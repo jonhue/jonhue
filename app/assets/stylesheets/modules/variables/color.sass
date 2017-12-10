@@ -9,9 +9,9 @@ html
 @function color( $color-name, $color-variant:null, $true-val:false )
     @if $true-val == true
         @if ( $color-variant != null )
-            @return map-get(map-get($light,$color-name),$color-variant)
+            @return map-get(map-get($default,$color-name),$color-variant)
         @else
-            @return map-get($light,$color-name)
+            @return map-get($default,$color-name)
     @else
         @if ( $color-variant != null )
             @return var(--color-#{$color-name}-#{$color-variant})
