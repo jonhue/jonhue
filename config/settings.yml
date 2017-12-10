@@ -1,0 +1,8 @@
+sentry:
+    dsn: https://3f0d80336048488fbda70bafbb06d7c3:12595bc5131b4d0c928e0e9ee6b9d9d9@sentry.io/257159
+
+mailgun:
+    key: key-516ebde117a4df7f844ed681582c192b
+    domain: jonhue.me
+    emails:
+        newsletter: me@jonhue.me
