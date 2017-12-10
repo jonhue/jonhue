@@ -1,5 +1,10 @@
 {
   "name": "jonhue",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "izimodal": "^1.5.1",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
 }

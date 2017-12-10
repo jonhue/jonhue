@@ -1,0 +1,62 @@
+#modal.iziModal
+    box-shadow: style(box-shadow, sm)
+    border: rpx(1) solid color(border)
+    border-radius: size(border-radius, md) !important
+    max-width: 90% !important
+    width: rpx(600)
+    // temporarily fixing height resizing
+    transition: margin-top .25s ease-out !important
+    &::after
+        content: none
+    &[data-full-screen="true"]
+        max-width: 100% !important
+        width: 100%
+        border-radius: 0 !important
+        border: none
+        height: 100vh !important
+        &.fadeInRight
+            animation: modal-fadeInRight .35s ease-out !important
+        &.fadeOutRight
+            animation: modal-fadeOutRight .35s ease-out !important
+    ::-webkit-scrollbar
+        width: style(scrollbar, width)
+    ::-webkit-scrollbar-track
+        background: style(scrollbar, track-background)
+    ::-webkit-scrollbar-thumb
+        border-radius: style(scrollbar, thumb-border-radius)
+        background: style(scrollbar, thumb-background)
+    ::-webkit-scrollbar-thumb:hover
+        background: style(scrollbar, thumb-hover-background)
+    & > .iziModal-wrap
+        border-radius: size(border-radius, md)
+        border-bottom: rpx(1) solid color(border)
+        & > .iziModal-content
+            & > .modal--header
+                background: color(background, lighter)
+                border-radius: size(border-radius, md) size(border-radius, md) 0 0
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: size(padding, sm)
+                border-bottom: rpx(1) solid color(border)
+                h4, p
+                    margin: 0
+            & > .modal--content
+                background: color(background, base)
+                border-radius: size(border-radius, md)
+                padding: size(padding, sm)
+.iziModal-overlay
+    background: color(overlay, base) !important
+#modal.iziModal, .iziModal-overlay
+    animation-duration: .5s !important
+
+@keyframes modal-fadeInRight
+    from
+        transform: translateX(100%)
+    to
+        transform: none
+@keyframes modal-fadeOutRight
+    from
+        transform: none
+    to
+        transform: translateX(100%)

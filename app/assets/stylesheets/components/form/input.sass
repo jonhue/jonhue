@@ -1,0 +1,50 @@
+input:not([type="submit"])
+    font-family: $font-family--sans-serif
+    font-size: px(15)
+    line-height: 1.58
+    color: color(text, light)
+    background: color(background, lighter)
+    border: rpx(1) solid color(border)
+    border-radius: size(border-radius, sm)
+    padding: rpx(12) rpx(16) rpx(13)
+    width: 100%
+    &:active, &:focus
+        // border: rpx(2) solid color(accent, base)
+        // padding: rpx(11) rpx(15) rpx(12)
+        border-color: color(accent, base)
+    &:active, &:focus
+        border-color: color(accent, base)
+        box-shadow: 0 0 0 rpx(3.5) rgba(color(accent, base, true), .35)
+        &.valid, &.green
+            box-shadow: 0 0 0 rpx(3.5) rgba(color(success, null, true), .35)
+        &.error, &.red
+            box-shadow: 0 0 0 rpx(3.5) rgba(color(error, null, true), .35)
+    &.valid, &.green
+        border-color: color(success)
+    &.error, &.red
+        border-color: color(error)
+
+
+
+.input ~ .input
+    margin-top: px(35)
+
+
+input
+    &::-webkit-input-placeholder
+        color: color(text, light) !important
+    &:-moz-placeholder
+        color: color(text, light) !important
+    &::-moz-placeholder
+        color: color(text, light) !important
+    &:-ms-input-placeholder
+        color: color(text, light) !important
+    &:active, &:focus
+        &::-webkit-input-placeholder
+            color: color(text, base) !important
+        &:-moz-placeholder
+            color: color(text, base) !important
+        &::-moz-placeholder
+            color: color(text, base) !important
+        &:-ms-input-placeholder
+            color: color(text, base) !important

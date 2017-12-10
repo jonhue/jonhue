@@ -1,0 +1,39 @@
+@function px($px, $element-font-size:16) {
+    @return $px/$element-font-size+em
+}
+
+@function rpx($px, $element-font-size:16) {
+    @return $px/$element-font-size+rem
+}
+
+
+$sizes: (
+    border-radius: (sm: rpx(3), md: rpx(5), lg: rpx(10)),
+    padding: (sm: px(20), md: px(30), lg: px(50))
+);
+
+:root {
+    @each $name, $size in $sizes {
+        @if type-of($size) == map {
+            @each $subname, $subsize in $size {
+                --size-#{$name}-#{$subname}: #{$subsize}
+            }
+        } @else if type-of($size) == number {
+            --size-#{$name}: #{$size}
+        }
+    }
+}
+
+@function size($size-name, $size-variant:null) {
+    @if ($size-variant != null) {
+        @return var(--size-#{$size-name}-#{$size-variant})
+    } @else {
+        @return var(--size-#{$size-name})
+    }
+}
+
+
+/* Usage */
+
+// size($name)
+// size($name, $type)

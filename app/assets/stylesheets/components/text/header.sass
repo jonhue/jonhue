@@ -1,0 +1,71 @@
+h1, h2, h3, h4, h5, h6
+    margin: .67em 0
+    line-height: 1.58
+
+h1
+    font-family: $font-family
+    font-weight: normal
+    font-size: rpx(34)
+    color: color(text, lighter)
+    @include bigger-than(mobile)
+        font-size: rpx(42)
+    &.marketing
+        font-family: $font-family
+        font-weight: bold
+        font-size: rpx(32)
+        @include bigger-than(mobile)
+            font-size: rpx(52)
+        &.subtext
+            font-size: rpx(26)
+            @include bigger-than(mobile)
+                font-size: rpx(32)
+
+h2
+    font-family: $font-family
+    font-weight: bold
+    font-size: rpx(24)
+    color: color(text, lighter)
+    @include bigger-than(mobile)
+        font-size: rpx(26)
+    &.marketing
+        font-family: $font-family
+        font-size: rpx(22)
+        @include bigger-than(mobile)
+            font-size: rpx(32)
+        &.subtext
+            color: color(text, base)
+            font-size: rpx(18)
+            @include bigger-than(mobile)
+                font-size: rpx(28)
+    &.lg
+        font-size: rpx(28)
+        @include bigger-than(mobile)
+            font-size: rpx(32)
+        &.subtext
+            font-size: rpx(24)
+            @include bigger-than(mobile)
+                font-size: rpx(28)
+
+h3
+    font-family: $font-family
+    font-weight: bold
+    font-size: rpx(21)
+    color: color(text, lighter)
+
+h4
+    font-family: $font-family
+    font-weight: 600
+    font-size: rpx(18)
+    color: color(text, lighter)
+    @include bigger-than(mobile)
+        font-size: rpx(20)
+
+h5
+    font-family: $font-family
+    font-weight: bold
+    font-size: rpx(16)
+    color: color(text, base)
+    @include bigger-than(mobile)
+        font-size: rpx(18)
+    &.marketing
+        font-family: $font-family

@@ -1,4 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
-  layout 'mailer'
+
+    default from: Settings.mailgun.emails.newsletter
+    layout 'mailer'
+
 end

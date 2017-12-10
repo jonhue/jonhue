@@ -1,0 +1,35 @@
+p, .text
+    font-family: $font-family
+    font-size: rpx(18)
+    color: color(text, light)
+    font-weight: normal
+    line-height: 1.58
+    letter-spacing: -.003em
+    &:not(.text)
+        margin-bottom: rpx(10)
+    &:last-child
+        margin-bottom: 0
+    @include bigger-than(mobile)
+        font-size: rpx(21)
+    // styles
+    &.marketing
+        font-family: $font-family
+    &.sans-serif
+        font-family: $font-family
+    &.no-margin
+        margin: 0
+    // sizes
+    &.md
+        font-size: rpx(16)
+        @include bigger-than(mobile)
+            font-size: rpx(18)
+    &.sm
+        font-size: rpx(14)
+        line-height: 1.75
+        @include bigger-than(mobile)
+            font-size: rpx(16)
+    &.tn
+        font-size: rpx(12)
+        line-height: 1.75
+        @include bigger-than(mobile)
+            font-size: rpx(14)

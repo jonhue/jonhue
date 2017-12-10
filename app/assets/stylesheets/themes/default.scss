@@ -1,0 +1,25 @@
+$default: (
+    accent: (
+        dark: #052ab3, // #1394e3
+        base: #042ECB, // #1DA1F2
+        contrast: #FFFFFF
+    ),
+    text: (
+        lighter: #14171A,
+        light: #3d4553,
+        base: #657786,
+        dark: #bec7cf
+    ),
+    border: #DCE2E7,
+    background: (
+        lighter: #FCFCFC,
+        light: #FFFFFF,
+        base: #FFFFFF,
+        dark: #EBF5FE
+    ),
+    error: #F6809A,
+    success: #6adb83,
+    overlay: (
+        base: transparentize(#E7ECF0, 0.13)
+    )
+);
