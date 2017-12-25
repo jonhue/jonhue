@@ -1,0 +1,30 @@
+%h1 It's me, Jonas Hübotter :)
+%p
+    A dangerously passionate
+    = link_to 'open-source', 'https://github.com/jonhue', target: '_blank'
+    developer, an engineer adoring user-oriented and innovative design.
+%p
+    I'm the creator of various apps like
+    = link_to 'NativeGap', 'https://nativegap.com', target: '_blank'
+    and
+    = link_to 'Phylator', 'https://phylator.herokuapp.com', target: '_blank'
+    + the founder of
+    = link_to 'Slooob', 'https://slooob.com', target: '_blank'
+    &
+    = link_to 'Yaeme', 'https://yaeme.com', target: '_blank'
+
+.button-wrapper
+    = link_to 'Project overview', 'https://github.com/jonhue/projects/projects/1?fullscreen=1', class: 'btn', target: '_blank'
+    = link_to 'Follow me on twitter', 'https://twitter.com/jhubotter', class: 'btn', target: '_blank'
+
+%footer
+    %p.small Get a glimpse off of my work:
+    .wrapper.flex.middle
+        = link_to 'https://twitter.com/jhubotter', target: '_blank' do
+            = asset 'components/social/twitter'
+        = link_to 'https://github.com/jonhue', target: '_blank' do
+            = asset 'components/social/github'
+        = link_to 'https://linkedin.com/in/jonhue', target: '_blank' do
+            = asset 'components/social/linkedin'
+        = link_to 'https://behance.net/jonhue', target: '_blank' do
+            = asset 'components/social/behance'

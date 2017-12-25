@@ -42,6 +42,10 @@ gem 'mailgun-ruby', '~> 1.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
+gem 'haml', '~> 5.0'
+gem 'metamagic', '~> 3.1'
+gem 'nestive-rails', '~> 1.0'
+
 
 # Utilities
 

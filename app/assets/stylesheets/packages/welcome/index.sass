@@ -1,2 +1,22 @@
 body.welcome.index
-    
+    padding: px(35)
+    @include bigger-than(mobile)
+        display: flex
+        align-items: center
+        justify-content: center
+    p
+        max-width: px(500)
+    .button-wrapper
+        margin-top: px(15)
+    footer
+        margin-top: px(75)
+        opacity: .5
+        p
+            opacity: .75
+            font-size: px(14)
+        a
+            opacity: .35
+            &:not(:first-child)
+                margin-left: px(25)
+            &:hover
+                opacity: .75
