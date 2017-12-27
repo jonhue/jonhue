@@ -1,8 +1,7 @@
 $default: (
     accent: (
-        dark: #052ab3, // #1394e3
-        base: #042ECB, // #1DA1F2
-        contrast: #FFFFFF
+        dark: #052ab3,
+        base: #042ECB
     ),
     text: (
         lighter: #14171A,
@@ -16,10 +15,5 @@ $default: (
         light: #FFFFFF,
         base: #FFFFFF,
         dark: #EBF5FE
-    ),
-    error: #F6809A,
-    success: #6adb83,
-    overlay: (
-        base: transparentize(#E7ECF0, 0.13)
     )
 );

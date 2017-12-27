@@ -34,7 +34,7 @@
 
         = area :head
 
-    %body{ class: class_hierarchy( [params[:controller].split('/').each { |n| n }, action_name] ) }
+    = turbolinks_animate_body class: class_hierarchy( [params[:controller].split('/').each { |n| n }, action_name] ) do
 
         .wrapper
 

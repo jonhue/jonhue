@@ -3,9 +3,7 @@
 //= require jquery/dist/jquery.js
 //= require rails-ujs
 //= require turbolinks
-
-//= require izimodal/js/iziModal.js
-//= require turbolinks-animate/turbolinks-animate.js
+//= require turbolinks-animate
 
 
 // Files

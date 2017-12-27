@@ -45,6 +45,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml', '~> 5.0'
 gem 'metamagic', '~> 3.1'
 gem 'nestive-rails', '~> 1.0'
+gem 'turbolinks-animate', '~> 1.1'
 
 
 # Utilities
