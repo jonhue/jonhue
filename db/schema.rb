@@ -10,7 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180206122053) do
+ActiveRecord::Schema.define(version: 20180206184601) do
+
+  create_table "apps", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "slug"
+    t.string "logo"
+    t.string "name"
+    t.string "description"
+    t.boolean "beta", default: false, null: false
+    t.string "url"
+    t.string "post"
+    t.string "github"
+    t.string "android"
+    t.string "ios"
+    t.string "windows"
+    t.string "chrome"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "belongings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "belonger_type"
+    t.bigint "belonger_id"
+    t.string "belongable_type"
+    t.bigint "belongable_id"
+    t.string "scope"
+    t.integer "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["belongable_type", "belongable_id"], name: "index_belongings_on_belongable_type_and_belongable_id"
+    t.index ["belonger_type", "belonger_id"], name: "index_belongings_on_belonger_type_and_belonger_id"
+  end
 
   create_table "devices", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "owner_type"
@@ -22,6 +52,37 @@ ActiveRecord::Schema.define(version: 20180206122053) do
     t.datetime "updated_at", null: false
     t.index ["onesignal_id"], name: "index_devices_on_onesignal_id"
     t.index ["owner_type", "owner_id"], name: "index_devices_on_owner_type_and_owner_id"
+  end
+
+  create_table "features", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "image"
+    t.string "title"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "title"
+    t.string "content"
+    t.string "platform"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "repositories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "slug"
+    t.string "logo"
+    t.string "name"
+    t.string "description"
+    t.string "language"
+    t.string "github"
+    t.string "demo"
+    t.string "rubygems"
+    t.string "npm"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

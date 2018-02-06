@@ -28,6 +28,7 @@ gem 'mozaic'
 gem 'myg'
 gem 'foreman'
 gem 'webpacker'
+gem 'acts_as_belongable'
 
 
 group :development, :test do
