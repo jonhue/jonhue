@@ -1,9 +1,0 @@
-{
-    "short_name": "JonHue",
-    "name": "Jonas Hübotter",
-    "start_url": "/",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
-    "display": "standalone",
-    "orientation": "portrait"
-}

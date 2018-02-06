@@ -29,6 +29,7 @@ gem 'randomize_id'
 gem 'mozaic'
 gem 'myg'
 gem 'foreman'
+gem 'webpacker'
 
 
 group :development, :test do
