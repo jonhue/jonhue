@@ -1,2 +1,5 @@
+google_analytics:
+    tracking_id: UA-113622099-1
+
 sentry:
     dsn: https://3f0d80336048488fbda70bafbb06d7c3:12595bc5131b4d0c928e0e9ee6b9d9d9@sentry.io/257159

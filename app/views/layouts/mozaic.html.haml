@@ -22,8 +22,10 @@
         %link{ rel: 'msapplication-square310x310logo', content: request.base_url + '/icon_310x310.png' }
 
         %meta{ name: 'theme-color', content: area(:theme_color, '#ffffff') }
-
         = favicon_link_tag '/favicon.ico'
+
+        = component 'seo/schema', type: :person, name: 'Jonas Hübotter'
+        = component 'layouts/google_analytics'
 
         = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
         = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
