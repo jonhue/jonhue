@@ -1,5 +1,5 @@
 default: &default
-    pool: <%= Settings.sidekiq.concurrency + 2 %> # Sidekiq concurrency + 2
+    pool: 5
 
 
 # production:

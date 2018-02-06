@@ -1,7 +1,0 @@
-redis:
-    url: redis://:JWKdReoEJnXiFF6I@redis-16302.c15.us-east-1-2.ec2.cloud.redislabs.com:16302
-
-sidekiq:
-    # => http://manuelvanrijn.nl/sidekiq-heroku-redis-calc/
-    concurrency: 22
-    timeout: 8

@@ -1,6 +1,1 @@
-redis:
-    url: redis://localhost:6379/
 
-sidekiq:
-    # => http://manuelvanrijn.nl/sidekiq-heroku-redis-calc/
-    concurrency: 47
