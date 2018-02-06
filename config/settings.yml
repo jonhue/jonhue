@@ -1,5 +1,8 @@
 google_analytics:
     tracking_id: UA-113622099-1
 
+onesignal:
+    app_id: ab35e854-f655-483c-aa26-c8f2dc12a2b8
+
 sentry:
     dsn: https://3f0d80336048488fbda70bafbb06d7c3:12595bc5131b4d0c928e0e9ee6b9d9d9@sentry.io/257159

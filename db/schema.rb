@@ -10,6 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20180206122053) do
+
+  create_table "devices", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "owner_type"
+    t.bigint "owner_id"
+    t.string "onesignal_id"
+    t.string "onesignal_permission"
+    t.datetime "last_used"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["onesignal_id"], name: "index_devices_on_onesignal_id"
+    t.index ["owner_type", "owner_id"], name: "index_devices_on_owner_type_and_owner_id"
+  end
 
 end
