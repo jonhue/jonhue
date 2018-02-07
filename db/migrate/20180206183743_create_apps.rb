@@ -20,6 +20,8 @@ class CreateApps < ActiveRecord::Migration[5.1]
             t.string :issues
             t.integer :open_issues
 
+            t.string :support
+
             t.timestamps
 
         end

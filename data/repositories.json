@@ -1,17 +1,11 @@
 [{
     "logo": "",
     "name": "Myg",
-    "description": "An opinionated & modular state-of-the-web framework",
-    "language": "CSS",
     "url": null,
     "github": "https://github.com/jonhue/myg",
     "demo": null,
     "rubygems": null,
     "npm": "https://www.npmjs.com/package/myg",
-    "todo": "https://github.com/jonhue/myg/projects/1?fullscreen=true",
-    "wiki": null,
-    "issues": "https://github.com/jonhue/myg/issues",
-    "open_issues": 0,
     "features": [{
         "image": "",
         "title": "Modular",

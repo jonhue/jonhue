@@ -25,9 +25,10 @@ end
 
 repositories = []
 custom_repositories = JSON.parse(File.read('data/repositories.json')).map { |h| h.deep_symbolize_keys }
+excluded_repositories = ['jonhue', 'hello_amp', 'railsamp']
 github_repositories = HTTParty.get(Settings.github.repos)&.parsed_response&.map { |h| h.deep_symbolize_keys }
 github_repositories&.each do |github_repository|
-    unless github_repository[:private] || App.where(github: github_repository[:html_url]).any?
+    unless excluded_repositories.include?(github_repository[:name]) || github_repository[:private] || App.where(github: github_repository[:html_url]).any?
         repository = custom_repositories.select { |r| r[:name] == github_repository[:name] }&.first
         if repository.nil?
             repository = {}
@@ -47,6 +48,7 @@ github_repositories&.each do |github_repository|
             repository[:url] ||= github_repository[:homepage]
         end
         repository[:language] ||= github_repository[:language]
+        repository[:deprecated] ||= github_repository[:archived] == true
         repository[:updated_at] ||= github_repository[:pushed_at]&.to_datetime
         repository[:created_at] ||= github_repository[:created_at]&.to_datetime
         repositories << repository

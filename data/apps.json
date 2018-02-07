@@ -12,22 +12,74 @@
     "todo": "https://github.com/jonhue/my-clipboard/projects/1?fullscreen=true",
     "wiki": null,
     "issues": "https://github.com/jonhue/my-clipboard/issues",
-    "open_issues": 0,
+    "support": "mailto:me@jonhue.me",
     "features": [{
         "image": "",
-        "title": "View your clipboard history",
+        "title": "Your clipboard's history",
         "content": "."
     }, {
         "image": "",
-        "title": "Remove sensitive data from your clipboard",
+        "title": "Clear your clipboard",
         "content": "."
     }, {
         "image": "",
-        "title": "Share your clipboard history across all your devices",
+        "title": "Cross-device sync",
         "content": "."
     }, {
         "image": "",
-        "title": "Edit your clipboard's contents",
+        "title": "Clipboard content editor",
+        "content": "."
+    }]
+}, {
+    "logo": "",
+    "name": "Phylator",
+    "description": "A simple but powerful calculator for physics",
+    "beta": true,
+    "url": "https://phylator.com",
+    "github": "https://github.com/Phylator/phylator",
+    "android": "https://play.google.com/store/apps/details?id=com.herokuapp.phylator",
+    "ios": null,
+    "windows": "https://www.microsoft.com/en-us/store/p/phylator/9p2s8l446bhc",
+    "chrome": "https://chrome.google.com/webstore/detail/phylator/ggpfjgcjfolgjiblbgfekmboejonlnng",
+    "todo": "https://github.com/Phylator/phylator/projects/1?fullscreen=true",
+    "wiki": null,
+    "issues": "https://github.com/Phylator/phylator/issues",
+    "support": "mailto:support@phylator.com",
+    "features": [{
+        "image": "",
+        "title": "Unit conversion",
+        "content": "."
+    }, {
+        "image": "",
+        "title": "Solving equations",
+        "content": "."
+    }, {
+        "image": "",
+        "title": "A humangous database",
+        "content": "."
+    }, {
+        "image": "",
+        "title": "Complete walkthroughs",
+        "content": "."
+    }]
+}, {
+    "logo": "",
+    "name": "NativeGap",
+    "description": "Your website, in your customers pocket",
+    "beta": true,
+    "url": "https://nativegap.com",
+    "github": null,
+    "android": null,
+    "ios": null,
+    "windows": null,
+    "chrome": null,
+    "todo": null,
+    "wiki": null,
+    "issues": null,
+    "support": "mailto:support@nativegap.com",
+    "features": [{
+        "image": "",
+        "title": ".",
         "content": "."
     }]
 }]

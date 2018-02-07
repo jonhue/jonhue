@@ -19,6 +19,8 @@ class CreateRepositories < ActiveRecord::Migration[5.1]
             t.string :issues
             t.integer :open_issues
 
+            t.boolean :deprecated, default: false, null: false
+
             t.timestamps
 
         end

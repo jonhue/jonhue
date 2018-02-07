@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20180206184601) do
     t.string "wiki"
     t.string "issues"
     t.integer "open_issues"
+    t.string "support"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -89,6 +90,7 @@ ActiveRecord::Schema.define(version: 20180206184601) do
     t.string "wiki"
     t.string "issues"
     t.integer "open_issues"
+    t.boolean "deprecated", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
