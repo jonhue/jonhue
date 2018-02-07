@@ -1,5 +1,6 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+require 'rss'
 
 
 apps = JSON.parse(File.read('data/apps.json')).map { |h| h.deep_symbolize_keys }
@@ -70,5 +71,23 @@ repositories&.each do |repository|
             f = Feature.create! feature
             f.add_to_belonger! r
         end
+    end
+end
+
+
+posts = RSS::Parser.parse 'https://medium.com/feed/@jonhue', false
+posts.items&.each do |post|
+    post_data = {
+        title: post.title,
+        content: post.content_encoded,
+        platform: 'Medium',
+        url: post.link,
+        created_at: post.pubDate
+    }
+    po = Post.find_by title: post_data[:title]
+    if po.nil?
+        po = Post.create! post_data
+    else
+        po.update! post_data
     end
 end

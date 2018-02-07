@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 20180206184601) do
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "title"
-    t.string "content"
+    t.text "content"
     t.string "platform"
     t.string "url"
     t.datetime "created_at", null: false
@@ -90,7 +90,7 @@ ActiveRecord::Schema.define(version: 20180206184601) do
     t.string "wiki"
     t.string "issues"
     t.integer "open_issues"
-    t.boolean "deprecated", default: false, null: false
+    t.boolean "discontinued", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
