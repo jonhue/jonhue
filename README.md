@@ -1,24 +1,9 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<div align="center">
+	<img src="https://jonhue.me/icon_76x76.png" width="76">
+	<h1>Jonas Hübotter</h1>
+	<h5>A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.</h4>
+	<br>
+	<h4>
+		<a href="https://jonhue.me">Website</a>
+	</h4>
+</div>
