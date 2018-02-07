@@ -7,6 +7,3 @@
 		<a href="https://jonhue.me">Website</a>
 	</h4>
 </div>
-<br>
-<br>
-<br>
