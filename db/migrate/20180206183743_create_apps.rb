@@ -10,13 +10,15 @@ class CreateApps < ActiveRecord::Migration[5.1]
             t.boolean :beta, default: false, null: false
 
             t.string :url
-            t.string :post
             t.string :github
             t.string :android
             t.string :ios
             t.string :windows
             t.string :chrome
             t.string :todo
+            t.string :wiki
+            t.string :issues
+            t.integer :open_issues
 
             t.timestamps
 

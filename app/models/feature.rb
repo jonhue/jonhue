@@ -5,4 +5,7 @@ class Feature < ApplicationRecord
     belongable :apps, 'App'
     belongable :repositories, 'Repository'
 
+    validates :title, presence: true
+    validates :content, presence: true
+
 end

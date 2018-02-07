@@ -19,12 +19,15 @@ ActiveRecord::Schema.define(version: 20180206184601) do
     t.string "description"
     t.boolean "beta", default: false, null: false
     t.string "url"
-    t.string "post"
     t.string "github"
     t.string "android"
     t.string "ios"
     t.string "windows"
     t.string "chrome"
+    t.string "todo"
+    t.string "wiki"
+    t.string "issues"
+    t.integer "open_issues"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -77,10 +80,15 @@ ActiveRecord::Schema.define(version: 20180206184601) do
     t.string "name"
     t.string "description"
     t.string "language"
+    t.string "url"
     t.string "github"
     t.string "demo"
     t.string "rubygems"
     t.string "npm"
+    t.string "todo"
+    t.string "wiki"
+    t.string "issues"
+    t.integer "open_issues"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

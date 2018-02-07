@@ -8,5 +8,6 @@ class App < ApplicationRecord
     validates :description, presence: true
 
     belonger :features, 'Feature'
+    belonger :posts, 'Post'
 
 end

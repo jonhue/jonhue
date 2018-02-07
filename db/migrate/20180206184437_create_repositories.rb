@@ -9,11 +9,15 @@ class CreateRepositories < ActiveRecord::Migration[5.1]
             t.string :description
             t.string :language
 
+            t.string :url
             t.string :github
             t.string :demo
             t.string :rubygems
             t.string :npm
             t.string :todo
+            t.string :wiki
+            t.string :issues
+            t.integer :open_issues
 
             t.timestamps
 

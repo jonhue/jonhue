@@ -3,6 +3,7 @@ class RepositoriesController < ApplicationController
     before_action :set_repository
 
     def show
+        turbolinks_animate 'fadein'
     end
 
     private

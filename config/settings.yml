@@ -1,3 +1,6 @@
+github:
+    repos: https://api.github.com/users/jonhue/repos
+
 google_analytics:
     tracking_id: UA-113622099-1
 

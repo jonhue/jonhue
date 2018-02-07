@@ -1,6 +1,6 @@
 class Belonging < ApplicationRecord
 
-    acts_as_list :belonger, add_new_at: :bottom
+    acts_as_list :belonger
 
     belongs_to :belonger, polymorphic: true
     belongs_to :belongable, polymorphic: true

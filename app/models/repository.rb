@@ -9,5 +9,6 @@ class Repository < ApplicationRecord
     validates :github, presence: true
 
     belonger :features, 'Feature'
+    belonger :posts, 'Post'
 
 end

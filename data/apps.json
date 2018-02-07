@@ -1,0 +1,33 @@
+[{
+    "logo": "",
+    "name": "My Clipboard",
+    "description": "Making your clipboard work for you",
+    "beta": false,
+    "url": null,
+    "github": "https://github.com/jonhue/my-clipboard",
+    "android": null,
+    "ios": null,
+    "windows": "https://www.microsoft.com/en-us/store/p/my-clipboard/9ph1zmz9w2wr",
+    "chrome": null,
+    "todo": "https://github.com/jonhue/my-clipboard/projects/1?fullscreen=true",
+    "wiki": null,
+    "issues": "https://github.com/jonhue/my-clipboard/issues",
+    "open_issues": 0,
+    "features": [{
+        "image": "",
+        "title": "View your clipboard history",
+        "content": "."
+    }, {
+        "image": "",
+        "title": "Remove sensitive data from your clipboard",
+        "content": "."
+    }, {
+        "image": "",
+        "title": "Share your clipboard history across all your devices",
+        "content": "."
+    }, {
+        "image": "",
+        "title": "Edit your clipboard's contents",
+        "content": "."
+    }]
+}]

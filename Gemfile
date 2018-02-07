@@ -29,6 +29,8 @@ gem 'myg'
 gem 'foreman'
 gem 'webpacker'
 gem 'acts_as_belongable'
+gem 'certified'
+gem 'httparty'
 
 
 group :development, :test do
