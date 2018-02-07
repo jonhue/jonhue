@@ -29,7 +29,7 @@ excluded_repositories = ['jonhue', 'hello_amp', 'railsamp']
 github_repositories = HTTParty.get(Settings.github.repos)&.parsed_response&.map { |h| h.deep_symbolize_keys }
 github_repositories&.each do |github_repository|
     unless excluded_repositories.include?(github_repository[:name]) || github_repository[:private] || App.where(github: github_repository[:html_url]).any?
-        repository = custom_repositories.select { |r| r[:name] == github_repository[:name] }&.first
+        repository = custom_repositories.select { |r| r[:github] == github_repository[:html_url] }&.first
         if repository.nil?
             repository = {}
         end
@@ -63,7 +63,7 @@ repositories&.each do |repository|
         r.update! repository
     end
     features&.each do |feature|
-        if a.features.where(title: feature[:title]).any?
+        if r.features.where(title: feature[:title]).any?
             f = r.features.where(title: feature[:title]).first
             f.update! feature
         else
