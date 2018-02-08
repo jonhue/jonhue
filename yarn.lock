@@ -1937,9 +1937,9 @@ detect-node@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.3.tgz#a2033c09cc8e158d37748fbde7507832bd6ce127"
 
-devise-onesignal@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/devise-onesignal/-/devise-onesignal-4.0.0.tgz#7db189e92ee425765b2a87c2cbe37c9b2404988e"
+devise-onesignal@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/devise-onesignal/-/devise-onesignal-4.0.1.tgz#e712bf71337abf28f4e5f0db16cd0cafa10dd5e6"
 
 diffie-hellman@^5.0.0:
   version "5.0.2"
