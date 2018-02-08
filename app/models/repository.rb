@@ -11,4 +11,8 @@ class Repository < ApplicationRecord
     belonger :features, 'Feature'
     belonger :posts, 'Post'
 
+    def content
+        Octokit.contents(self.github.tr('https://github.com/', ''), path: 'README.md', accept: 'application/vnd.github.v3.html').html_safe
+    end
+
 end

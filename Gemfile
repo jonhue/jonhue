@@ -31,6 +31,7 @@ gem 'webpacker'
 gem 'acts_as_belongable'
 gem 'certified'
 gem 'httparty'
+gem 'octokit'
 
 
 group :development, :test do
