@@ -1,5 +1,5 @@
 [{
-    "logo": "",
+    "logo": "https://user-images.githubusercontent.com/13420273/35914502-c2fabd18-0c03-11e8-8e9c-656e6b8b6336.png",
     "name": "My Clipboard",
     "description": "Making your clipboard work for you",
     "beta": false,
@@ -18,7 +18,7 @@
         "title": "Your clipboard's history",
         "content": "."
     }, {
-        "image": "",
+        "image": "https://store-images.s-microsoft.com/image/apps.65487.14244558422593350.94a4bbb7-7fc2-4c07-a11e-066f21ca07fd.98c7af6b-2970-4c0b-8408-162503f337b2",
         "title": "Clear your clipboard",
         "content": "."
     }, {
@@ -31,7 +31,7 @@
         "content": "."
     }]
 }, {
-    "logo": "",
+    "logo": "https://phylator.com/icon_512x512.png",
     "name": "Phylator",
     "description": "A simple but powerful calculator for physics",
     "beta": true,
@@ -63,7 +63,7 @@
         "content": "."
     }]
 }, {
-    "logo": "",
+    "logo": "https://nativegap.com/icon_512x512.png",
     "name": "NativeGap",
     "description": "Your website, in your customers pocket",
     "beta": true,

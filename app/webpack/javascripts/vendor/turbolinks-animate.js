@@ -1,5 +1,6 @@
-import * as turbolinksAnimate from 'turbolinks-animate';
+import $ from 'jquery';
+import 'turbolinks-animate';
 
 export function init() {
-    turbolinksAnimate.TurbolinksAnimate.init();
+    TurbolinksAnimate.init({ element: $('body.turbolinks-animate') });
 };
