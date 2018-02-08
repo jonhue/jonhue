@@ -6175,12 +6175,11 @@ tunnel-agent@~0.4.1:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.4.3.tgz#6373db76909fe570e08d73583365ed828a74eeeb"
 
-turbolinks-animate@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/turbolinks-animate/-/turbolinks-animate-2.1.1.tgz#aba918aff685e9f79873015031818f5065e0c030"
+turbolinks-animate@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/turbolinks-animate/-/turbolinks-animate-3.0.0.tgz#0711e67a512df439322c1fa6f182a507f965583e"
   dependencies:
     animate.css "^3.5.2"
-    jquery "^3.2.1"
     turbolinks "^5.0.3"
 
 turbolinks@^5.0.3, turbolinks@^5.1.1:
