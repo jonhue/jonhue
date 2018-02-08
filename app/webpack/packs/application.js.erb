@@ -1,7 +1,9 @@
 import $ from 'jquery';
 import 'rails-ujs';
-import 'devise-onesignal';
-import 'devise-onesignal/vendor/assets/javascripts/OneSignalSDK';
+
+import 'devise-onesignal/dist/OneSignalSDK';
+import * as deviseOneSignal from 'devise-onesignal';
+deviseOneSignal.init( '<%= DeviseOnesignal.configuration.app_id %>', <%= DeviseOnesignal.configuration.auto_register %>, <%= DeviseOnesignal.configuration.persist_notification %> );
 
 import Turbolinks from 'turbolinks';
 Turbolinks.start();
