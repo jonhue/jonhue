@@ -1,19 +1,23 @@
-import $ from 'jquery';
 import 'rails-ujs';
-
-import 'devise-onesignal/dist/OneSignalSDK';
-import * as deviseOneSignal from 'devise-onesignal';
-deviseOneSignal.init( '<%= DeviseOnesignal.configuration.app_id %>', <%= DeviseOnesignal.configuration.auto_register %>, <%= DeviseOnesignal.configuration.persist_notification %> );
+import './../javascripts/cable';
 
 import Turbolinks from 'turbolinks';
 Turbolinks.start();
 
-import './../javascripts/vendor/vendor';
-import './../javascripts/components/components';
+import 'turbolinks-animate';
+document.addEventListener( 'turbolinks:load', () => {
+    TurbolinksAnimate.init({ element: document.querySelector('body.turbolinks-animate') });
+})
 
-import './../javascripts/packages/welcome/welcome';
+import 'onsignal/dist/OneSignalSDK';
+import OnSignal from 'onsignal';
+document.addEventListener( 'ready', () => {
+    const onSignal = new OnSignal('<%= Settings.onesignal.app_id %>');
+})
 
-// import './../javascripts/cable';
+// import './../javascripts/components/components';
+
+// import './../javascripts/packages/welcome/welcome';
 
 
 import './../stylesheets/index';

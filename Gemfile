@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
 end
 
 
-gem 'rails', '~> 5.1.4'
+gem 'rails', '~> 5.1.5'
 gem 'turbolinks'
 gem 'puma'
 gem 'sass-rails'
@@ -32,6 +32,7 @@ gem 'acts_as_belongable'
 gem 'certified'
 gem 'httparty'
 gem 'octokit'
+gem 'modalist'
 
 
 group :development, :test do
