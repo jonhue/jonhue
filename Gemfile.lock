@@ -78,12 +78,6 @@ GEM
     crass (1.0.3)
     debug_inspector (0.0.3)
     deep_merge (1.2.1)
-    devise-onesignal (4.0.1)
-      actionpack (>= 5.0)
-      actionview (>= 5.0)
-      activerecord (>= 5.0)
-      activesupport (>= 5.0)
-      railties (>= 5.0)
     dry-configurable (0.7.0)
       concurrent-ruby (~> 1.0)
     dry-container (0.6.0)
@@ -172,6 +166,12 @@ GEM
       mini_portile2 (~> 2.3.0)
     octokit (4.8.0)
       sawyer (~> 0.8.0, >= 0.5.3)
+    onsignal (5.0.0)
+      actionpack (>= 5.0)
+      actionview (>= 5.0)
+      activerecord (>= 5.0)
+      activesupport (>= 5.0)
+      railties (>= 5.0)
     parallel (1.12.1)
     parser (2.5.0.0)
       ast (~> 2.4.0)
@@ -314,7 +314,6 @@ DEPENDENCIES
   capybara
   certified
   config
-  devise-onesignal
   foreman
   friendly_id
   haml
@@ -326,6 +325,7 @@ DEPENDENCIES
   myg
   mysql2
   octokit
+  onsignal
   pg
   pry-rails
   puma
