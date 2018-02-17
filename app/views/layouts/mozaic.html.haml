@@ -6,7 +6,7 @@
         %meta{ charset: 'utf-8' }
         %meta{ name: 'viewport', content: 'user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1' }
 
-        = metamagic site: 'Jonas Hübotter', title: [:title, :site], separator: ' - ', description: '...', keywords: ['developer']
+        = metamagic site: 'Jonas Hübotter', title: [:title, :site], separator: ' - ', description: 'A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.', keywords: ['developer']
         = component 'pwa/manifest'
 
         %link{ rel: 'apple-touch-icon', sizes: '76x76', href: request.base_url + '/icon_76x76.png' }
@@ -32,7 +32,7 @@
 
         = csrf_meta_tags
 
-    = turbolinks_animate_body class: class_hierarchy( [params[:controller].split('/').each { |n| n }, action_name] ) do
+    = component 'turbolinks-animate', animation: @turbolinks_animate_animation, class: class_hierarchy( [params[:controller].split('/').each { |n| n }, action_name] ) do
 
         = component 'modalist/overlay'
         = component 'modalist/wrapper'
