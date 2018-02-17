@@ -3743,8 +3743,8 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
     minimist "0.0.8"
 
 modalist@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/modalist/-/modalist-2.0.0.tgz#27c7162b666a616aff92b332196cb91eecd5cf42"
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/modalist/-/modalist-2.0.1.tgz#4d9d58b0887d45d1b402cbfdcd32ed40cead5758"
   dependencies:
     animate.css "^3.6.1"
 
