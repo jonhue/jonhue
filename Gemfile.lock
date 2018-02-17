@@ -252,7 +252,7 @@ GEM
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
-    search-engine-optimization (1.0.1)
+    search-engine-optimization (1.0.2)
       mozaic (~> 2.0)
       railties (>= 5.0)
     selenium-webdriver (3.9.0)

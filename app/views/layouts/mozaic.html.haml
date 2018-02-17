@@ -7,7 +7,7 @@
         %meta{ name: 'viewport', content: 'user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1' }
 
         = metamagic site: 'Jonas Hübotter', title: [:title, :site], separator: ' - ', description: '...', keywords: ['developer']
-        = pwa_manifest
+        = component 'pwa/manifest'
 
         %link{ rel: 'apple-touch-icon', sizes: '76x76', href: request.base_url + '/icon_76x76.png' }
         %link{ rel: 'apple-touch-icon', sizes: '120x120', href: request.base_url + '/icon_120x120.png' }
@@ -21,7 +21,7 @@
         -# %link{ rel: 'msapplication-wide310x150logo', content: request.base_url + '/icon_310x150.png' }
         %link{ rel: 'msapplication-square310x310logo', content: request.base_url + '/icon_310x310.png' }
 
-        %meta{ name: 'theme-color', content: area(:theme_color, '#FFFFFF') }
+        = component 'pwa/theme'
         = favicon_link_tag '/favicon.ico'
 
         = component 'seo/schema', type: :person, name: 'Jonas Hübotter'
@@ -32,9 +32,10 @@
 
         = csrf_meta_tags
 
-        = area :head
-
     = turbolinks_animate_body class: class_hierarchy( [params[:controller].split('/').each { |n| n }, action_name] ) do
+
+        = component 'modalist/overlay'
+        = component 'modalist/wrapper'
 
         = mozaic_area do
             = yield

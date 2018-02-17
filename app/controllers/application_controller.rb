@@ -9,9 +9,7 @@ class ApplicationController < ActionController::Base
         render_r404 :not_found, 404, exception
     end
 
-
     private
-
 
     def set_raven_context
         Raven.extra_context params: params.to_unsafe_h, url: request.url
