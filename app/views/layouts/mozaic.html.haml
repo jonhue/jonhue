@@ -24,13 +24,14 @@
         = component 'pwa/theme'
         = favicon_link_tag '/favicon.ico'
 
-        = component 'seo/schema', type: :person, name: 'Jonas Hübotter'
         = component 'layouts/google_analytics'
 
         = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
         = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
 
         = csrf_meta_tags
+
+        = area :head
 
     = component 'turbolinks-animate', animation: @turbolinks_animate_animation, class: class_hierarchy( [params[:controller].split('/').each { |n| n }, action_name] ) do
 

@@ -1,1 +1,3 @@
 - meta title: @repository.name, description: @repository.description
+- append :head do
+    = component 'seo/schema', type: :product, category: 'Software/Open Source', logo: @repository.logo, name: @repository.name, description: @repository.description, url: @repository.url || @repository.github
