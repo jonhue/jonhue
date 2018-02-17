@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+    mount Pwa::Engine, at: ''
+
     get 'contact', to: 'welcome#contact'
     get 'privacy', to: 'welcome#privacy'
 
