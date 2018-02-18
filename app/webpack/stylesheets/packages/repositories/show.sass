@@ -30,7 +30,8 @@ body.repositories.show
             width: px(200)
             height: px(200)
             border-radius: px(15)
-        & > .myg-badge--container
+        & > .myg-button--container
+            justify-content: center
             width: px(500)
             max-width: 85%
 
@@ -55,6 +56,10 @@ body.repositories.show
         background: color(background, lighter)
         padding: px(25)
         & > div
+            .myg-badge--container
+                margin-bottom: px(15)
             +bigger-than(tablet)
                 +flex--center-c
                 +flex--space-between
+                .myg-badge--container
+                    margin-bottom: inherit

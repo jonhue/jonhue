@@ -3790,328 +3790,328 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
-myg-action-button@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-action-button/-/myg-action-button-0.4.3.tgz#72046ba0efc0df0eb25263c1cde81a5b60fa3452"
+myg-action-button@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-action-button/-/myg-action-button-0.4.5.tgz#ad61ba41c756cfdbfd6c9cfff9b51eb6c4fc8acd"
   dependencies:
-    myg-base "^0.4.3"
-    myg-spacing "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-spacing "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-animate@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-animate/-/myg-animate-0.4.3.tgz#ccd7c203670a76dd919020dbfdb4a4a98544e4cc"
+myg-animate@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-animate/-/myg-animate-0.4.5.tgz#01ee7df5520fed3251f411ddbafac19f3daf50b5"
   dependencies:
     animate.css "^3.5.2"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-badge@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-badge/-/myg-badge-0.4.3.tgz#8dbba0bf2a5c9cb807d91a03324408d34a28aa36"
+myg-badge@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-badge/-/myg-badge-0.4.5.tgz#4fff940b0c6d77e1afde2a98332389a5802c27c1"
   dependencies:
-    myg-base "^0.4.3"
-    myg-grid "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-grid "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-base@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-base/-/myg-base-0.4.3.tgz#c87aec04f5e318d960e46b8b68c31b9be1fb2c17"
+myg-base@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-base/-/myg-base-0.4.5.tgz#3a549f1aa58fb3d3e8a9a441b721fb604c88570a"
 
-myg-button@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-button/-/myg-button-0.4.3.tgz#8cf421912d01e0d11a41164c71dda241dd2438be"
+myg-button@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-button/-/myg-button-0.4.5.tgz#06cf4e327803bde16da811a6e280953667fbab48"
   dependencies:
-    myg-animate "^0.4.3"
-    myg-base "^0.4.3"
-    myg-elevation "^0.4.3"
-    myg-font "^0.4.3"
-    myg-grid "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-animate "^0.4.5"
+    myg-base "^0.4.5"
+    myg-elevation "^0.4.5"
+    myg-font "^0.4.5"
+    myg-grid "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-card@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-card/-/myg-card-0.4.3.tgz#b776bfc20534e8a294e32f98a169cdd3eb074ab1"
+myg-card@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-card/-/myg-card-0.4.5.tgz#77b9d8469c7b0030ee192504547433224becb00e"
   dependencies:
-    myg-animate "^0.4.3"
-    myg-base "^0.4.3"
-    myg-elevation "^0.4.3"
-    myg-spacing "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-animate "^0.4.5"
+    myg-base "^0.4.5"
+    myg-elevation "^0.4.5"
+    myg-spacing "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-checkbox@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-checkbox/-/myg-checkbox-0.4.3.tgz#d2549d2b0ae362e219baee9d91e067242e33e7bc"
+myg-checkbox@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-checkbox/-/myg-checkbox-0.4.5.tgz#dd3c1007adc5fd1922068cf320cb9a97af775946"
   dependencies:
     "@material/checkbox" "^0.29.0"
-    myg-base "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-dialog@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-dialog/-/myg-dialog-0.4.3.tgz#df6548a54a5ac3a098d5198744e19bf01f283724"
+myg-dialog@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-dialog/-/myg-dialog-0.4.5.tgz#fd0c7b1c4885bc4477d8b9e702d0d61a23ad7060"
   dependencies:
     "@material/dialog" "^0.29.0"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-drawer@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-drawer/-/myg-drawer-0.4.3.tgz#4a161d77da24a6302567d7e35a4c21d09958e0c6"
+myg-drawer@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-drawer/-/myg-drawer-0.4.5.tgz#35157e672b839f2108beb63cd606d93dd5a9894f"
   dependencies:
     "@material/drawer" "^0.29.0"
-    myg-base "^0.4.3"
-    myg-spacing "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-spacing "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-dropdown@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-dropdown/-/myg-dropdown-0.4.3.tgz#3d78c4a863d80a185e0044391cdc61a61d0c0d17"
+myg-dropdown@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-dropdown/-/myg-dropdown-0.4.5.tgz#f1c41dba98e07e48553d0f3876199b6da176b095"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
     popper.js "^1.12.9"
 
-myg-elevation@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-elevation/-/myg-elevation-0.4.3.tgz#8b7639af4dffd48cf03e43c2eed5454f5fd258b9"
+myg-elevation@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-elevation/-/myg-elevation-0.4.5.tgz#458f8b656c2b347efadbe51cd16e8194c9658612"
   dependencies:
-    myg-base "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-font@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-font/-/myg-font-0.4.3.tgz#383ebd20c4192282aa7e71c4e8bfb9be706370c8"
+myg-font@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-font/-/myg-font-0.4.5.tgz#07397e4a36f1082ce60537a9c71723325602f603"
 
-myg-footer@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-footer/-/myg-footer-0.4.3.tgz#1d3cce0378348561c6a1f517e24d661d65bd9f7b"
+myg-footer@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-footer/-/myg-footer-0.4.5.tgz#6d8cf9d7d5ad9a176c9af64d3cdf1b87f3bb2986"
   dependencies:
-    myg-animate "^0.4.3"
-    myg-base "^0.4.3"
-    myg-grid "^0.4.3"
-    myg-spacing "^0.4.3"
+    myg-animate "^0.4.5"
+    myg-base "^0.4.5"
+    myg-grid "^0.4.5"
+    myg-spacing "^0.4.5"
 
-myg-form-field@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-form-field/-/myg-form-field-0.4.3.tgz#e3e5378af57a52378b81627dc44839801bbf7e4e"
+myg-form-field@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-form-field/-/myg-form-field-0.4.5.tgz#a63243ac5d5db3935aaf13b9a6d8f69b6ee0a0fd"
   dependencies:
     "@material/form-field" "^0.29.0"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-grid@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-grid/-/myg-grid-0.4.3.tgz#8d7ff9708dd19262e5aabf8f579d7de08f6d6044"
+myg-grid@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-grid/-/myg-grid-0.4.5.tgz#59de914618c31cf2afc21ed9a957b8f9a9041644"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-icon@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-icon/-/myg-icon-0.4.3.tgz#903a751d8f6e1fe138ffee6f8087a7ab48913af3"
+myg-icon@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-icon/-/myg-icon-0.4.5.tgz#9e5ee0f5395b8d2f4d12a8847f2b17949edc0c43"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-input@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-input/-/myg-input-0.4.3.tgz#f2473ad2b3b267d830a653d9f2a84bdd6bfdccd8"
+myg-input@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-input/-/myg-input-0.4.5.tgz#8c63a44a6deff013c522a0d24d86969076b5f809"
   dependencies:
-    myg-animate "^0.4.3"
-    myg-base "^0.4.3"
-    myg-font "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-animate "^0.4.5"
+    myg-base "^0.4.5"
+    myg-font "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-label@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-label/-/myg-label-0.4.3.tgz#35ec38673acc537cb3dac5a1bc6dcf73ad51f6ec"
+myg-label@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-label/-/myg-label-0.4.5.tgz#3c6cd69fe5e8f1c2565c8454d3b6630ef90b31df"
   dependencies:
-    myg-animate "^0.4.3"
-    myg-base "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-animate "^0.4.5"
+    myg-base "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-layout@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-layout/-/myg-layout-0.4.3.tgz#713f37add528df8dfcdb1a25e738d40445d4850f"
+myg-layout@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-layout/-/myg-layout-0.4.5.tgz#5b810b691ab9c3596cd99de2508ea1f4954bbde6"
   dependencies:
-    myg-base "^0.4.3"
-    myg-font "^0.4.3"
-    myg-grid "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-font "^0.4.5"
+    myg-grid "^0.4.5"
+    myg-theme "^0.4.5"
     normalize.css "^7.0.0"
 
-myg-list@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-list/-/myg-list-0.4.3.tgz#582530acf4b2c799cf5c8d739ec0a9c9bb46cd63"
+myg-list@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-list/-/myg-list-0.4.5.tgz#13c742dc1c60171c1d95977d36d4366e17379f9c"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-menu@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-menu/-/myg-menu-0.4.3.tgz#cd90c9f54ae49ec9660e80890cdc5b8728e8a390"
+myg-menu@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-menu/-/myg-menu-0.4.5.tgz#bd78d91c6dec6381186e0065801115e8c04d2ed6"
   dependencies:
     "@material/menu" "^0.29.0"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-modal@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-modal/-/myg-modal-0.4.3.tgz#ba8a4ec2d94c7934d183e771ad82853e2d79f0c4"
+myg-modal@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-modal/-/myg-modal-0.4.5.tgz#c02fad927f6671f982222c82d2ce28b2c24af711"
   dependencies:
     animate.css "^3.5.2"
     modalist "^2.0.0"
-    myg-base "^0.4.3"
-    myg-spacing "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-spacing "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-progress@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-progress/-/myg-progress-0.4.3.tgz#1e2e1a66d65354fcec4c7dde5bcbc0cec093a70e"
+myg-progress@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-progress/-/myg-progress-0.4.5.tgz#10dfac8876ddb766551d3a8afa5194617a481bec"
   dependencies:
     "@material/linear-progress" "^0.29.0"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-radio@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-radio/-/myg-radio-0.4.3.tgz#b03df560cb0508d4cc482e342f0f5002e3242042"
+myg-radio@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-radio/-/myg-radio-0.4.5.tgz#d881e11ac968378f4d1b42a0f351d53994a36011"
   dependencies:
     "@material/radio" "^0.29.0"
-    myg-base "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-select@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-select/-/myg-select-0.4.3.tgz#957aef857e88171b41d052168b992eecbdf0869b"
+myg-select@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-select/-/myg-select-0.4.5.tgz#d22a3b8dd879ba5384c0ce991e6f27e2bcddf437"
   dependencies:
     "@material/select" "^0.29.0"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-sidebar@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-sidebar/-/myg-sidebar-0.4.3.tgz#f4c915b559f9e052f88a5d0095f81a956efaaf4f"
+myg-sidebar@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-sidebar/-/myg-sidebar-0.4.5.tgz#a87f75b40e6fe851c3448d910601b1db06ddb571"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-slide@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-slide/-/myg-slide-0.4.3.tgz#2f56879ca2580e15d65821ffafbf3df4de8580f5"
+myg-slide@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-slide/-/myg-slide-0.4.5.tgz#ee7993e9fcdcbc71bc9b9866c46d76ab43d014da"
   dependencies:
     flickity "^2.0.10"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-slider@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-slider/-/myg-slider-0.4.3.tgz#5f81636136bb123f26e68294593990c7c22c19a6"
+myg-slider@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-slider/-/myg-slider-0.4.5.tgz#9a8cb217b3da91cca47120e71d33218c77a5ecd9"
   dependencies:
     "@material/slider" "^0.29.0"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-spacing@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-spacing/-/myg-spacing-0.4.3.tgz#e3b2fa19e678bbba3905ed49f45be44928104bf0"
+myg-spacing@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-spacing/-/myg-spacing-0.4.5.tgz#8222381a3ddc309c2eca1f1deb69955d89154e80"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-switch@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-switch/-/myg-switch-0.4.3.tgz#d0918f1c9800ab2a732395cf61b72b3b5f979b79"
+myg-switch@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-switch/-/myg-switch-0.4.5.tgz#b654e895fe689471d384a90912bba438aee27f8e"
   dependencies:
     "@material/switch" "^0.29.0"
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-tabs@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-tabs/-/myg-tabs-0.4.3.tgz#81f5fdeefcd10e215cbd0c3988326221042eabd3"
+myg-tabs@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-tabs/-/myg-tabs-0.4.5.tgz#8b8bbc11061aa58108412165d3ddc53317e9c700"
   dependencies:
     "@material/tabs" "^0.29.0"
-    myg-animate "^0.4.3"
-    myg-base "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-animate "^0.4.5"
+    myg-base "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-text@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-text/-/myg-text-0.4.3.tgz#4424717cd63ab54cbaf783d1afecbe2d3c2d2f63"
+myg-text@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-text/-/myg-text-0.4.5.tgz#03c1fd20fa28fca508b46a744c930407c0006850"
   dependencies:
-    myg-base "^0.4.3"
-    myg-font "^0.4.3"
-    myg-grid "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-font "^0.4.5"
+    myg-grid "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-theme@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-theme/-/myg-theme-0.4.3.tgz#11974c7b055124c5a47d9a4f03b1e63f8e7d4ac7"
+myg-theme@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-theme/-/myg-theme-0.4.5.tgz#77bbab550e77e2d9b87b58cb63819c123c2e078d"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
 
-myg-titlebar@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-titlebar/-/myg-titlebar-0.4.3.tgz#5b56d05c6c179fbf1f80d20504f64a284c9011d4"
+myg-titlebar@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-titlebar/-/myg-titlebar-0.4.5.tgz#d7727a90e1651d2bd79de173c5f2a33923f4ba0b"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
     welcomer "^2.1.0"
 
-myg-toast@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-toast/-/myg-toast-0.4.3.tgz#07048d9ef5d552b16495a6c199ae936949dccabb"
+myg-toast@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-toast/-/myg-toast-0.4.5.tgz#a3ae777dacd83494cfcef10a1a3df6cc040f4dd4"
   dependencies:
     "@material/snackbar" "^0.29.0"
-    myg-base "^0.4.3"
-    myg-font "^0.4.3"
-    myg-spacing "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-font "^0.4.5"
+    myg-spacing "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-toolbar@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-toolbar/-/myg-toolbar-0.4.3.tgz#af702eeb92b4fd12e66d65cc16b9fe58377915fd"
+myg-toolbar@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-toolbar/-/myg-toolbar-0.4.5.tgz#a6ffb161850599a1503f823334dc58506a8d6015"
   dependencies:
     "@material/toolbar" "^0.29.0"
-    myg-base "^0.4.3"
-    myg-font "^0.4.3"
-    myg-layout "^0.4.3"
-    myg-theme "^0.4.3"
+    myg-base "^0.4.5"
+    myg-font "^0.4.5"
+    myg-layout "^0.4.5"
+    myg-theme "^0.4.5"
 
-myg-tooltip@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg-tooltip/-/myg-tooltip-0.4.3.tgz#1c73f1391f97a5603bebfaf9ce48294bc0d87899"
+myg-tooltip@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg-tooltip/-/myg-tooltip-0.4.5.tgz#86eb3414deebd22ed80a3dcdc98dc915a7a14b39"
   dependencies:
-    myg-base "^0.4.3"
+    myg-base "^0.4.5"
     popper.js "^1.12.9"
 
-myg@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/myg/-/myg-0.4.3.tgz#a036dbebb82099301ed313d8e4a4fef9b35bde5b"
+myg@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/myg/-/myg-0.4.5.tgz#a1398867443af2a146218f08cc6ab8a18b6af3f9"
   dependencies:
-    myg-action-button "^0.4.3"
-    myg-animate "^0.4.3"
-    myg-badge "^0.4.3"
-    myg-base "^0.4.3"
-    myg-button "^0.4.3"
-    myg-card "^0.4.3"
-    myg-checkbox "^0.4.3"
-    myg-dialog "^0.4.3"
-    myg-drawer "^0.4.3"
-    myg-dropdown "^0.4.3"
-    myg-elevation "^0.4.3"
-    myg-font "^0.4.3"
-    myg-footer "^0.4.3"
-    myg-form-field "^0.4.3"
-    myg-grid "^0.4.3"
-    myg-icon "^0.4.3"
-    myg-input "^0.4.3"
-    myg-label "^0.4.3"
-    myg-layout "^0.4.3"
-    myg-list "^0.4.3"
-    myg-menu "^0.4.3"
-    myg-modal "^0.4.3"
-    myg-progress "^0.4.3"
-    myg-radio "^0.4.3"
-    myg-select "^0.4.3"
-    myg-sidebar "^0.4.3"
-    myg-slide "^0.4.3"
-    myg-slider "^0.4.3"
-    myg-spacing "^0.4.3"
-    myg-switch "^0.4.3"
-    myg-tabs "^0.4.3"
-    myg-text "^0.4.3"
-    myg-theme "^0.4.3"
-    myg-titlebar "^0.4.3"
-    myg-toast "^0.4.3"
-    myg-toolbar "^0.4.3"
-    myg-tooltip "^0.4.3"
+    myg-action-button "^0.4.5"
+    myg-animate "^0.4.5"
+    myg-badge "^0.4.5"
+    myg-base "^0.4.5"
+    myg-button "^0.4.5"
+    myg-card "^0.4.5"
+    myg-checkbox "^0.4.5"
+    myg-dialog "^0.4.5"
+    myg-drawer "^0.4.5"
+    myg-dropdown "^0.4.5"
+    myg-elevation "^0.4.5"
+    myg-font "^0.4.5"
+    myg-footer "^0.4.5"
+    myg-form-field "^0.4.5"
+    myg-grid "^0.4.5"
+    myg-icon "^0.4.5"
+    myg-input "^0.4.5"
+    myg-label "^0.4.5"
+    myg-layout "^0.4.5"
+    myg-list "^0.4.5"
+    myg-menu "^0.4.5"
+    myg-modal "^0.4.5"
+    myg-progress "^0.4.5"
+    myg-radio "^0.4.5"
+    myg-select "^0.4.5"
+    myg-sidebar "^0.4.5"
+    myg-slide "^0.4.5"
+    myg-slider "^0.4.5"
+    myg-spacing "^0.4.5"
+    myg-switch "^0.4.5"
+    myg-tabs "^0.4.5"
+    myg-text "^0.4.5"
+    myg-theme "^0.4.5"
+    myg-titlebar "^0.4.5"
+    myg-toast "^0.4.5"
+    myg-toolbar "^0.4.5"
+    myg-tooltip "^0.4.5"
 
 nan@^2.3.0, nan@^2.3.2:
   version "2.8.0"
