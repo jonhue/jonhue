@@ -32,7 +32,6 @@ gem 'acts_as_belongable'
 gem 'certified'
 gem 'httparty'
 gem 'octokit'
-gem 'modalist'
 
 
 group :development, :test do

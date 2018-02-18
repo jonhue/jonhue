@@ -35,8 +35,5 @@
 
     = component 'turbolinks-animate', animation: @turbolinks_animate_animation, class: 'myg myg-layout myg-layout--toolbar ' + class_hierarchy( [params[:controller].split('/').each { |n| n }, action_name] ) do
 
-        = component 'modalist/overlay'
-        = component 'modalist/wrapper'
-
         = mozaic_area do
             = yield

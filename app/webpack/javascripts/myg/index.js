@@ -1,13 +1,7 @@
 import './button';
 import './card';
-import './checkbox';
 import './drawer';
-import './footer';
-import './form-field';
 import './icon';
-import './input';
-import './modal';
-import './radio';
 import './text';
 import './theme';
 import './toolbar';
