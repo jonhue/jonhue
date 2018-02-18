@@ -8,7 +8,9 @@
 
 
 .myg-toolbar > .mdc-toolbar__row
-    padding: 0 myg-spacing(sm)
+    padding-left: myg-spacing(sm)
+    +bigger-than(tablet)
+        padding-right: myg-spacing(sm)
     & > section.mdc-toolbar__section.mdc-toolbar__section--align-end
         &:not(.mobile)
             display: none
