@@ -49,7 +49,7 @@ github_repositories&.each do |github_repository|
         elsif github_repository[:homepage]&.include? 'npm'
             repository[:npm] ||= github_repository[:homepage]
         else
-            repository[:url] ||= github_repository[:homepage] unless github_repository[:homepage]&.include? 'jonhue.me'
+            repository[:url] ||= github_repository[:homepage] unless github_repository[:homepage]&.include?('jonhue.me')
         end
         repository[:language] ||= github_repository[:language]
         repository[:discontinued] ||= github_repository[:archived] == true

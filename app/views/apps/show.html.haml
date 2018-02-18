@@ -8,7 +8,7 @@
     %p.lg= @app.description
     .myg-button--container
         - if @app.url
-            = link_to 'Read more', @app.url, class: 'myg-button'
+            = link_to 'Get started', @app.url, class: 'myg-button'
         - if @app.android
             = link_to 'Android', @app.android, class: 'myg-button myg-button--secondary', target: '_blank'
         - if @app.ios
@@ -17,7 +17,7 @@
             = link_to 'Windows 10', @app.windows, class: 'myg-button myg-button--secondary', target: '_blank'
         - if @app.chrome
             = link_to 'Chrome', @app.chrome, class: 'myg-button myg-button--secondary', target: '_blank'
-            
+
 %section#more
     .myg-wrap--large
         .myg-badge--container

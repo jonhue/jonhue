@@ -12,7 +12,7 @@
     "todo": "https://github.com/jonhue/my-clipboard/projects/1?fullscreen=true",
     "wiki": null,
     "issues": "https://github.com/jonhue/my-clipboard/issues",
-    "support": "mailto:me@jonhue.me",
+    "support": "me@jonhue.me",
     "released_at": "January 22, 2018",
     "features": [{
         "image": "",
@@ -45,7 +45,7 @@
     "todo": "https://github.com/Phylator/phylator/projects/1?fullscreen=true",
     "wiki": null,
     "issues": "https://github.com/Phylator/phylator/issues",
-    "support": "mailto:support@phylator.com",
+    "support": "support@phylator.com",
     "features": [{
         "image": "",
         "title": "Unit conversion",
@@ -77,7 +77,7 @@
     "todo": null,
     "wiki": null,
     "issues": null,
-    "support": "mailto:support@nativegap.com",
+    "support": "support@nativegap.com",
     "features": [{
         "image": "",
         "title": ".",
