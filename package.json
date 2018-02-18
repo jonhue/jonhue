@@ -9,7 +9,7 @@
         "rails-erb-loader": "^5.2.1",
         "rails-ujs": "^5.1.4",
         "turbolinks": "^5.1.1",
-        "turbolinks-animate": "^3.0.2"
+        "turbolinks-animate": "^3.0.4"
     },
     "devDependencies": {
         "webpack-dev-server": "^2.11.1"

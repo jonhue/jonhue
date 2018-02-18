@@ -11,8 +11,9 @@ document.addEventListener( 'turbolinks:load', () => {
 
 import 'onsignal/dist/OneSignalSDK';
 import OnSignal from 'onsignal';
-document.addEventListener( 'ready', () => {
+document.addEventListener( 'turbolinks:load', () => { // change to 'ready'
     const onSignal = new OnSignal('<%= Settings.onesignal.app_id %>');
+    document.querySelectorAll('#subscribe a.myg-button').forEach( (element) => element.addEventListener( 'click', () => onSignal.subscribe() ) );
 })
 
 import './../javascripts/myg/index';
