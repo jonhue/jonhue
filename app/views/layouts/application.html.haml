@@ -1,6 +1,6 @@
 = mozaic do
 
-    = component 'myg/toolbar' do
+    = component 'myg/toolbar', data: { turbolinks_animate_persist: 'true' } do
         .myg-wrap--large.mdc-toolbar__row
             %section.mdc-toolbar__section.mdc-toolbar__section--align-start
                 %h3= link_to 'Jonas Hübotter', root_url

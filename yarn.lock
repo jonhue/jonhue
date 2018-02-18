@@ -6220,9 +6220,9 @@ tunnel-agent@~0.4.1:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.4.3.tgz#6373db76909fe570e08d73583365ed828a74eeeb"
 
-turbolinks-animate@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/turbolinks-animate/-/turbolinks-animate-3.0.1.tgz#49ad5d657453b0f36a026e1858bb2e73b66ba5a6"
+turbolinks-animate@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/turbolinks-animate/-/turbolinks-animate-3.0.2.tgz#2b2cf25fc4e417bd57a4e67af837ee9040b8b389"
   dependencies:
     animate.css "^3.5.2"
     turbolinks "^5.0.3"
