@@ -23,6 +23,8 @@ body.welcome.index
             min-height: px(260)
             padding: myg-spacing(base)
             .wrapper
+                .myg-badge--container
+                    margin-bottom: px(15)
                 & > h3
                     margin: px(20) 0 px(5)
                 & > p
@@ -47,6 +49,9 @@ body.welcome.index
             font-size: px(18)
     p.sm
         font-size: px(14)
+    hr
+        border: px(1) solid color(border)
+        margin: px(50) 0
 
     #home
         +flex--center
@@ -89,9 +94,6 @@ body.welcome.index
             & > p
                 font-size: px(20)
                 +font(serif)
-            hr
-                border: px(1) solid color(border)
-                margin: px(35) 0
             .wrapper
                 width: 100%
                 +flex--center

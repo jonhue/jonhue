@@ -4,6 +4,9 @@
 
 @import "components/components"
 
+@import "packages/apps/show"
+@import "packages/repositories/show"
+@import "packages/welcome/contact"
 @import "packages/welcome/index"
 
 
@@ -12,6 +15,10 @@
     padding-left: myg-spacing(sm)
     +bigger-than(tablet)
         padding-right: myg-spacing(sm)
+    & > section.mdc-toolbar__section.mdc-toolbar__section--align-start
+        & > h3 > a
+            color: color(text, darker)
+            text-decoration: none !important
     & > section.mdc-toolbar__section.mdc-toolbar__section--align-end
         &:not(.mobile)
             display: none

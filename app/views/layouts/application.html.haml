@@ -3,7 +3,7 @@
     = component 'myg/toolbar' do
         .myg-wrap--large.mdc-toolbar__row
             %section.mdc-toolbar__section.mdc-toolbar__section--align-start
-                %h3 Jonas Hübotter
+                %h3= link_to 'Jonas Hübotter', root_url
             %section.mdc-toolbar__section.mdc-toolbar__section--align-end.mobile
                 = link_to 'javascript:void(0)', class: 'preventdefault' do
                     = asset 'components/drawer/toggle'

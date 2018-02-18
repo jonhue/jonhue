@@ -1,3 +1,53 @@
 - meta title: @repository.name, description: @repository.description
 - append :head do
     = component 'seo/schema', type: :product, category: 'Software/Open Source', logo: @repository.logo, name: @repository.name, description: @repository.description, url: @repository.url || @repository.github
+
+%section#home
+    - if @repository.logo
+        = image_tag @repository.logo
+    %h1.sm= @repository.name
+    %p.lg= @repository.description
+    .myg-button--container
+        - if @repository.github
+            = link_to 'Source code', @repository.github, class: 'myg-button'
+        - if @repository.demo
+            = link_to 'Demo', @repository.demo, class: 'myg-button myg-button--secondary'
+        = link_to 'Docs', '#readme', class: 'myg-button myg-button--secondary'
+        - if @repository.rubygems
+            = link_to 'Rubygems', @repository.rubygems, class: 'myg-button myg-button--secondary'
+        - if @repository.npm
+            = link_to 'NPM', @repository.npm, class: 'myg-button myg-button--secondary'
+        - if @repository.url
+            = link_to 'Read more', @repository.url, class: 'myg-button myg-button--secondary'
+
+%section#readme
+    %a{ name: 'readme' }
+    .myg-wrap--tablet
+        = @repository.content
+
+%section#more
+    .myg-wrap--large
+        .myg-badge--container
+            - if @repository.created_at > Time.now - 1.month
+                %p.myg-badge.success New! 🚀
+            - if @repository.discontinued
+                %p.myg-badge.error Discontinued
+            - elsif @repository.updated_at > Time.now - 1.day
+                %p.myg-badge.error On... 🔥
+            %p.myg-badge
+                = @repository.language
+            - if @repository.stars > 0
+                %p.myg-badge
+                    = @repository.stars
+                    ⭐️
+            %p.myg-badge
+                Updated
+                = time_ago_in_words @repository.updated_at
+                ago
+        .myg-button--container
+            - if @repository.wiki
+                = link_to 'Wiki', @repository.wiki, class: 'myg-button myg-button--secondary'
+            - if @repository.issues
+                = link_to "#{pluralize(@repository.open_issues, 'open issue')}", @repository.issues, class: 'myg-button myg-button--secondary'
+            - if @repository.todo
+                = link_to "What's up next?", @repository.todo, class: 'myg-button myg-button--secondary'

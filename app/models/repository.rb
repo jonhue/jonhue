@@ -12,7 +12,7 @@ class Repository < ApplicationRecord
     belonger :posts, 'Post'
 
     def content
-        Octokit.contents(self.github.tr('https://github.com/', ''), path: 'README.md', accept: 'application/vnd.github.v3.html').html_safe
+        Octokit.contents(self.github.sub('https://github.com/', ''), path: 'README.md', accept: 'application/vnd.github.v3.html').force_encoding('UTF-8').html_safe
     end
 
 end

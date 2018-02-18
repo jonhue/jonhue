@@ -1,0 +1,35 @@
+body.apps.show
+
+    h1.sm
+        font-size: px(30)
+        +bigger-than(tablet)
+            font-size: px(36)
+    p.lg
+        font-size: px(16)
+        +bigger-than(tablet)
+            font-size: px(18)
+
+    section#home
+        min-height: calc(100vh - #{map-get($myg-layout, toolbar-height)} - #{px(100)})
+        padding: px(100) 0
+        +flex--center
+        text-align: center
+        flex-direction: column
+        h1, p
+            max-width: 85%
+        h1
+            margin: px(35) 0 0
+        p
+            margin: 0 0 px(35)
+        & > img
+            width: px(200)
+            height: px(200)
+            border-radius: px(15)
+
+    section#more
+        background: color(background, lighter)
+        padding: px(25)
+        & > div
+            +bigger-than(tablet)
+                +flex--center-c
+                +flex--space-between

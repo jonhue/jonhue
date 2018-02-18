@@ -32,6 +32,7 @@ gem 'acts_as_belongable'
 gem 'certified'
 gem 'httparty'
 gem 'octokit'
+gem 'nilify_blanks'
 
 
 group :development, :test do
