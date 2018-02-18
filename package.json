@@ -4,12 +4,12 @@
     "dependencies": {
         "@rails/webpacker": "^3.2.2",
         "actioncable": "^5.1.5",
-        "myg": "^0.4.2",
+        "myg": "^0.4.3",
         "onsignal": "^5.0.0",
         "rails-erb-loader": "^5.2.1",
         "rails-ujs": "^5.1.4",
         "turbolinks": "^5.1.1",
-        "turbolinks-animate": "^3.0.0"
+        "turbolinks-animate": "^3.0.1"
     },
     "devDependencies": {
         "webpack-dev-server": "^2.11.1"
