@@ -1,38 +1,140 @@
 - append :head do
     = component 'seo/schema', type: :person, name: 'Jonas Hübotter', email: 'me@jonhue.me', address: 'Berlin', gender: 'male', job_title: 'Software Developer', url: 'https://jonhue.me', image: 'https://jonhue.me/512x512.png', description: 'A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.'
 
+%section#home.myg-wrap--large
+    %h1.lg Hey, it's me :)
+    %p.lg A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.
+    .myg-button--container
+        = link_to 'Apps', '', class: 'myg-button'
+        = link_to 'Tweets', 'https://twitter.com/jhubotter', class: 'myg-button myg-button--secondary', target: '_blank'
+        = link_to 'Code', 'https://github.com/jonhue', class: 'myg-button myg-button--secondary', target: '_blank'
+
+%section#apps
+    .myg-wrap--large
+        %h2.lg Apps
+        .myg-grid
+            - @apps.each do |app|
+                .myg-card
+                    = link_to app, class: 'myg-card--top' do
+                        = image_tag app.logo
+                    .myg-card--bottom
+                        .wrapper
+                            .myg-badge--container
+                                - if app.released_at && app.released_at > Time.now - 1.month
+                                    %p.myg-badge.success New! 🚀
+                                - if app.beta
+                                    %p.myg-badge.error Beta 🔥
+                                - if app.url
+                                    %p.myg-badge Web
+                                - if app.android
+                                    %p.myg-badge Android
+                                - if app.ios
+                                    %p.myg-badge iOS
+                                - if app.windows
+                                    %p.myg-badge Windows
+                                - if app.chrome
+                                    %p.myg-badge Chrome
+                            %h3= app.name
+                            %p= app.description
+                        = link_to 'Learn more', app, class: 'myg-button myg-button--secondary'
+
+%section#subscribe
+    .myg-wrap--phone
+        %h1.sm You'll enjoy clicking.
+        = link_to 'Get notified when something is happening 🎉', '', class: 'myg-button'
+        .flex.reverse
+            %p.sm * I'm afraid, I can't promise.
+
+%section#writing
+    .myg-wrap--tablet
+        - @posts.each_with_index do |post, index|
+            %h1.sm= post.title
+            .myg-badge--container
+                %p.myg-badge= post.platform
+            %p= post.content[0..750].html_safe + '...'
+            %p= link_to 'Continue reading', post.url
+            - unless index == @posts.count - 1
+                %hr
+        .wrapper
+            = link_to 'Even more writing 📖', '', class: 'myg-button myg-button--secondary', target: '_blank'
+
+%section#open-source
+    .myg-wrap--large
+        %h2.lg Open Source
+        .myg-grid
+            - @repositories.each do |repository|
+                .myg-card
+                    .myg-card--top
+                    .myg-card--bottom
+                        .wrapper
+                            .myg-badge--container
+                                - if repository.created_at > Time.now - 1.month
+                                    %p.myg-badge.success New! 🚀
+                                - if repository.discontinued
+                                    %p.myg-badge.error Discontinued
+                                - elsif repository.updated_at > Time.now - 1.day
+                                    %p.myg-badge.error On... 🔥
+                                %p.myg-badge
+                                    = repository.language
+                                - if repository.stars > 0
+                                    %p.myg-badge
+                                        = repository.stars
+                                        ⭐️
+                            %h3= repository.name
+                            %p= repository.description
+                            %p.sm= link_to "Updated #{time_ago_in_words(repository.updated_at)} ago", repository.github, class: 'hyperlink--inherit'
+                        = link_to 'Learn more', repository, class: 'myg-button myg-button--secondary'
+
+%section#myg
+    .myg-wrap--large
+        .wrapper
+            %p.sm Get a glimpse off of my work:
+            .wrapper.flex.flex--center-c
+                = link_to 'https://twitter.com/jhubotter', target: '_blank' do
+                    = asset 'components/social/twitter'
+                = link_to 'https://github.com/jonhue', target: '_blank' do
+                    = asset 'components/social/github'
+                = link_to 'https://linkedin.com/in/jonhue', target: '_blank' do
+                    = asset 'components/social/linkedin'
+                = link_to 'https://medium.com/@jonhue', target: '_blank' do
+                    = asset 'components/social/medium'
+                = link_to 'https://behance.net/jonhue', target: '_blank' do
+                    = asset 'components/social/behance'
+        %p
+            Built with ❤️ and
+            = link_to 'Myg', '/repos/myg'
+            by the developer who built Myg. 🤙
 
 
-
-%h1 It's me, Jonas Hübotter :)
-%p
-    A student, a dangerously passionate
-    = link_to 'open-source', 'https://github.com/jonhue', target: '_blank'
-    developer, an engineer adoring user-oriented and innovative design.
-%p
-    I'm the creator of various apps like
-    = link_to 'NativeGap', 'https://nativegap.com', target: '_blank'
-    and
-    = link_to 'Phylator', 'https://phylator.herokuapp.com', target: '_blank'
-    + the founder of
-    = link_to 'Slooob', 'https://slooob.com', target: '_blank'
-    &
-    = link_to 'Yaeme', 'https://yaeme.com', target: '_blank'
-
-.button-wrapper
-    = link_to 'Project overview', 'https://github.com/jonhue/projects/projects/1?fullscreen=1', class: 'btn', target: '_blank'
-    = link_to 'Follow me on twitter', 'https://twitter.com/jhubotter', class: 'btn', target: '_blank'
-
-%footer
-    %p.small Get a glimpse off of my work:
-    .wrapper.flex.middle
-        = link_to 'https://twitter.com/jhubotter', target: '_blank' do
-            = asset 'components/social/twitter'
-        = link_to 'https://github.com/jonhue', target: '_blank' do
-            = asset 'components/social/github'
-        = link_to 'https://linkedin.com/in/jonhue', target: '_blank' do
-            = asset 'components/social/linkedin'
-        = link_to 'https://medium.com/@jonhue', target: '_blank' do
-            = asset 'components/social/medium'
-        = link_to 'https://behance.net/jonhue', target: '_blank' do
-            = asset 'components/social/behance'
+-# %h1 It's me, Jonas Hübotter :)
+-# %p
+-#     A student, a dangerously passionate
+-#     = link_to 'open-source', 'https://github.com/jonhue', target: '_blank'
+-#     developer, an engineer adoring user-oriented and innovative design.
+-# %p
+-#     I'm the creator of various apps like
+-#     = link_to 'NativeGap', 'https://nativegap.com', target: '_blank'
+-#     and
+-#     = link_to 'Phylator', 'https://phylator.herokuapp.com', target: '_blank'
+-#     + the founder of
+-#     = link_to 'Slooob', 'https://slooob.com', target: '_blank'
+-#     &
+-#     = link_to 'Yaeme', 'https://yaeme.com', target: '_blank'
+-#
+-# .button-wrapper
+-#     = link_to 'Project overview', 'https://github.com/jonhue/projects/projects/1?fullscreen=1', class: 'btn', target: '_blank'
+-#     = link_to 'Follow me on twitter', 'https://twitter.com/jhubotter', class: 'btn', target: '_blank'
+-#
+-# %footer
+-#     %p.small Get a glimpse off of my work:
+-#     .wrapper.flex.middle
+-#         = link_to 'https://twitter.com/jhubotter', target: '_blank' do
+-#             = asset 'components/social/twitter'
+-#         = link_to 'https://github.com/jonhue', target: '_blank' do
+-#             = asset 'components/social/github'
+-#         = link_to 'https://linkedin.com/in/jonhue', target: '_blank' do
+-#             = asset 'components/social/linkedin'
+-#         = link_to 'https://medium.com/@jonhue', target: '_blank' do
+-#             = asset 'components/social/medium'
+-#         = link_to 'https://behance.net/jonhue', target: '_blank' do
+-#             = asset 'components/social/behance'

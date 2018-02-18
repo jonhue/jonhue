@@ -18,6 +18,8 @@ class CreateRepositories < ActiveRecord::Migration[5.1]
             t.string :wiki
             t.string :issues
             t.integer :open_issues
+            t.integer :stars
+            t.integer :watchers
 
             t.boolean :discontinued, default: false, null: false
 

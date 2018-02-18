@@ -22,6 +22,7 @@ class CreateApps < ActiveRecord::Migration[5.1]
 
             t.string :support
 
+            t.datetime :released_at
             t.timestamps
 
         end

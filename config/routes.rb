@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     get 'contact', to: 'welcome#contact'
     get 'privacy', to: 'welcome#privacy'
 
-    get 'repos/:id', to: 'repositories#show'
-    get ':id', to: 'apps#show'
+    get 'repos/:id', to: 'repositories#show', as: :repository
+    get ':id', to: 'apps#show', as: :app
 
     root 'welcome#index'
 

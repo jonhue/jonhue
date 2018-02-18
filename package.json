@@ -4,7 +4,7 @@
     "dependencies": {
         "@rails/webpacker": "^3.2.2",
         "actioncable": "^5.1.5",
-        "myg": "^0.3.0",
+        "myg": "^0.4.2",
         "onsignal": "^5.0.0",
         "rails-erb-loader": "^5.2.1",
         "rails-ujs": "^5.1.4",

@@ -1,22 +1,131 @@
 body.welcome.index
-    padding: px(35)
-    @include bigger-than(mobile)
-        display: flex
-        align-items: center
-        justify-content: center
-    p
-        max-width: px(500)
-    .button-wrapper
-        margin-top: px(15)
-    footer
-        margin-top: px(75)
-        opacity: .5
-        p
-            opacity: .75
-            font-size: px(14)
-        a
-            opacity: .35
-            &:not(:first-child)
-                margin-left: px(25)
-            &:hover
-                opacity: .75
+
+    .myg-content > section
+        padding: myg-spacing(base)
+        & > .myg-wrap--large
+            padding: myg-spacing(base)
+    .myg-card
+        background: color(background, base)
+        padding: 0
+        +myg-grid-span(4)
+        h2
+            margin-bottom: 0
+        .myg-card--top
+            height: px(300)
+            background: color(background, dark)
+            +flex--center
+            img
+                height: px(125)
+                border-radius: px(5)
+        .myg-card--bottom
+            +flex--space-between
+            flex-direction: column
+            min-height: px(260)
+            padding: myg-spacing(base)
+            .wrapper
+                & > h3
+                    margin: px(20) 0 px(5)
+                & > p
+                    margin: 0
+                    &:last-child
+                        margin: 0 0 px(25)
+                        &.sm
+                            color: color(text, light)
+                            margin-top: px(5)
+
+    h1.lg
+        font-size: px(40)
+        margin: 0
+        +bigger-than(tablet)
+            font-size: px(74)
+    h2.lg
+        font-size: px(32)
+    p.lg
+        font-size: px(16)
+        margin-bottom: px(35)
+        +bigger-than(tablet)
+            font-size: px(18)
+    p.sm
+        font-size: px(14)
+
+    #home
+        +flex--center
+        text-align: center
+        flex-direction: column
+        min-height: calc(100vh - #{px(225)})
+        +bigger-than(desktop)
+            align-items: flex-start
+            text-align: left
+        h1, p
+            width: px(650)
+            max-width: 85%
+        .myg-button--container
+            margin-bottom: px(50)
+
+    #apps
+        padding: px(25) 0 px(75)
+        background: color(background, lighter)
+
+    #subscribe
+        padding: px(75) 0 px(100)
+        background: color(text, dark)
+        & > div
+            width: 85%
+            h1, p
+                color: color(background, base)
+            .myg-button
+                border-color: color(background, base) !important
+                background: color(text, dark)
+                &:hover
+                    background: color(background, base)
+                    color: color(text, dark)
+
+    #writing
+        padding: px(75) 0
+        .myg-wrap--tablet
+            width: 85%
+            h1
+                font-size: px(40)
+            & > p
+                font-size: px(20)
+                +font(serif)
+            hr
+                border: px(1) solid color(border)
+                margin: px(35) 0
+            .wrapper
+                width: 100%
+                +flex--center
+                margin-top: px(50)
+
+    #open-source
+        padding: px(25) 0 px(75)
+        .myg-card--top
+            height: px(25)
+        .myg-card--bottom
+            min-height: px(300)
+
+    #myg
+        padding: px(50) 0
+        background: color(background, lighter)
+        & > div
+            +flex--center-c
+            flex-direction: column
+            & > p
+                max-width: 75%
+                text-align: center
+            p.sm
+                color: color(text, lighter)
+            & > .wrapper
+                margin-bottom: px(20)
+                & > .wrapper
+                    display: flex
+                    flex-wrap: wrap
+                    margin: px(-6)
+                    & > a
+                        margin: px(6)
+                        opacity: .7
+                        +transition
+                        path, rect
+                            fill: color(text, lighter)
+                        &:hover
+                            opacity: 1
