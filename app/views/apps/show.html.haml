@@ -8,7 +8,7 @@
     %p.lg= @app.description
     .myg-button--container
         - if @app.url
-            = link_to 'Get started', @app.url, class: 'myg-button'
+            = link_to 'Get started', @app.url, class: 'myg-button', target: '_blank'
         - if @app.android
             = link_to 'Android', @app.android, class: 'myg-button myg-button--secondary', target: '_blank'
         - if @app.ios
@@ -37,8 +37,8 @@
                 %p.myg-badge Chrome
         .myg-button--container
             - if @app.wiki
-                = link_to 'Wiki', @app.wiki, class: 'myg-button myg-button--secondary'
+                = link_to 'Wiki', @app.wiki, class: 'myg-button myg-button--secondary', target: '_blank'
             - if @app.support
-                = link_to 'Support', "mailto:#{@app.support}", class: 'myg-button myg-button--secondary'
+                = link_to 'Support', "mailto:#{@app.support}", class: 'myg-button myg-button--secondary', target: '_blank'
             - if @app.github
-                = link_to 'Source code', @app.github, class: 'myg-button myg-button--secondary'
+                = link_to 'Source code', @app.github, class: 'myg-button myg-button--secondary', target: '_blank'

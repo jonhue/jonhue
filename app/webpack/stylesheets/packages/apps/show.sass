@@ -10,7 +10,7 @@ body.apps.show
             font-size: px(18)
 
     section#home
-        min-height: calc(100vh - #{map-get($myg-layout, toolbar-height)} - #{px(100)})
+        min-height: calc(100vh - 2 * #{map-get($myg-layout, toolbar-height)} - #{px(105)})
         padding: px(100) 0
         +flex--center
         text-align: center
@@ -21,6 +21,7 @@ body.apps.show
             margin: px(35) 0 0
         p
             margin: 0 0 px(35)
+            max-width: px(700)
         & > img
             width: px(200)
             height: px(200)

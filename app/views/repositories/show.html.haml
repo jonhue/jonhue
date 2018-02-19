@@ -9,16 +9,24 @@
     %p.lg= @repository.description
     .myg-button--container
         - if @repository.github
-            = link_to 'Source code', @repository.github, class: 'myg-button'
+            = link_to 'Source code', @repository.github, class: 'myg-button', target: '_blank'
         - if @repository.demo
-            = link_to 'Demo', @repository.demo, class: 'myg-button myg-button--secondary'
+            = link_to 'Demo', @repository.demo, class: 'myg-button myg-button--secondary', target: '_blank'
         = link_to 'Docs', '#readme', class: 'myg-button myg-button--secondary'
         - if @repository.rubygems
-            = link_to 'Rubygems', @repository.rubygems, class: 'myg-button myg-button--secondary'
+            = link_to 'Rubygems', @repository.rubygems, class: 'myg-button myg-button--secondary', target: '_blank'
         - if @repository.npm
-            = link_to 'NPM', @repository.npm, class: 'myg-button myg-button--secondary'
+            = link_to 'NPM', @repository.npm, class: 'myg-button myg-button--secondary', target: '_blank'
         - if @repository.url
-            = link_to 'Read more', @repository.url, class: 'myg-button myg-button--secondary'
+            = link_to 'Read more', @repository.url, class: 'myg-button myg-button--secondary', target: '_blank'
+
+- if @repository.features.any?
+    %section#features
+        .myg-slide.main-carousel
+            - @repository.features.each do |feature|
+                .carousel-cell
+                    %h1.sm= feature.title
+                    %p.lg= feature.content
 
 %section#readme
     %a{ name: 'readme' }
@@ -46,8 +54,8 @@
                 ago
         .myg-button--container
             - if @repository.wiki
-                = link_to 'Wiki', @repository.wiki, class: 'myg-button myg-button--secondary'
+                = link_to 'Wiki', @repository.wiki, class: 'myg-button myg-button--secondary', target: '_blank'
             - if @repository.issues
-                = link_to "#{pluralize(@repository.open_issues, 'open issue')}", @repository.issues, class: 'myg-button myg-button--secondary'
+                = link_to "#{pluralize(@repository.open_issues, 'open issue')}", @repository.issues, class: 'myg-button myg-button--secondary', target: '_blank'
             - if @repository.todo
-                = link_to "What's up next?", @repository.todo, class: 'myg-button myg-button--secondary'
+                = link_to "What's up next?", @repository.todo, class: 'myg-button myg-button--secondary', target: '_blank'

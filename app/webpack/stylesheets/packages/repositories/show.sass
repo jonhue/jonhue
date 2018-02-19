@@ -26,6 +26,7 @@ body.repositories.show
             margin: px(35) 0 0
         p
             margin: 0 0 px(35)
+            max-width: px(700)
         & > img
             width: px(200)
             height: px(200)
@@ -34,6 +35,32 @@ body.repositories.show
             justify-content: center
             width: px(500)
             max-width: 85%
+
+    section#features
+        background: color(text, dark)
+        .myg-slide
+            min-height: px(350)
+            .carousel-cell
+                width: 100%
+                min-height: px(350)
+                counter-increment: gallery-cell
+                padding: px(50) myg-spacing(base)
+                +flex--center
+                flex-direction: column
+                h1
+                    margin-bottom: 0
+                    color: color(background, base)
+                p
+                    color: color(text, light)
+                    margin-bottom: px(60)
+                    text-align: center
+                    max-width: px(750)
+            .flickity-page-dots
+                bottom: px(35)
+                .dot
+                    width: px(7)
+                    height: px(7)
+                    background: color(background, base)
 
     section#readme
         padding: px(50) px(25)

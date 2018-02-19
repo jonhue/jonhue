@@ -1,26 +1,49 @@
 [{
     "logo": "",
     "name": "Myg",
+    "description": "An opinionated & modular state-of-the-web framework",
     "url": null,
     "github": "https://github.com/jonhue/myg",
-    "demo": null,
+    "demo": "https://jonhue.me",
     "rubygems": null,
     "npm": "https://www.npmjs.com/package/myg",
     "features": [{
         "image": "",
         "title": "Modular",
-        "content": "."
+        "content": "Myg includes a lot of UI elements. Because everyone of them is separately published on NPM, you can just include what you actually use."
     }, {
         "image": "",
         "title": "Lightweight",
-        "content": "."
+        "content": "Mixins > Classes. Myg's CSS classes are entirely optional to minimize file size."
     }, {
         "image": "",
         "title": "Opinionated",
-        "content": "."
+        "content": "Opinionated components prevent you from polluting your DOM."
     }, {
         "image": "",
         "title": "Modern",
-        "content": "."
+        "content": "Myg uses the latest web technologies to support its rich feature set while remaining lightweight."
+    }]
+}, {
+    "logo": "",
+    "name": "Myg on Rails",
+    "description": "The opinionated & modular state-of-the-web framework Myg integrated with Ruby on Rails",
+    "url": null,
+    "github": "https://github.com/jonhue/myg-rails",
+    "demo": "https://jonhue.me",
+    "rubygems": "https://rubygems.org/gems/myg",
+    "npm": null,
+    "features": [{
+        "image": "",
+        "title": "Mozaic components",
+        "content": "Making the implementation of complex Myg components dead simple while keeping your views clean."
+    }, {
+        "image": "",
+        "title": "Handling themes",
+        "content": "Create different color themes and switch between on the fly. You can even switch automatically for day & night."
+    }, {
+        "image": "",
+        "title": "Keeping you organized",
+        "content": "Myg on Rails supports you by generating a set of javascript and style files in which you can customize every aspect of Myg to your liking."
     }]
 }]
