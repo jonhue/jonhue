@@ -10,6 +10,7 @@ class RepositoriesController < ApplicationController
 
     def set_repository
         @repository = Repository.friendly.find params[:id]
+        @readme = @repository.content
     end
 
 end

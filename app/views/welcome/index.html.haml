@@ -84,7 +84,7 @@
                                         = repository.stars
                                         ⭐️
                             %h3= repository.name
-                            %p= repository.description
+                            %p= emojify repository.description
                             %p.sm= link_to "Updated #{time_ago_in_words(repository.updated_at)} ago", repository.github, class: 'hyperlink--inherit', target: '_blank'
                         = link_to 'Learn more', repository, class: 'myg-button myg-button--secondary'
 

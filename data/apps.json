@@ -17,19 +17,19 @@
     "features": [{
         "image": "",
         "title": "Your clipboard's history",
-        "content": "."
+        "content": "My Clipboard automatically tracks your clipboards history and makes the up to 250 entries available to you."
     }, {
         "image": "https://store-images.s-microsoft.com/image/apps.65487.14244558422593350.94a4bbb7-7fc2-4c07-a11e-066f21ca07fd.98c7af6b-2970-4c0b-8408-162503f337b2",
         "title": "Clear your clipboard",
-        "content": "."
+        "content": "A dead simple way of removing sensitive data from your clipboard."
     }, {
         "image": "",
         "title": "Cross-device sync",
-        "content": "."
+        "content": "My Clipboard syncs your clipboard across all of your Windows 10 devices. Resume where you left off."
     }, {
         "image": "",
         "title": "Clipboard content editor",
-        "content": "."
+        "content": "Directly edit the contents of your clipboard in a handy editor."
     }]
 }, {
     "logo": "https://phylator.com/icon_512x512.png",

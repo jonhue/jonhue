@@ -33,6 +33,7 @@ gem 'certified'
 gem 'httparty'
 gem 'octokit'
 gem 'nilify_blanks'
+gem 'gemoji'
 
 
 group :development, :test do

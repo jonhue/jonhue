@@ -6,13 +6,14 @@
     - if @repository.logo
         = image_tag @repository.logo
     %h1.sm= @repository.name
-    %p.lg= @repository.description
+    %p.lg= emojify @repository.description
     .myg-button--container
         - if @repository.github
             = link_to 'Source code', @repository.github, class: 'myg-button', target: '_blank'
         - if @repository.demo
             = link_to 'Demo', @repository.demo, class: 'myg-button myg-button--secondary', target: '_blank'
-        = link_to 'Docs', '#readme', class: 'myg-button myg-button--secondary'
+        - if @content
+            = link_to 'Docs', '#readme', class: 'myg-button myg-button--secondary'
         - if @repository.rubygems
             = link_to 'Rubygems', @repository.rubygems, class: 'myg-button myg-button--secondary', target: '_blank'
         - if @repository.npm
@@ -31,7 +32,7 @@
 %section#readme
     %a{ name: 'readme' }
     .myg-wrap--tablet
-        = @repository.content
+        = @content
 
 %section#more
     .myg-wrap--large

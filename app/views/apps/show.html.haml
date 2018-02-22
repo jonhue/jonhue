@@ -18,6 +18,14 @@
         - if @app.chrome
             = link_to 'Chrome', @app.chrome, class: 'myg-button myg-button--secondary', target: '_blank'
 
+- if @app.features.any?
+    %section#features
+        .myg-slide.main-carousel
+            - @app.features.each do |feature|
+                .carousel-cell
+                    %h1.sm= feature.title
+                    %p.lg= feature.content
+
 %section#more
     .myg-wrap--large
         .myg-badge--container
@@ -39,6 +47,6 @@
             - if @app.wiki
                 = link_to 'Wiki', @app.wiki, class: 'myg-button myg-button--secondary', target: '_blank'
             - if @app.support
-                = link_to 'Support', "mailto:#{@app.support}", class: 'myg-button myg-button--secondary', target: '_blank'
+                = link_to 'Support', "mailto:#{@app.support}", class: 'myg-button myg-button--secondary'
             - if @app.github
                 = link_to 'Source code', @app.github, class: 'myg-button myg-button--secondary', target: '_blank'
