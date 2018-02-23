@@ -53,8 +53,8 @@
             %h1.sm= post.title
             .myg-badge--container
                 %p.myg-badge= post.platform
-            %p= post.content[0..750].html_safe + '...'
-            %p= link_to 'Continue reading', post.url, target: '_blank'
+            %p.bg= post.content[0..750].html_safe + '...'
+            %p.bg= link_to 'Continue reading', post.url, target: '_blank'
             - unless index == @posts.count - 1
                 %hr
         .wrapper
