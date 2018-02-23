@@ -5,7 +5,7 @@
         "@rails/webpacker": "^3.2.2",
         "actioncable": "^5.1.5",
         "myg": "^0.4.7",
-        "onsignal": "^5.0.2",
+        "onsignal": "^5.0.3",
         "rails-erb-loader": "^5.2.1",
         "rails-ujs": "^5.1.4",
         "turbolinks": "^5.1.1",
