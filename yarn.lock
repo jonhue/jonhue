@@ -4359,9 +4359,9 @@ onecolor@^3.0.4:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/onecolor/-/onecolor-3.0.5.tgz#36eff32201379efdf1180fb445e51a8e2425f9f6"
 
-onsignal@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/onsignal/-/onsignal-5.0.1.tgz#b242d600c52a7a2c65e012f5ff1c8cff4a3b0922"
+onsignal@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/onsignal/-/onsignal-5.0.2.tgz#b7d85fd6a7a65b757d1c468ca78b98c3f58a8311"
 
 opn@^5.1.0:
   version "5.2.0"
