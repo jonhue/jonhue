@@ -16,6 +16,8 @@ function showSubscription() {
 }
 document.addEventListener( 'turbolinks:load', () => { // change to 'ready'
     const onSignal = new OnSignal('<%= Settings.onesignal.app_id %>');
+    console.log(onSignal.isSubscribed());
+    console.log(getCookieValue('oneSignalPlayerId'));
     if (onSignal.isSubscribed())
         showSubscription()
     else {
@@ -25,6 +27,10 @@ document.addEventListener( 'turbolinks:load', () => { // change to 'ready'
         }));
     }
 })
+function getCookieValue(a) {
+    let b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b ? b.pop() : '';
+}
 
 import './../javascripts/myg/index';
 
