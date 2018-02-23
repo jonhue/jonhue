@@ -12,7 +12,7 @@
             = link_to 'Source code', @repository.github, class: 'myg-button', target: '_blank'
         - if @repository.demo
             = link_to 'Demo', @repository.demo, class: 'myg-button myg-button--secondary', target: '_blank'
-        - if @readme
+        - if @readme.length > 1000
             = link_to 'Docs', '#readme', class: 'myg-button myg-button--secondary'
         - if @repository.rubygems
             = link_to 'Rubygems', @repository.rubygems, class: 'myg-button myg-button--secondary', target: '_blank'
@@ -29,7 +29,7 @@
                     %h1.sm= feature.title
                     %p.lg= feature.content
 
-- if @readme
+- if @readme.length > 1000
     %section#readme
         %a{ name: 'readme' }
         .myg-wrap--tablet
