@@ -3,10 +3,11 @@ Rails.application.routes.draw do
     mount Pwa::Engine, at: ''
 
     get 'contact', to: 'welcome#contact'
-    get 'privacy', to: 'welcome#privacy'
 
     get 'repos/:id', to: 'repositories#show', as: :repository
     get ':id', to: 'apps#show', as: :app
+    get ':id/terms', to: 'apps#terms', as: :app_terms
+    get ':id/privacy', to: 'apps#privacy', as: :app_privacy
 
     root 'welcome#index'
 

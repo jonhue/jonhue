@@ -11,8 +11,4 @@ class WelcomeController < ApplicationController
         turbolinks_animate 'fadein'
     end
 
-    def privacy
-        turbolinks_animate 'fadein'
-    end
-
 end

@@ -50,3 +50,5 @@
                 = link_to 'Support', "mailto:#{@app.support}", class: 'myg-button myg-button--secondary'
             - if @app.github
                 = link_to 'Source code', @app.github, class: 'myg-button myg-button--secondary', target: '_blank'
+            = link_to 'Terms of Service', app_terms_url(@app), class: 'myg-button myg-button--secondary'
+            = link_to 'Privacy Policy', app_privacy_url(@app), class: 'myg-button myg-button--secondary'

@@ -6,6 +6,14 @@ class AppsController < ApplicationController
         turbolinks_animate 'fadein'
     end
 
+    def terms
+        turbolinks_animate 'fadein'
+    end
+
+    def privacy
+        turbolinks_animate 'fadein'
+    end
+
     private
 
     def set_app
