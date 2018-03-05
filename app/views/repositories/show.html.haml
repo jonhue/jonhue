@@ -12,7 +12,7 @@
             = link_to 'Source code', @repository.github, class: 'myg-button', target: '_blank'
         - if @repository.demo
             = link_to 'Demo', @repository.demo, class: 'myg-button myg-button--secondary', target: '_blank'
-        - if @content
+        - if @readme.length > 1000
             = link_to 'Docs', '#readme', class: 'myg-button myg-button--secondary'
         - if @repository.rubygems
             = link_to 'Rubygems', @repository.rubygems, class: 'myg-button myg-button--secondary', target: '_blank'
@@ -24,15 +24,16 @@
 - if @repository.features.any?
     %section#features
         .myg-slide.main-carousel
-            - @repository.features.each do |feature|
+            - @repository.features.order('created_at desc').each do |feature|
                 .carousel-cell
                     %h1.sm= feature.title
                     %p.lg= feature.content
 
-%section#readme
-    %a{ name: 'readme' }
-    .myg-wrap--tablet
-        = @content
+- if @readme.length > 1000
+    %section#readme
+        %a{ name: 'readme' }
+        .myg-wrap--tablet
+            = @readme
 
 %section#more
     .myg-wrap--large

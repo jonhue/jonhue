@@ -2,7 +2,7 @@
     = component 'seo/schema', type: :person, name: 'Jonas Hübotter', email: 'me@jonhue.me', address: 'Berlin', gender: 'male', job_title: 'Software Developer', url: 'https://jonhue.me', image: 'https://jonhue.me/512x512.png', description: 'A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.'
 
 %section#home.myg-wrap--large
-    %h1.lg Hey, it's me :)
+    %h1.bg Hey, it's me :)
     %p.lg A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.
     .myg-button--container
         = link_to 'Apps', '#apps', class: 'myg-button'
@@ -50,11 +50,11 @@
     %a{ name: 'writing' }
     .myg-wrap--tablet
         - @posts.each_with_index do |post, index|
-            %h1.sm= post.title
+            %h1= post.title
             .myg-badge--container
                 %p.myg-badge= post.platform
-            %p= post.content[0..750].html_safe + '...'
-            %p= link_to 'Continue reading', post.url, target: '_blank'
+            %p.bg= post.content[0..750].html_safe + '...'
+            %p.bg= link_to 'Continue reading', post.url, target: '_blank'
             - unless index == @posts.count - 1
                 %hr
         .wrapper

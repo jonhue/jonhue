@@ -35,23 +35,8 @@ body.welcome.index
                             color: color(text, light)
                             margin-top: px(5)
 
-    h1.lg
-        font-size: px(40)
-        margin-bottom: 0
-        +bigger-than(tablet)
-            font-size: px(74)
-    h2.lg
-        font-size: px(32)
     p.lg
-        font-size: px(16)
         margin-bottom: px(35)
-        +bigger-than(tablet)
-            font-size: px(18)
-    p.sm
-        font-size: px(14)
-    hr
-        border: px(1) solid color(border)
-        margin: px(50) 0
 
     #home
         +flex--center
@@ -64,6 +49,8 @@ body.welcome.index
         h1, p
             width: px(650)
             max-width: 85%
+        h1
+            margin-bottom: 0
         .myg-button--container
             margin-bottom: px(100)
 
@@ -89,10 +76,8 @@ body.welcome.index
         padding: px(75) 0
         .myg-wrap--tablet
             width: 85%
-            h1
-                font-size: px(40)
             & > p
-                font-size: px(20)
+                +font-size(p, bg)
                 +font(serif)
             .wrapper
                 width: 100%
