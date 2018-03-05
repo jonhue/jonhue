@@ -2,7 +2,7 @@
     "name": "jonhue",
     "private": true,
     "dependencies": {
-        "@rails/webpacker": "^3.2.2",
+        "@rails/webpacker": "^3.3.0",
         "actioncable": "^5.1.5",
         "myg": "^0.4.7",
         "onsignal": "^5.0.4",
@@ -12,6 +12,6 @@
         "turbolinks-animate": "^3.0.4"
     },
     "devDependencies": {
-        "webpack-dev-server": "^2.11.1"
+        "webpack-dev-server": "^3.1.0"
     }
 }
