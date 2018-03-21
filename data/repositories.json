@@ -154,4 +154,13 @@
     "demo": null,
     "rubygems": "https://rubygems.org/gems/mozaic",
     "npm": null
+}, {
+    "logo": null,
+    "name": "amp-html",
+    "description": "Reliable high-⚡ apps across devices and distribution platforms with AMP & Rails.",
+    "url": null,
+    "github": "https://github.com/jonhue/amp-html",
+    "demo": "https://hello-amp.herokuapp.com",
+    "rubygems": "https://rubygems.org/gems/amp-html",
+    "npm": null
 }]
