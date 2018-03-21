@@ -5,5 +5,9 @@ import MygSlide from 'myg-slide';
     document.addEventListener( event, init );
 })
 function init() {
-    const mygSlides = MygSlide.initAll( document.querySelectorAll('.myg-slide'), {} );
+    const mygSlides = MygSlide.initAll( document.querySelectorAll('.myg-slide'), {
+        prevNextButtons: false,
+        wrapAround: true,
+        autoPlay: 10000
+    });
 }
