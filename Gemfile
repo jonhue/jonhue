@@ -34,6 +34,7 @@ gem 'httparty'
 gem 'octokit'
 gem 'nilify_blanks'
 gem 'gemoji'
+gem 'bootsnap', require: false
 
 
 group :development, :test do
@@ -49,7 +50,7 @@ group :development do
     gem 'binding_of_caller'
     gem 'brakeman', require: false
     gem 'rubocop', require: false
-    gem 'mysql2'
+    gem 'mysql2', '~> 0.4.10'
     gem 'lol_dba', require: false
 end
 
