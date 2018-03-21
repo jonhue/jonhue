@@ -4,6 +4,7 @@ class AppsController < ApplicationController
 
     def show
         turbolinks_animate 'fadein'
+        @features = @app.features.order('created_at asc')
     end
 
     def terms

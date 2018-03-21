@@ -4,6 +4,7 @@ class RepositoriesController < ApplicationController
 
     def show
         turbolinks_animate 'fadein'
+        @features = @repository.features.order('created_at asc')
     end
 
     private

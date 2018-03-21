@@ -24,7 +24,7 @@
 - if @repository.features.any?
     %section#features
         .myg-slide.main-carousel
-            - @repository.features.order('created_at desc').each do |feature|
+            - @features.each do |feature|
                 .carousel-cell
                     %h1.sm= feature.title
                     %p.lg= feature.content
