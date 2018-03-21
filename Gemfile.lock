@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/jonhue/myg-rails.git
+  revision: 00b4d292883f44b7891fe9bf3b356a2bd2071934
+  specs:
+    myg (2.8.0)
+      actionpack (>= 5.0)
+      activesupport (>= 5.0)
+      mozaic (~> 2.0)
+      railties (>= 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -149,11 +159,6 @@ GEM
     msgpack (1.2.4-x86-mingw32)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
-    myg (2.8.0)
-      actionpack (>= 5.0)
-      activesupport (>= 5.0)
-      mozaic (~> 2.0)
-      railties (>= 5.0)
     mysql2 (0.4.10-x86-mingw32)
     nestive-rails (1.0.1)
       rails (>= 5.0)
@@ -322,7 +327,7 @@ DEPENDENCIES
   lol_dba
   metamagic
   mozaic
-  myg
+  myg!
   mysql2 (~> 0.4.10)
   nilify_blanks
   octokit

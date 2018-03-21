@@ -1,9 +1,9 @@
-import MygCard from 'myg-card';
+import MygSidebar from 'myg-sidebar';
 
 ['turbolinks:load', 'modalist:render', 'myg-tabs:render'].forEach( (event) => {
     document.removeEventListener( event, init );
     document.addEventListener( event, init );
 })
 function init() {
-    const mygCards = MygCard.initAll( document.querySelectorAll('.myg-card'), {} );
+    const mygSidebar = MygSidebar.init( document.querySelector('.myg-sidebar'), {} );
 }
