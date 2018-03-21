@@ -157,10 +157,163 @@
 }, {
     "logo": null,
     "name": "amp-html",
-    "description": "Reliable high-⚡ apps across devices and distribution platforms with AMP & Rails.",
+    "description": "Reliable high-⚡ apps across devices and distribution platforms with AMP & Rails",
     "url": null,
     "github": "https://github.com/jonhue/amp-html",
     "demo": "https://hello-amp.herokuapp.com",
     "rubygems": "https://rubygems.org/gems/amp-html",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "TurbolinksAnimate on Rails",
+    "description": "Rich & adaptive animations for apps using Rails w/ Turbolinks™",
+    "url": null,
+    "github": "https://github.com/jonhue/turbolinks-animate",
+    "demo": "https://nativegap.com",
+    "rubygems": "https://rubygems.org/gems/turbolinks-animate",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "Imoji.js",
+    "description": "A sleek & responsive emoji input",
+    "url": null,
+    "github": "https://github.com/jonhue/imoji.js",
+    "demo": "https://jonhue.github.io/imoji.js",
+    "rubygems": null,
+    "npm": "https://www.npmjs.com/package/imoji"
+}, {
+    "logo": null,
+    "name": "Blurry.js",
+    "description": "Blurry image loading with StackBlur",
+    "url": null,
+    "github": "https://github.com/jonhue/blurry.js",
+    "demo": null,
+    "rubygems": null,
+    "npm": "https://www.npmjs.com/package/blurry"
+}, {
+    "logo": null,
+    "name": "Avatari",
+    "description": "Add avatars to ActiveRecord models",
+    "url": null,
+    "github": "https://github.com/jonhue/avatari",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/avatari",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "acts_as_belongable",
+    "description": "Associations engine for Rails",
+    "url": null,
+    "github": "https://github.com/jonhue/acts_as_belongable",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/acts_as_belongable",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "Themer",
+    "description": "Themes for Rails apps",
+    "url": null,
+    "github": "https://github.com/jonhue/themer",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/themer",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "r404",
+    "description": "Error handler & renderer for Rails",
+    "url": null,
+    "github": "https://github.com/jonhue/r404",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/r404",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "Username",
+    "description": "Usernames for ActiveRecord models",
+    "url": null,
+    "github": "https://github.com/jonhue/username",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/username",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "CanCanCan System",
+    "description": "Conventions & helpers simplifying the use of CanCanCan in complex Rails applications",
+    "url": null,
+    "github": "https://github.com/jonhue/cancancan-system",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/cancancan-system",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "RandomizeId",
+    "description": "Randomize ActiveRecord IDs",
+    "url": null,
+    "github": "https://github.com/jonhue/randomize_id",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/randomize_id",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "Ledermann Rails Settings Update",
+    "description": "Simplifying updating settings from controllers",
+    "url": null,
+    "github": "https://github.com/jonhue/ledermann-rails-settings-update",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/ledermann-rails-settings-update",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "Ahoy Views",
+    "description": "Track views of ActiveRecord objects in Rails",
+    "url": null,
+    "github": "https://github.com/jonhue/ahoy-views",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/ahoy-views",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "nestive-rails",
+    "description": "A Better Nested Inheritable Layouts Plugin for Rails 5",
+    "url": null,
+    "github": "https://github.com/jonhue/nestive-rails",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/nestive-rails",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "acts_as_favoritor",
+    "description": "A Rubygem to add Favorite, Follow, Vote, etc. functionality to ActiveRecord models",
+    "url": null,
+    "github": "https://github.com/jonhue/acts_as_favoritor",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/acts_as_favoritor",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "Sandboxy",
+    "description": "Virtual data-oriented environments for Rails",
+    "url": null,
+    "github": "https://github.com/jonhue/sandboxy",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/sandboxy",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "OmniAuth PayPal OAuth2 Strategy",
+    "description": "OAuth2 strategy for PayPal",
+    "url": null,
+    "github": "https://github.com/jonhue/omniauth-paypal-oauth2",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/omniauth-paypal-oauth2",
+    "npm": null
+}, {
+    "logo": null,
+    "name": "CarrierWave Delay",
+    "description": "Asynchronous processing with Carrierwave",
+    "url": null,
+    "github": "https://github.com/jonhue/carrierwave-delay",
+    "demo": null,
+    "rubygems": "https://rubygems.org/gems/carrierwave-delay",
     "npm": null
 }]
