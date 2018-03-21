@@ -50,12 +50,21 @@ body.welcome.index
             width: px(650)
             max-width: 85%
         h1
-            margin-bottom: 0
+            margin: px(100) 0 0
+            +smaller-than(phone)
+                font-size: px(40)
         .myg-button--container
             margin-bottom: px(100)
 
     #apps
-        padding: px(25) 0 px(75)
+        padding: 0
+        +bigger-than(large)
+            padding: px(5) 0 px(25)
+        +bigger-than(desktop)
+            padding: px(25) 0 px(75)
+        +smaller-than(large)
+            h2
+                margin-top: px(10)
         background: color(background, lighter)
 
     #subscribe
@@ -85,7 +94,14 @@ body.welcome.index
                 margin-top: px(50)
 
     #open-source
-        padding: px(25) 0 px(75)
+        padding: 0
+        +bigger-than(large)
+            padding: px(5) 0 px(25)
+        +bigger-than(desktop)
+            padding: px(25) 0 px(75)
+        +smaller-than(large)
+            h2
+                margin-top: px(10)
         .myg-card--top
             height: px(25)
         .myg-card--bottom

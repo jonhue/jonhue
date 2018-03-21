@@ -58,7 +58,7 @@
             - unless index == @posts.count - 1
                 %hr
         .wrapper
-            = link_to 'Even more writing 📖', Settings.social.yaeme, class: 'myg-button myg-button--secondary', target: '_blank'
+            = link_to 'Even more writing 📖', Settings.social.medium, class: 'myg-button myg-button--secondary', target: '_blank'
 
 %section#open-source
     %a{ name: 'open-source' }
@@ -97,8 +97,6 @@
                     = asset 'components/social/twitter'
                 = link_to Settings.social.github, target: '_blank' do
                     = asset 'components/social/github'
-                = link_to Settings.social.yaeme, target: '_blank' do
-                    = asset 'components/social/yaeme'
                 = link_to Settings.social.medium, target: '_blank' do
                     = asset 'components/social/medium'
                 = link_to Settings.social.linkedin, target: '_blank' do
