@@ -6,6 +6,8 @@ body.repositories.show
     section#home
         min-height: calc(100vh - #{map-get($myg-layout, toolbar-height)} - #{px(150)})
         padding: px(100) 0
+        +smaller-than(phone)
+            padding: px(50) 0
         +flex--center
         text-align: center
         flex-direction: column
@@ -15,7 +17,8 @@ body.repositories.show
             margin: px(35) 0 0
         p
             margin: 0 0 px(35)
-            max-width: px(700)
+            width: px(700)
+            max-width: 85%
         & > img
             width: px(200)
             height: px(200)

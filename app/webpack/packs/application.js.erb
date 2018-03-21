@@ -12,17 +12,20 @@ document.addEventListener( 'turbolinks:load', () => {
 import 'onsignal/dist/OneSignalSDK';
 import OnSignal from 'onsignal';
 function showSubscription() {
-    document.querySelector('#subscribe a.myg-button').innerHTML = '🎉 Thank you for subscribing! 🎉';
+    if (document.querySelector('#subscribe a.myg-button'))
+        document.querySelector('#subscribe a.myg-button').innerHTML = '🎉 Thank you for subscribing! 🎉';
 }
 document.addEventListener( 'turbolinks:load', () => { // change to 'ready'
     const onSignal = new OnSignal('<%= Settings.onesignal.app_id %>');
     if (onSignal.isSubscribed())
         showSubscription()
     else {
-        document.querySelector('#subscribe a.myg-button').addEventListener( 'click', () => {
-            onSignal.subscribe();
-            showSubscription();
-        });
+        if (document.querySelector('#subscribe a.myg-button')) {
+            document.querySelector('#subscribe a.myg-button').addEventListener( 'click', () => {
+                onSignal.subscribe();
+                showSubscription();
+            });
+        }
     }
 })
 
