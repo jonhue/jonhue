@@ -87,7 +87,7 @@
     "name": "Progressive Web Apps for Rails",
     "description": "Add a service worker and a manifest to your app, for it to be recognized as a PWA and accessed without a network connection",
     "url": null,
-    "github": "https://rubygems.org/gems/pwa",
+    "github": "https://github.com/jonhue/pwa",
     "demo": null,
     "rubygems": "https://rubygems.org/gems/pwa",
     "npm": null
