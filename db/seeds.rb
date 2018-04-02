@@ -77,21 +77,3 @@ repositories&.each do |repository|
         end
     end
 end
-
-
-posts = RSS::Parser.parse 'https://medium.com/feed/@jonhue', false
-posts.items&.each do |post|
-    post_data = {
-        title: post.title,
-        content: post.content_encoded,
-        platform: 'Medium',
-        url: post.link,
-        created_at: post.pubDate
-    }
-    po = Post.find_by title: post_data[:title]
-    if po.nil?
-        po = Post.create! post_data
-    else
-        po.update! post_data
-    end
-end

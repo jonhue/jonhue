@@ -46,20 +46,6 @@
         .flex.reverse
             %p.sm * I'm afraid, I can't promise.
 
-%section#writing
-    %a{ name: 'writing' }
-    .myg-wrap--tablet
-        - @posts.each_with_index do |post, index|
-            %h1= post.title
-            .myg-badge--container
-                %p.myg-badge= post.platform
-            %p.bg= post.content[0..750].html_safe + '...'
-            %p.bg= link_to 'Continue reading', post.url, target: '_blank'
-            - unless index == @posts.count - 1
-                %hr
-        .wrapper
-            = link_to 'Even more writing 📖', Settings.social.medium, class: 'myg-button myg-button--secondary', target: '_blank'
-
 %section#open-source
     %a{ name: 'open-source' }
     .myg-wrap--large
