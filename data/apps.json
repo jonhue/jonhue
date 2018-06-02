@@ -91,4 +91,32 @@
         "title": "Share & Showcase on the Marketplace",
         "content": "Create a custom & beautiful landing page for your app and direct customers directly to install it on their platform."
     }]
+}, {
+    "logo": "https://tip-the-world-cup.com/icon_512x512.png",
+    "name": "Tip The World Cup",
+    "description": "Tip the 2018 World CUp with friends & family.",
+    "beta": false,
+    "url": "https://tip-the-world-cup.com",
+    "github": "https://github.com/jonhue/tip-the-world-cup",
+    "android": null,
+    "ios": null,
+    "windows": null,
+    "chrome": null,
+    "todo": "https://github.com/jonhue/tip-the-world-cup/projects/1?fullscreen=true",
+    "wiki": null,
+    "issues": "https://github.com/jonhue/tip-the-world-cup/issues",
+    "support": "app@tip-the-world-cup.com",
+    "features": [{
+        "image": "",
+        "title": "Private & public betting games",
+        "content": "Bring together your friends by sharing a link or inviting them one-by-one."
+    }, {
+        "image": "",
+        "title": "Livescores",
+        "content": "Follow your betting games live once he tournament started."
+    }, {
+        "image": "",
+        "title": "Sleek UI",
+        "content": "The simple and beautiful UI puts the players and their tips in the spotlight."
+    }]
 }]
