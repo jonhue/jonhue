@@ -62,8 +62,8 @@ end
 repositories&.each do |repository|
     features = repository.delete :features
     r = Repository.find_by name: repository[:name]
-    if r.nil? && repository[:name] && repository[:description] && repository[:github]
-        r = Repository.create! repository
+    if r.nil?
+        r = Repository.create! repository if repository[:name] && repository[:description] && repository[:github]
     else
         r.update! repository
     end
