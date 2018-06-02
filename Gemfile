@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
 end
 
 
-gem 'rails', '~> 5.1.5'
+gem 'rails', '~> 5.2.0'
 gem 'turbolinks'
 gem 'puma'
 gem 'sass-rails'
