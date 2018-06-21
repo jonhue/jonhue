@@ -125,6 +125,7 @@ GEM
     execjs (2.7.0)
     faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
+    ffi (1.9.23)
     ffi (1.9.23-x64-mingw32)
     ffi (1.9.23-x86-mingw32)
     foreman (0.84.0)
@@ -163,10 +164,12 @@ GEM
       activesupport (>= 5.0)
       nestive-rails (~> 1.0)
       railties (>= 5.0)
+    msgpack (1.2.4)
     msgpack (1.2.4-x64-mingw32)
     msgpack (1.2.4-x86-mingw32)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
+    mysql2 (0.4.10)
     mysql2 (0.4.10-x64-mingw32)
     mysql2 (0.4.10-x86-mingw32)
     nestive-rails (1.0.1)
@@ -175,6 +178,8 @@ GEM
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
     nio4r (2.3.1)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.2-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     nokogiri (1.8.2-x86-mingw32)
@@ -190,6 +195,7 @@ GEM
     parallel (1.12.1)
     parser (2.5.1.0)
       ast (~> 2.4.0)
+    pg (1.0.0)
     pg (1.0.0-x64-mingw32)
     pg (1.0.0-x86-mingw32)
     powerpack (0.1.1)
@@ -280,7 +286,7 @@ GEM
     simple_form (4.0.1)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
-    sprockets (3.7.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
@@ -320,6 +326,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x64-mingw32
   x86-mingw32
 
