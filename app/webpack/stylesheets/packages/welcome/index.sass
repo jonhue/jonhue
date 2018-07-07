@@ -1,123 +1,122 @@
 body.welcome.index
+  .myg-content > section
+    padding: myg-spacing(base)
+    & > .myg-wrap--large
+      padding: myg-spacing(base)
+  .myg-card
+    background: color(background, base)
+    padding: 0
+    +myg-grid-span(4)
+    h2
+      margin-bottom: 0
+    .myg-card--top
+      height: px(300)
+      background: color(background, dark)
+      +flex--center
+      img
+        height: px(125)
+        border-radius: px(5)
+    .myg-card--bottom
+      +flex--space-between
+      flex-direction: column
+      min-height: px(260)
+      padding: myg-spacing(base)
+      .wrapper
+        .myg-badge--container
+          margin-bottom: px(15)
+        & > h3
+          margin: px(20) 0 px(5)
+        & > p
+          margin: 0
+          &:last-child
+            margin: 0 0 px(25)
+            &.sm
+              color: color(text, light)
+              margin-top: px(5)
 
-    .myg-content > section
-        padding: myg-spacing(base)
-        & > .myg-wrap--large
-            padding: myg-spacing(base)
-    .myg-card
-        background: color(background, base)
-        padding: 0
-        +myg-grid-span(4)
-        h2
-            margin-bottom: 0
-        .myg-card--top
-            height: px(300)
-            background: color(background, dark)
-            +flex--center
-            img
-                height: px(125)
-                border-radius: px(5)
-        .myg-card--bottom
-            +flex--space-between
-            flex-direction: column
-            min-height: px(260)
-            padding: myg-spacing(base)
-            .wrapper
-                .myg-badge--container
-                    margin-bottom: px(15)
-                & > h3
-                    margin: px(20) 0 px(5)
-                & > p
-                    margin: 0
-                    &:last-child
-                        margin: 0 0 px(25)
-                        &.sm
-                            color: color(text, light)
-                            margin-top: px(5)
+  p.lg
+    margin-bottom: px(35)
 
-    p.lg
-        margin-bottom: px(35)
+  #home
+    +flex--center
+    text-align: center
+    flex-direction: column
+    min-height: calc(100vh - #{px(225)})
+    +bigger-than(desktop)
+      align-items: flex-start
+      text-align: left
+    h1, p
+      width: px(650)
+      max-width: 85%
+    h1
+      margin: px(100) 0 0
+      +smaller-than(phone)
+        margin: px(50) 0 0
+        font-size: px(40)
+    .myg-button--container
+      margin-bottom: px(100)
 
-    #home
-        +flex--center
-        text-align: center
-        flex-direction: column
-        min-height: calc(100vh - #{px(225)})
-        +bigger-than(desktop)
-            align-items: flex-start
-            text-align: left
-        h1, p
-            width: px(650)
-            max-width: 85%
-        h1
-            margin: px(100) 0 0
-            +smaller-than(phone)
-                margin: px(50) 0 0
-                font-size: px(40)
-        .myg-button--container
-            margin-bottom: px(100)
+  #apps
+    padding: 0
+    +bigger-than(large)
+      padding: px(5) 0 px(25)
+    +bigger-than(desktop)
+      padding: px(25) 0 px(75)
+    +smaller-than(large)
+      h2
+        margin-top: px(10)
+    background: color(background, lighter)
 
-    #apps
-        padding: 0
-        +bigger-than(large)
-            padding: px(5) 0 px(25)
-        +bigger-than(desktop)
-            padding: px(25) 0 px(75)
-        +smaller-than(large)
-            h2
-                margin-top: px(10)
-        background: color(background, lighter)
-
-    #subscribe
-        padding: px(75) 0 px(100)
+  #subscribe
+    padding: px(75) 0 px(100)
+    background: color(text, dark)
+    & > div
+      width: 85%
+      h1, p
+        color: color(background, base)
+      .myg-button
+        border-color: color(background, base) !important
         background: color(text, dark)
-        & > div
-            width: 85%
-            h1, p
-                color: color(background, base)
-            .myg-button
-                border-color: color(background, base) !important
-                background: color(text, dark)
-                &:hover
-                    background: color(background, base)
-                    color: color(text, dark)
+        &:hover
+          background: color(background, base)
+          color: color(text, dark)
 
-    #open-source
-        padding: 0
-        +bigger-than(large)
-            padding: px(5) 0 px(25)
-        +bigger-than(desktop)
-            padding: px(25) 0 px(75)
-        +smaller-than(large)
-            h2
-                margin-top: px(10)
-        .myg-card--top
-            height: px(25)
-        .myg-card--bottom
-            min-height: px(300)
+  #open-source
+    padding: 0
+    +bigger-than(large)
+      padding: px(5) 0 px(25)
+    +bigger-than(desktop)
+      padding: px(25) 0 px(75)
+    +smaller-than(large)
+      h2
+        margin-top: px(10)
+    .myg-card--top
+      height: px(25)
+    .myg-card--bottom
+      min-height: px(300)
 
-    #myg
-        padding: px(50) 0
-        background: color(background, lighter)
-        & > div
-            +flex--center-c
-            flex-direction: column
-            & > p
-                max-width: 75%
-                text-align: center
-            p.sm
-                color: color(text, lighter)
-            & > .wrapper
-                margin-bottom: px(20)
-                & > .wrapper
-                    display: flex
-                    flex-wrap: wrap
-                    margin: px(-6)
-                    & > a
-                        margin: px(6)
-                        opacity: .7
-                        +transition
-                        path, rect
-                            fill: color(text, lighter)
-                        &:hover
-                            opacity: 1
+  #myg
+    padding: px(50) 0
+    background: color(background, lighter)
+    & > div
+      +flex--center-c
+      flex-direction: column
+      & > p
+        max-width: 75%
+        text-align: center
+      p.sm
+        color: color(text, lighter)
+      & > .wrapper
+        margin-bottom: px(20)
+        & > .wrapper
+          display: flex
+          flex-wrap: wrap
+          margin: px(-6)
+          & > a
+            margin: px(6)
+            opacity: .7
+            +transition
+            path, rect
+              fill: color(text, lighter)
+            &:hover
+              opacity: 1

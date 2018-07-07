@@ -1,319 +1,319 @@
 [{
-    "logo": null,
-    "name": "Myg",
-    "description": "An opinionated & modular state-of-the-web framework",
-    "url": null,
-    "github": "https://github.com/jonhue/myg",
-    "demo": "https://nativegap.com",
-    "rubygems": null,
-    "npm": "https://www.npmjs.com/package/myg",
-    "features": [{
-        "image": null,
-        "title": "Modular",
-        "content": "Myg includes a lot of UI elements. Because everyone of them is separately published on NPM, you can just include what you actually use."
-    }, {
-        "image": null,
-        "title": "Lightweight",
-        "content": "Mixins > Classes. Myg's CSS classes are entirely optional to minimize file size."
-    }, {
-        "image": null,
-        "title": "Opinionated",
-        "content": "Opinionated components prevent you from polluting your DOM."
-    }, {
-        "image": null,
-        "title": "Modern",
-        "content": "Myg uses the latest web technologies to support its rich feature set while remaining lightweight."
-    }]
+  "logo": null,
+  "name": "Myg",
+  "description": "An opinionated & modular state-of-the-web framework",
+  "url": null,
+  "github": "https://github.com/jonhue/myg",
+  "demo": "https://nativegap.com",
+  "rubygems": null,
+  "npm": "https://www.npmjs.com/package/myg",
+  "features": [{
+    "image": null,
+    "title": "Modular",
+    "content": "Myg includes a lot of UI elements. Because everyone of them is separately published on NPM, you can just include what you actually use."
+  }, {
+    "image": null,
+    "title": "Lightweight",
+    "content": "Mixins > Classes. Myg's CSS classes are entirely optional to minimize file size."
+  }, {
+    "image": null,
+    "title": "Opinionated",
+    "content": "Opinionated components prevent you from polluting your DOM."
+  }, {
+    "image": null,
+    "title": "Modern",
+    "content": "Myg uses the latest web technologies to support its rich feature set while remaining lightweight."
+  }]
 }, {
-    "logo": null,
-    "name": "Myg on Rails",
-    "description": "The opinionated & modular state-of-the-web framework Myg integrated with Ruby on Rails",
-    "url": null,
-    "github": "https://github.com/jonhue/myg-rails",
-    "demo": "https://nativegap.com",
-    "rubygems": "https://rubygems.org/gems/myg",
-    "npm": null,
-    "features": [{
-        "image": null,
-        "title": "Mozaic components",
-        "content": "Making the implementation of complex Myg components dead simple while keeping your views clean."
-    }, {
-        "image": null,
-        "title": "Handling themes",
-        "content": "Create different color themes and switch between on the fly. You can even switch automatically for day & night."
-    }, {
-        "image": null,
-        "title": "Keeping you organized",
-        "content": "Myg on Rails supports you by generating a set of javascript and style files in which you can customize every aspect of Myg to your liking."
-    }]
+  "logo": null,
+  "name": "Myg on Rails",
+  "description": "The opinionated & modular state-of-the-web framework Myg integrated with Ruby on Rails",
+  "url": null,
+  "github": "https://github.com/jonhue/myg-rails",
+  "demo": "https://nativegap.com",
+  "rubygems": "https://rubygems.org/gems/myg",
+  "npm": null,
+  "features": [{
+    "image": null,
+    "title": "Mozaic components",
+    "content": "Making the implementation of complex Myg components dead simple while keeping your views clean."
+  }, {
+    "image": null,
+    "title": "Handling themes",
+    "content": "Create different color themes and switch between on the fly. You can even switch automatically for day & night."
+  }, {
+    "image": null,
+    "title": "Keeping you organized",
+    "content": "Myg on Rails supports you by generating a set of javascript and style files in which you can customize every aspect of Myg to your liking."
+  }]
 }, {
-    "logo": null,
-    "name": "OnSignal",
-    "description": "OneSignal API wrapper simplifying user targeted cross platform notifications",
-    "url": null,
-    "github": "https://github.com/jonhue/onsignal",
-    "demo": null,
-    "rubygems": null,
-    "npm": "https://www.npmjs.com/package/onsignal"
+  "logo": null,
+  "name": "OnSignal",
+  "description": "OneSignal API wrapper simplifying user targeted cross platform notifications",
+  "url": null,
+  "github": "https://github.com/jonhue/onsignal",
+  "demo": null,
+  "rubygems": null,
+  "npm": "https://www.npmjs.com/package/onsignal"
 }, {
-    "logo": null,
-    "name": "TurbolinksAnimate",
-    "description": "Rich & adaptive animations for apps using Turbolinks™",
-    "url": null,
-    "github": "https://github.com/jonhue/turbolinks-animate.js",
-    "demo": "https://nativegap.com",
-    "rubygems": null,
-    "npm": "https://www.npmjs.com/package/turbolinks-animate"
+  "logo": null,
+  "name": "TurbolinksAnimate",
+  "description": "Rich & adaptive animations for apps using Turbolinks™",
+  "url": null,
+  "github": "https://github.com/jonhue/turbolinks-animate.js",
+  "demo": "https://nativegap.com",
+  "rubygems": null,
+  "npm": "https://www.npmjs.com/package/turbolinks-animate"
 }, {
-    "logo": null,
-    "name": "NotificationsRails",
-    "description": "The most powerful (cross-platform) notifications handler & pusher API for Rails",
-    "url": null,
-    "github": "https://github.com/jonhue/notifications-rails",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/notifications-rails",
-    "npm": null
+  "logo": null,
+  "name": "NotificationsRails",
+  "description": "The most powerful (cross-platform) notifications handler & pusher API for Rails",
+  "url": null,
+  "github": "https://github.com/jonhue/notifications-rails",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/notifications-rails",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Modalist",
-    "description": "A powerful & (really) lightweight AJAX modal plugin",
-    "url": null,
-    "github": "https://github.com/jonhue/modalist.js",
-    "demo": "https://nativegap.com",
-    "rubygems": null,
-    "npm": "https://www.npmjs.com/package/modalist"
+  "logo": null,
+  "name": "Modalist",
+  "description": "A powerful & (really) lightweight AJAX modal plugin",
+  "url": null,
+  "github": "https://github.com/jonhue/modalist.js",
+  "demo": "https://nativegap.com",
+  "rubygems": null,
+  "npm": "https://www.npmjs.com/package/modalist"
 }, {
-    "logo": null,
-    "name": "Progressive Web Apps for Rails",
-    "description": "Add a service worker and a manifest to your app, for it to be recognized as a PWA and accessed without a network connection",
-    "url": null,
-    "github": "https://github.com/jonhue/pwa",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/pwa",
-    "npm": null
+  "logo": null,
+  "name": "Progressive Web Apps for Rails",
+  "description": "Add a service worker and a manifest to your app, for it to be recognized as a PWA and accessed without a network connection",
+  "url": null,
+  "github": "https://github.com/jonhue/pwa",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/pwa",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Welcomer.js",
-    "description": "Slick welcome bars for your pages",
-    "url": null,
-    "github": "https://github.com/jonhue/welcomer.js",
-    "demo": "https://jonhue.github.io/welcomer.js",
-    "rubygems": null,
-    "npm": "https://www.npmjs.com/package/welcomer"
+  "logo": null,
+  "name": "Welcomer.js",
+  "description": "Slick welcome bars for your pages",
+  "url": null,
+  "github": "https://github.com/jonhue/welcomer.js",
+  "demo": "https://jonhue.github.io/welcomer.js",
+  "rubygems": null,
+  "npm": "https://www.npmjs.com/package/welcomer"
 }, {
-    "logo": null,
-    "name": "Modalist on Rails",
-    "description": "A powerful & (really) lightweight ajaxified modal solution for Rails apps",
-    "url": null,
-    "github": "https://github.com/jonhue/modalist",
-    "demo": "https://nativegap.com",
-    "rubygems": "https://rubygems.org/gems/modalist",
-    "npm": null
+  "logo": null,
+  "name": "Modalist on Rails",
+  "description": "A powerful & (really) lightweight ajaxified modal solution for Rails apps",
+  "url": null,
+  "github": "https://github.com/jonhue/modalist",
+  "demo": "https://nativegap.com",
+  "rubygems": "https://rubygems.org/gems/modalist",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "OnSignal on Rails",
-    "description": "OneSignal API wrapper simplifying user targeted cross platform notifications",
-    "url": null,
-    "github": "https://github.com/jonhue/onsignal-rails",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/onsignal",
-    "npm": null
+  "logo": null,
+  "name": "OnSignal on Rails",
+  "description": "OneSignal API wrapper simplifying user targeted cross platform notifications",
+  "url": null,
+  "github": "https://github.com/jonhue/onsignal-rails",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/onsignal",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Chatter",
-    "description": ":computer: :mortar_board: Final project of my CS class",
-    "url": null,
-    "github": "https://github.com/jonhue/chatter",
-    "demo": null,
-    "rubygems": null,
-    "npm": null
+  "logo": null,
+  "name": "Chatter",
+  "description": ":computer: :mortar_board: Final project of my CS class",
+  "url": null,
+  "github": "https://github.com/jonhue/chatter",
+  "demo": null,
+  "rubygems": null,
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Material Components Web for Rails",
-    "description": "Provides a set of helpers simplifying the use of the Material Components Web library",
-    "url": null,
-    "github": "https://github.com/jonhue/material-components-web",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/material-components-web",
-    "npm": null
+  "logo": null,
+  "name": "Material Components Web for Rails",
+  "description": "Provides a set of helpers simplifying the use of the Material Components Web library",
+  "url": null,
+  "github": "https://github.com/jonhue/material-components-web",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/material-components-web",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Search Engine Optimization",
-    "description": "Advanced SEO for Rails apps",
-    "url": null,
-    "github": "https://github.com/jonhue/search-engine-optimization",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/search-engine-optimization",
-    "npm": null
+  "logo": null,
+  "name": "Search Engine Optimization",
+  "description": "Advanced SEO for Rails apps",
+  "url": null,
+  "github": "https://github.com/jonhue/search-engine-optimization",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/search-engine-optimization",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Mozaic",
-    "description": "An opinionated layout engine for Rails",
-    "url": null,
-    "github": "https://github.com/jonhue/mozaic",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/mozaic",
-    "npm": null
+  "logo": null,
+  "name": "Mozaic",
+  "description": "An opinionated layout engine for Rails",
+  "url": null,
+  "github": "https://github.com/jonhue/mozaic",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/mozaic",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "amp-html",
-    "description": "Reliable high-⚡ apps across devices and distribution platforms with AMP & Rails",
-    "url": null,
-    "github": "https://github.com/jonhue/amp-html",
-    "demo": "https://hello-amp.herokuapp.com",
-    "rubygems": "https://rubygems.org/gems/amp-html",
-    "npm": null
+  "logo": null,
+  "name": "amp-html",
+  "description": "Reliable high-⚡ apps across devices and distribution platforms with AMP & Rails",
+  "url": null,
+  "github": "https://github.com/jonhue/amp-html",
+  "demo": "https://hello-amp.herokuapp.com",
+  "rubygems": "https://rubygems.org/gems/amp-html",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "TurbolinksAnimate on Rails",
-    "description": "Rich & adaptive animations for apps using Rails w/ Turbolinks™",
-    "url": null,
-    "github": "https://github.com/jonhue/turbolinks-animate",
-    "demo": "https://nativegap.com",
-    "rubygems": "https://rubygems.org/gems/turbolinks-animate",
-    "npm": null
+  "logo": null,
+  "name": "TurbolinksAnimate on Rails",
+  "description": "Rich & adaptive animations for apps using Rails w/ Turbolinks™",
+  "url": null,
+  "github": "https://github.com/jonhue/turbolinks-animate",
+  "demo": "https://nativegap.com",
+  "rubygems": "https://rubygems.org/gems/turbolinks-animate",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Imoji.js",
-    "description": "A sleek & responsive emoji input",
-    "url": null,
-    "github": "https://github.com/jonhue/imoji.js",
-    "demo": "https://jonhue.github.io/imoji.js",
-    "rubygems": null,
-    "npm": "https://www.npmjs.com/package/imoji"
+  "logo": null,
+  "name": "Imoji.js",
+  "description": "A sleek & responsive emoji input",
+  "url": null,
+  "github": "https://github.com/jonhue/imoji.js",
+  "demo": "https://jonhue.github.io/imoji.js",
+  "rubygems": null,
+  "npm": "https://www.npmjs.com/package/imoji"
 }, {
-    "logo": null,
-    "name": "Blurry.js",
-    "description": "Blurry image loading with StackBlur",
-    "url": null,
-    "github": "https://github.com/jonhue/blurry.js",
-    "demo": null,
-    "rubygems": null,
-    "npm": "https://www.npmjs.com/package/blurry"
+  "logo": null,
+  "name": "Blurry.js",
+  "description": "Blurry image loading with StackBlur",
+  "url": null,
+  "github": "https://github.com/jonhue/blurry.js",
+  "demo": null,
+  "rubygems": null,
+  "npm": "https://www.npmjs.com/package/blurry"
 }, {
-    "logo": null,
-    "name": "Avatari",
-    "description": "Add avatars to ActiveRecord models",
-    "url": null,
-    "github": "https://github.com/jonhue/avatari",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/avatari",
-    "npm": null
+  "logo": null,
+  "name": "Avatari",
+  "description": "Add avatars to ActiveRecord models",
+  "url": null,
+  "github": "https://github.com/jonhue/avatari",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/avatari",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "acts_as_belongable",
-    "description": "Associations engine for Rails",
-    "url": null,
-    "github": "https://github.com/jonhue/acts_as_belongable",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/acts_as_belongable",
-    "npm": null
+  "logo": null,
+  "name": "acts_as_belongable",
+  "description": "Associations engine for Rails",
+  "url": null,
+  "github": "https://github.com/jonhue/acts_as_belongable",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/acts_as_belongable",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Themer",
-    "description": "Themes for Rails apps",
-    "url": null,
-    "github": "https://github.com/jonhue/themer",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/themer",
-    "npm": null
+  "logo": null,
+  "name": "Themer",
+  "description": "Themes for Rails apps",
+  "url": null,
+  "github": "https://github.com/jonhue/themer",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/themer",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "r404",
-    "description": "Error handler & renderer for Rails",
-    "url": null,
-    "github": "https://github.com/jonhue/r404",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/r404",
-    "npm": null
+  "logo": null,
+  "name": "r404",
+  "description": "Error handler & renderer for Rails",
+  "url": null,
+  "github": "https://github.com/jonhue/r404",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/r404",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Username",
-    "description": "Usernames for ActiveRecord models",
-    "url": null,
-    "github": "https://github.com/jonhue/username",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/username",
-    "npm": null
+  "logo": null,
+  "name": "Username",
+  "description": "Usernames for ActiveRecord models",
+  "url": null,
+  "github": "https://github.com/jonhue/username",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/username",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "CanCanCan System",
-    "description": "Conventions & helpers simplifying the use of CanCanCan in complex Rails applications",
-    "url": null,
-    "github": "https://github.com/jonhue/cancancan-system",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/cancancan-system",
-    "npm": null
+  "logo": null,
+  "name": "CanCanCan System",
+  "description": "Conventions & helpers simplifying the use of CanCanCan in complex Rails applications",
+  "url": null,
+  "github": "https://github.com/jonhue/cancancan-system",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/cancancan-system",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "RandomizeId",
-    "description": "Randomize ActiveRecord IDs",
-    "url": null,
-    "github": "https://github.com/jonhue/randomize_id",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/randomize_id",
-    "npm": null
+  "logo": null,
+  "name": "RandomizeId",
+  "description": "Randomize ActiveRecord IDs",
+  "url": null,
+  "github": "https://github.com/jonhue/randomize_id",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/randomize_id",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Ledermann Rails Settings Update",
-    "description": "Simplifying updating settings from controllers",
-    "url": null,
-    "github": "https://github.com/jonhue/ledermann-rails-settings-update",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/ledermann-rails-settings-update",
-    "npm": null
+  "logo": null,
+  "name": "Ledermann Rails Settings Update",
+  "description": "Simplifying updating settings from controllers",
+  "url": null,
+  "github": "https://github.com/jonhue/ledermann-rails-settings-update",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/ledermann-rails-settings-update",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Ahoy Views",
-    "description": "Track views of ActiveRecord objects in Rails",
-    "url": null,
-    "github": "https://github.com/jonhue/ahoy-views",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/ahoy-views",
-    "npm": null
+  "logo": null,
+  "name": "Ahoy Views",
+  "description": "Track views of ActiveRecord objects in Rails",
+  "url": null,
+  "github": "https://github.com/jonhue/ahoy-views",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/ahoy-views",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "nestive-rails",
-    "description": "A Better Nested Inheritable Layouts Plugin for Rails 5",
-    "url": null,
-    "github": "https://github.com/jonhue/nestive-rails",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/nestive-rails",
-    "npm": null
+  "logo": null,
+  "name": "nestive-rails",
+  "description": "A Better Nested Inheritable Layouts Plugin for Rails 5",
+  "url": null,
+  "github": "https://github.com/jonhue/nestive-rails",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/nestive-rails",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "acts_as_favoritor",
-    "description": "A Rubygem to add Favorite, Follow, Vote, etc. functionality to ActiveRecord models",
-    "url": null,
-    "github": "https://github.com/jonhue/acts_as_favoritor",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/acts_as_favoritor",
-    "npm": null
+  "logo": null,
+  "name": "acts_as_favoritor",
+  "description": "A Rubygem to add Favorite, Follow, Vote, etc. functionality to ActiveRecord models",
+  "url": null,
+  "github": "https://github.com/jonhue/acts_as_favoritor",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/acts_as_favoritor",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "Sandboxy",
-    "description": "Virtual data-oriented environments for Rails",
-    "url": null,
-    "github": "https://github.com/jonhue/sandboxy",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/sandboxy",
-    "npm": null
+  "logo": null,
+  "name": "Sandboxy",
+  "description": "Virtual data-oriented environments for Rails",
+  "url": null,
+  "github": "https://github.com/jonhue/sandboxy",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/sandboxy",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "OmniAuth PayPal OAuth2 Strategy",
-    "description": "OAuth2 strategy for PayPal",
-    "url": null,
-    "github": "https://github.com/jonhue/omniauth-paypal-oauth2",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/omniauth-paypal-oauth2",
-    "npm": null
+  "logo": null,
+  "name": "OmniAuth PayPal OAuth2 Strategy",
+  "description": "OAuth2 strategy for PayPal",
+  "url": null,
+  "github": "https://github.com/jonhue/omniauth-paypal-oauth2",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/omniauth-paypal-oauth2",
+  "npm": null
 }, {
-    "logo": null,
-    "name": "CarrierWave Delay",
-    "description": "Asynchronous processing with Carrierwave",
-    "url": null,
-    "github": "https://github.com/jonhue/carrierwave-delay",
-    "demo": null,
-    "rubygems": "https://rubygems.org/gems/carrierwave-delay",
-    "npm": null
+  "logo": null,
+  "name": "CarrierWave Delay",
+  "description": "Asynchronous processing with Carrierwave",
+  "url": null,
+  "github": "https://github.com/jonhue/carrierwave-delay",
+  "demo": null,
+  "rubygems": "https://rubygems.org/gems/carrierwave-delay",
+  "npm": null
 }]
