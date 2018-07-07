@@ -5,6 +5,7 @@ AllCops:
     - bin/*
     - db/schema.rb
     - node_modules/**/*
+    - vendor/**/*
   TargetRubyVersion: 2.5
 
 Metrics/AbcSize:
