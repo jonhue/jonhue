@@ -49,7 +49,9 @@ group :development do
   gem 'foreman', require: false
   gem 'mysql2'
   gem 'pry-rails'
+  gem 'rspec-rails', require: false
   gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
   gem 'web-console'
 end
 
