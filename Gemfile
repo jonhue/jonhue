@@ -47,6 +47,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'foreman', require: false
+  gem 'haml_lint', require: false
   gem 'mysql2'
   gem 'pry-rails'
   gem 'rspec-rails', require: false

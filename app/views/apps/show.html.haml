@@ -1,54 +1,64 @@
 - meta title: @app.name, description: @app.description
 - append :head do
-    = component 'seo/schema', type: :product, category: 'App', logo: @app.logo, name: @app.name, description: @app.description, url: @app.url
+  = component('seo/schema', type: :product, category: 'App', logo: @app.logo,
+              name: @app.name, description: @app.description, url: @app.url)
 
 %section#home
-    = image_tag @app.logo
-    %h1.sm= @app.name
-    %p.lg= @app.description
-    .myg-button--container
-        - if @app.url
-            = link_to 'Get started', @app.url, class: 'myg-button', target: '_blank'
-        - if @app.android
-            = link_to 'Android', @app.android, class: 'myg-button myg-button--secondary', target: '_blank'
-        - if @app.ios
-            = link_to 'iOS', @app.ios, class: 'myg-button myg-button--secondary', target: '_blank'
-        - if @app.windows
-            = link_to 'Windows 10', @app.windows, class: 'myg-button myg-button--secondary', target: '_blank'
-        - if @app.chrome
-            = link_to 'Chrome', @app.chrome, class: 'myg-button myg-button--secondary', target: '_blank'
+  = image_tag @app.logo
+  %h1.sm= @app.name
+  %p.lg= @app.description
+  .myg-button--container
+    - if @app.url
+      = link_to 'Get started', @app.url, class: 'myg-button', target: '_blank'
+    - if @app.android
+      = link_to('Android', @app.android,
+                class: 'myg-button myg-button--secondary', target: '_blank')
+    - if @app.ios
+      = link_to('iOS', @app.ios,
+                class: 'myg-button myg-button--secondary', target: '_blank')
+    - if @app.windows
+      = link_to('Windows 10', @app.windows,
+                class: 'myg-button myg-button--secondary', target: '_blank')
+    - if @app.chrome
+      = link_to('Chrome', @app.chrome,
+                class: 'myg-button myg-button--secondary', target: '_blank')
 
 - if @app.features.any?
-    %section#features
-        .myg-slide.main-carousel
-            - @features.each do |feature|
-                .carousel-cell
-                    %h1.sm= feature.title
-                    %p.lg= feature.content
+  %section#features
+    .myg-slide.main-carousel
+      - @features.each do |feature|
+        .carousel-cell
+          %h1.sm= feature.title
+          %p.lg= feature.content
 
 %section#more
-    .myg-wrap--large
-        .myg-badge--container
-            - if @app.released_at && @app.released_at > Time.now - 1.month
-                %p.myg-badge.success New! 🚀
-            - if @app.beta
-                %p.myg-badge.error Beta 🔥
-            - if @app.url
-                %p.myg-badge Web
-            - if @app.android
-                %p.myg-badge Android
-            - if @app.ios
-                %p.myg-badge iOS
-            - if @app.windows
-                %p.myg-badge Windows
-            - if @app.chrome
-                %p.myg-badge Chrome
-        .myg-button--container
-            - if @app.wiki
-                = link_to 'Wiki', @app.wiki, class: 'myg-button myg-button--secondary', target: '_blank'
-            - if @app.support
-                = link_to 'Support', "mailto:#{@app.support}", class: 'myg-button myg-button--secondary'
-            - if @app.github
-                = link_to 'Source code', @app.github, class: 'myg-button myg-button--secondary', target: '_blank'
-            = link_to 'Terms of Service', app_terms_url(@app), class: 'myg-button myg-button--secondary'
-            = link_to 'Privacy Policy', app_privacy_url(@app), class: 'myg-button myg-button--secondary'
+  .myg-wrap--large
+    .myg-badge--container
+      - if @app.released_at && @app.released_at > Time.now - 1.month
+        %p.myg-badge.success New! 🚀
+      - if @app.beta
+        %p.myg-badge.error Beta 🔥
+      - if @app.url
+        %p.myg-badge Web
+      - if @app.android
+        %p.myg-badge Android
+      - if @app.ios
+        %p.myg-badge iOS
+      - if @app.windows
+        %p.myg-badge Windows
+      - if @app.chrome
+        %p.myg-badge Chrome
+    .myg-button--container
+      - if @app.wiki
+        = link_to('Wiki', @app.wiki, class: 'myg-button myg-button--secondary',
+                  target: '_blank')
+      - if @app.support
+        = link_to('Support', "mailto:#{@app.support}",
+                  class: 'myg-button myg-button--secondary')
+      - if @app.github
+        = link_to('Source code', @app.github,
+                  class: 'myg-button myg-button--secondary', target: '_blank')
+      = link_to('Terms of Service', app_terms_url(@app),
+                class: 'myg-button myg-button--secondary')
+      = link_to('Privacy Policy', app_privacy_url(@app),
+                class: 'myg-button myg-button--secondary')

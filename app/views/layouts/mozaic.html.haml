@@ -1,39 +1,52 @@
 !!!
 %html{ lang: 'en' }
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ name: 'viewport', content: viewport_content }
 
-    %head
+    = metamagic(site: 'Jonas Hübotter', title: [:title, :site],
+                separator: ' - ',
+                description: description,
+                keywords: ['developer'])
+    = component 'pwa/manifest'
 
-        %meta{ charset: 'utf-8' }
-        %meta{ name: 'viewport', content: 'user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1' }
+    %link{ rel: 'apple-touch-icon', sizes: '76x76',
+      href: request.base_url + '/icon_76x76.png' }
+    %link{ rel: 'apple-touch-icon', sizes: '120x120',
+      href: request.base_url + '/icon_120x120.png' }
+    %link{ rel: 'apple-touch-icon', sizes: '152x152',
+      href: request.base_url + '/icon_152x152.png' }
+    %link{ rel: 'icon', sizes: '192x192',
+      href: request.base_url + '/icon_192x192.png' }
+    %link{ rel: 'icon', sizes: '256x256',
+      href: request.base_url + '/icon_256x256.png' }
+    %link{ rel: 'icon', sizes: '384x384',
+      href: request.base_url + '/icon_384x384.png' }
+    %link{ rel: 'icon', sizes: '512x512',
+      href: request.base_url + '/icon_512x512.png' }
+    %link{ rel: 'msapplication-square70x70logo',
+      content: request.base_url + '/icon_70x70.png' }
+    %link{ rel: 'msapplication-square150x150logo',
+      content: request.base_url + '/icon_150x150.png' }
+    -# %link{ rel: 'msapplication-wide310x150logo',
+    -#   content: request.base_url + '/icon_310x150.png' }
+    %link{ rel: 'msapplication-square310x310logo',
+      content: request.base_url + '/icon_310x310.png' }
 
-        = metamagic site: 'Jonas Hübotter', title: [:title, :site], separator: ' - ', description: 'A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.', keywords: ['developer']
-        = component 'pwa/manifest'
+    = component 'pwa/theme'
+    = favicon_link_tag '/favicon.ico'
 
-        %link{ rel: 'apple-touch-icon', sizes: '76x76', href: request.base_url + '/icon_76x76.png' }
-        %link{ rel: 'apple-touch-icon', sizes: '120x120', href: request.base_url + '/icon_120x120.png' }
-        %link{ rel: 'apple-touch-icon', sizes: '152x152', href: request.base_url + '/icon_152x152.png' }
-        %link{ rel: 'icon', sizes: '192x192', href: request.base_url + '/icon_192x192.png' }
-        %link{ rel: 'icon', sizes: '256x256', href: request.base_url + '/icon_256x256.png' }
-        %link{ rel: 'icon', sizes: '384x384', href: request.base_url + '/icon_384x384.png' }
-        %link{ rel: 'icon', sizes: '512x512', href: request.base_url + '/icon_512x512.png' }
-        %link{ rel: 'msapplication-square70x70logo', content: request.base_url + '/icon_70x70.png' }
-        %link{ rel: 'msapplication-square150x150logo', content: request.base_url + '/icon_150x150.png' }
-        -# %link{ rel: 'msapplication-wide310x150logo', content: request.base_url + '/icon_310x150.png' }
-        %link{ rel: 'msapplication-square310x310logo', content: request.base_url + '/icon_310x310.png' }
+    = component 'layouts/google_analytics'
 
-        = component 'pwa/theme'
-        = favicon_link_tag '/favicon.ico'
+    = stylesheet_pack_tag('application', media: 'all',
+                          'data-turbolinks-track': 'reload')
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
 
-        = component 'layouts/google_analytics'
+    = csrf_meta_tags
 
-        = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
-        = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = area :head
 
-        = csrf_meta_tags
-
-        = area :head
-
-    = component 'turbolinks-animate', animation: @turbolinks_animate_animation, class: 'myg myg-layout myg-layout--toolbar ' + class_hierarchy( [params[:controller].split('/').each { |n| n }, action_name] ) do
-
-        = mozaic_area do
-            = yield
+  = component('turbolinks-animate', animation: @turbolinks_animate_animation,
+              class: body_class) do
+    = mozaic_area do
+      = yield

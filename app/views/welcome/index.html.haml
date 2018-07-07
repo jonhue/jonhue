@@ -1,95 +1,108 @@
 - append :head do
-    = component 'seo/schema', type: :person, name: 'Jonas Hübotter', email: 'me@jonhue.me', address: 'Berlin', gender: 'male', job_title: 'Software Developer', url: 'https://jonhue.me', image: 'https://jonhue.me/512x512.png', description: 'A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.'
+  = component('seo/schema', type: :person, name: 'Jonas Hübotter',
+              email: 'me@jonhue.me', address: 'Berlin', gender: 'male',
+              job_title: 'Software Developer', url: 'https://jonhue.me',
+              image: 'https://jonhue.me/512x512.png',
+              description: description)
 
-%section#home.myg-wrap--large
-    %h1.bg Hey, it's me :)
-    %p.lg A student, a dangerously passionate open-source developer, an engineer adoring user-oriented and innovative design.
-    .myg-button--container
-        = link_to 'Apps', '#apps', class: 'myg-button'
-        = link_to 'Tweets', Settings.social.twitter, class: 'myg-button myg-button--secondary', target: '_blank'
-        = link_to 'Code', Settings.social.github, class: 'myg-button myg-button--secondary', target: '_blank'
+%section.myg-wrap--large#home
+  %h1.bg Hey, it's me :)
+  %p.lg
+    A student, a dangerously passionate open-source developer, an engineer
+    adoring user-oriented and innovative design.
+  .myg-button--container
+    = link_to 'Apps', '#apps', class: 'myg-button'
+    = link_to('Tweets', Settings.social.twitter,
+              class: 'myg-button myg-button--secondary', target: '_blank')
+    = link_to('Code', Settings.social.github,
+              class: 'myg-button myg-button--secondary', target: '_blank')
 
 %section#apps
-    %a{ name: 'apps' }
-    .myg-wrap--large
-        %h2.lg Apps
-        .myg-grid
-            - @apps.each do |app|
-                .myg-card
-                    = link_to app, class: 'myg-card--top' do
-                        = image_tag app.logo
-                    .myg-card--bottom
-                        .wrapper
-                            .myg-badge--container
-                                - if app.released_at && app.released_at > Time.now - 1.month
-                                    %p.myg-badge.success New! 🚀
-                                - if app.beta
-                                    %p.myg-badge.error Beta 🔥
-                                - if app.url
-                                    %p.myg-badge Web
-                                - if app.android
-                                    %p.myg-badge Android
-                                - if app.ios
-                                    %p.myg-badge iOS
-                                - if app.windows
-                                    %p.myg-badge Windows
-                                - if app.chrome
-                                    %p.myg-badge Chrome
-                            %h3= app.name
-                            %p= app.description
-                        = link_to 'Learn more', app, class: 'myg-button myg-button--secondary'
+  %a{ name: 'apps' }
+  .myg-wrap--large
+    %h2.lg Apps
+    .myg-grid
+      - @apps.each do |app|
+        .myg-card
+          = link_to app, class: 'myg-card--top' do
+            = image_tag app.logo
+          .myg-card--bottom
+            .wrapper
+              .myg-badge--container
+                - if app.released_at && app.released_at > Time.now - 1.month
+                  %p.myg-badge.success New! 🚀
+                - if app.beta
+                  %p.myg-badge.error Beta 🔥
+                - if app.url
+                  %p.myg-badge Web
+                - if app.android
+                  %p.myg-badge Android
+                - if app.ios
+                  %p.myg-badge iOS
+                - if app.windows
+                  %p.myg-badge Windows
+                - if app.chrome
+                  %p.myg-badge Chrome
+              %h3= app.name
+              %p= app.description
+            = link_to('Learn more', app,
+                      class: 'myg-button myg-button--secondary')
 
 %section#subscribe
-    .myg-wrap--phone
-        %h1.sm You'll enjoy clicking.
-        = link_to 'Get notified when something is happening 🎉', 'javascript:void(0)', class: 'myg-button'
-        .flex.reverse
-            %p.sm * I'm afraid, I can't promise.
+  .myg-wrap--phone
+    %h1.sm You'll enjoy clicking.
+    = link_to('Get notified when something is happening 🎉',
+              'javascript:void(0)', class: 'myg-button')
+    .flex.reverse
+      %p.sm * I'm afraid, I can't promise.
 
 %section#open-source
-    %a{ name: 'open-source' }
-    .myg-wrap--large
-        %h2.lg Open Source
-        .myg-grid
-            - @repositories.each do |repository|
-                .myg-card
-                    .myg-card--top
-                    .myg-card--bottom
-                        .wrapper
-                            .myg-badge--container
-                                - if repository.created_at > Time.now - 1.month
-                                    %p.myg-badge.success New! 🚀
-                                - if repository.discontinued
-                                    %p.myg-badge.error Discontinued
-                                - elsif repository.updated_at > Time.now - 1.day
-                                    %p.myg-badge.error On... 🔥
-                                %p.myg-badge
-                                    = repository.language
-                                - if repository.stars > 0
-                                    %p.myg-badge
-                                        = repository.stars
-                                        ⭐️
-                            %h3= repository.name
-                            %p= emojify repository.description
-                            %p.sm= link_to "Updated #{time_ago_in_words(repository.updated_at)} ago", repository.github, class: 'hyperlink--inherit', target: '_blank'
-                        = link_to 'Learn more', repository, class: 'myg-button myg-button--secondary'
+  %a{ name: 'open-source' }
+  .myg-wrap--large
+    %h2.lg Open Source
+    .myg-grid
+      - @repositories.each do |repository|
+        .myg-card
+          .myg-card--top
+          .myg-card--bottom
+            .wrapper
+              .myg-badge--container
+                - if repository.created_at > Time.now - 1.month
+                  %p.myg-badge.success New! 🚀
+                - if repository.discontinued
+                  %p.myg-badge.error Discontinued
+                - elsif repository.updated_at > Time.now - 1.day
+                  %p.myg-badge.error On... 🔥
+                %p.myg-badge
+                  = repository.language
+                - if repository.stars.positive?
+                  %p.myg-badge
+                    = repository.stars
+                    ⭐️
+              %h3= repository.name
+              %p= emojify repository.description
+              %p.sm= link_to(updated_time_ago(repository.updated_at),
+                              repository.github,
+                              class: 'hyperlink--inherit', target: '_blank')
+            = link_to('Learn more', repository,
+                      class: 'myg-button myg-button--secondary')
 
 %section#myg
-    .myg-wrap--large
-        .wrapper
-            %p.sm Get a glimpse off of my work:
-            .wrapper.flex.flex--center-c
-                = link_to Settings.social.twitter, target: '_blank' do
-                    = asset 'components/social/twitter'
-                = link_to Settings.social.github, target: '_blank' do
-                    = asset 'components/social/github'
-                = link_to Settings.social.medium, target: '_blank' do
-                    = asset 'components/social/medium'
-                = link_to Settings.social.linkedin, target: '_blank' do
-                    = asset 'components/social/linkedin'
-                = link_to Settings.social.behance, target: '_blank' do
-                    = asset 'components/social/behance'
-        %p
-            Built with ❤️ and
-            = link_to 'Myg', Repository.find_by(name: 'Myg')
-            by the developer who built Myg. 🤙
+  .myg-wrap--large
+    .wrapper
+      %p.sm Get a glimpse off of my work:
+      .wrapper.flex.flex--center-c
+        = link_to Settings.social.twitter, target: '_blank' do
+          = asset 'components/social/twitter'
+        = link_to Settings.social.github, target: '_blank' do
+          = asset 'components/social/github'
+        = link_to Settings.social.medium, target: '_blank' do
+          = asset 'components/social/medium'
+        = link_to Settings.social.linkedin, target: '_blank' do
+          = asset 'components/social/linkedin'
+        = link_to Settings.social.behance, target: '_blank' do
+          = asset 'components/social/behance'
+    %p
+      Built with ❤️ and
+      = link_to 'Myg', Repository.find_by(name: 'Myg')
+      by the developer who built Myg. 🤙
