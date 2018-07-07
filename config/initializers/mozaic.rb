@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Mozaic.configure do |config|
   # Use Mozaic with Webpacker
   # config.es6 = true
@@ -7,5 +9,6 @@ Mozaic.configure do |config|
   config.stylesheets = 'app/webpack/stylesheets'
 
   # Define Mozaic components
-  config.define_component 'layouts/google_analytics', tracking_id: Settings.google_analytics.tracking_id
+  config.define_component 'layouts/google_analytics',
+                          tracking_id: Settings.google_analytics.tracking_id
 end

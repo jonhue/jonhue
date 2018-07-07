@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Feature < ApplicationRecord
   acts_as_belongable
 

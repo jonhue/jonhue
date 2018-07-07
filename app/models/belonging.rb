@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Belonging < ApplicationRecord
   acts_as_list :belonger
 

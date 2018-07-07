@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Myg.configure do |config|
   # Path to Myg javascripts directory
   config.javascripts_dir = 'app/webpack/javascripts/myg'

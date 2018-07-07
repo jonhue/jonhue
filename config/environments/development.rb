@@ -1,7 +1,11 @@
-Rails.application.configure do
-  # Settings specified here will take precedence over those in config/application.rb.
+# frozen_string_literal: true
 
-  # Verifies that versions and hashed value of the package contents in the project's package.json
+Rails.application.configure do
+  # Settings specified here will take precedence over those in
+  # config/application.rb.
+
+  # Verifies that versions and hashed value of the package contents in the
+  # project's package.json
   config.webpacker.check_yarn_integrity = true
 
   # In the development environment your application's code is reloaded on
@@ -23,7 +27,7 @@ Rails.application.configure do
     config.public_file_server.headers = {
       'Cache-Control' => "public, max-age=#{2.days.seconds.to_i}"
     }
-    else
+  else
     config.action_controller.perform_caching = false
 
     config.cache_store = :null_store

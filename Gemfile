@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '2.5.1'
 
@@ -46,8 +48,8 @@ group :development do
   gem 'binding_of_caller'
   gem 'foreman', require: false
   gem 'mysql2'
-  gem 'rubocop', require: false
   gem 'pry-rails'
+  gem 'rubocop', require: false
   gem 'web-console'
 end
 
