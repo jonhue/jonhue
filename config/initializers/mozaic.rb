@@ -9,6 +9,8 @@ Mozaic.configure do |config|
   config.stylesheets = 'app/webpack/stylesheets'
 
   # Define Mozaic components
-  config.define_component 'layouts/google_analytics',
-                          tracking_id: Rails.application.credentials.google_analytics[:tracking_id]
+  config.define_component(
+    'layouts/google_analytics',
+    tracking_id: Rails.application.credentials.google_analytics[:tracking_id]
+  )
 end
