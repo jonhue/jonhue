@@ -1,24 +1,24 @@
 default: &default
-    pool: 5
+  pool: 5
 
 
 # production:
-#     <<: *default
+#   <<: *default
 
 development:
-    <<: *default
-    adapter: mysql2
-    encoding: utf8
-    username: root
-    password: 0402Jonas
-    port: 3306
-    database: jonhue_development
+  <<: *default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: 0402Jonas
+  port: 3306
+  database: jonhue_development
 
 test:
-    <<: *default
-    adapter: mysql2
-    encoding: utf8
-    username: root
-    password: 0402Jonas
-    port: 3306
-    database: jonhue_test
+  <<: *default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: 0402Jonas
+  port: 3306
+  database: jonhue_test

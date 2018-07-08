@@ -6,27 +6,27 @@ Turbolinks.start();
 
 import 'turbolinks-animate';
 document.addEventListener( 'turbolinks:load', () => {
-    TurbolinksAnimate.init({ element: document.querySelector('body.turbolinks-animate') });
+  TurbolinksAnimate.init({ element: document.querySelector('body.turbolinks-animate') });
 })
 
 import 'onsignal/dist/OneSignalSDK';
 import OnSignal from 'onsignal';
 function showSubscription() {
-    if (document.querySelector('#subscribe a.myg-button'))
-        document.querySelector('#subscribe a.myg-button').innerHTML = '🎉 Thank you for subscribing! 🎉';
+  if (document.querySelector('#subscribe a.myg-button'))
+    document.querySelector('#subscribe a.myg-button').innerHTML = '🎉 Thank you for subscribing! 🎉';
 }
 document.addEventListener( 'turbolinks:load', () => { // change to 'ready'
-    const onSignal = new OnSignal('<%= Settings.onesignal.app_id %>');
-    if (onSignal.isSubscribed())
-        showSubscription()
-    else {
-        if (document.querySelector('#subscribe a.myg-button')) {
-            document.querySelector('#subscribe a.myg-button').addEventListener( 'click', () => {
-                onSignal.subscribe();
-                showSubscription();
-            });
-        }
+  const onSignal = new OnSignal('<%= Settings.onesignal.app_id %>');
+  if (onSignal.isSubscribed())
+    showSubscription()
+  else {
+    if (document.querySelector('#subscribe a.myg-button')) {
+      document.querySelector('#subscribe a.myg-button').addEventListener( 'click', () => {
+        onSignal.subscribe();
+        showSubscription();
+      });
     }
+  }
 })
 
 import './../javascripts/myg/index';

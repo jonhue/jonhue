@@ -1,25 +1,29 @@
 = mozaic do
 
-    = component 'myg/toolbar', class: 'myg-toolbar--flexible', data: { turbolinks_animate_persist: 'true' } do
-        .myg-wrap--large.mdc-toolbar__row
-            %section.mdc-toolbar__section.mdc-toolbar__section--align-start
-                %h3= link_to 'Jonas Hübotter', root_url
-            %section.mdc-toolbar__section.mdc-toolbar__section--align-end.mobile
-                = link_to 'javascript:void(0)', class: 'preventdefault' do
-                    = asset 'components/drawer/toggle'
-            %section.mdc-toolbar__section.mdc-toolbar__section--align-end
-                = link_to 'Apps', root_url + '#apps'
-                = link_to 'Open Source', root_url + '#open-source'
-                = link_to 'Contact', contact_url, class: 'myg-button myg-button--dense myg-button--secondary'
+  = component('myg/toolbar',
+              class: 'myg-toolbar--flexible',
+              data: { turbolinks_animate_persist: 'true' }) do
+    .myg-wrap--large.mdc-toolbar__row
+      %section.mdc-toolbar__section.mdc-toolbar__section--align-start
+        %h3= link_to 'Jonas Hübotter', root_url
+      %section.mdc-toolbar__section.mdc-toolbar__section--align-end.mobile
+        = link_to 'javascript:void(0)', class: 'preventdefault' do
+          = asset 'components/drawer/toggle'
+      %section.mdc-toolbar__section.mdc-toolbar__section--align-end
+        = link_to 'Apps', root_url + '#apps'
+        = link_to 'Open Source', root_url + '#open-source'
+        = link_to('Contact', contact_url,
+                  class: 'myg-button myg-button--dense myg-button--secondary')
 
-    = component 'myg/drawer' do
-        %nav.mdc-drawer__drawer
-            %nav.mdc-drawer__content
-                = link_to 'Apps', root_url + '#apps'
-                = link_to 'Open Source', root_url + '#open-source'
-            %nav.mdc-drawer__footer
-                = link_to 'Contact', contact_url, class: 'myg-button myg-button--dense myg-button--secondary'
+  = component 'myg/drawer' do
+    %nav.mdc-drawer__drawer
+      %nav.mdc-drawer__content
+        = link_to 'Apps', root_url + '#apps'
+        = link_to 'Open Source', root_url + '#open-source'
+      %nav.mdc-drawer__footer
+        = link_to('Contact', contact_url,
+                  class: 'myg-button myg-button--dense myg-button--secondary')
 
-    .myg-content
-        = mozaic_area :application do
-            = yield
+  .myg-content
+    = mozaic_area :application do
+      = yield

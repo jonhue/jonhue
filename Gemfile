@@ -1,62 +1,64 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '2.5.1'
 
 git_source(:github) do |repo_name|
-    repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
-    "https://github.com/#{repo_name}.git"
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
+  "https://github.com/#{repo_name}.git"
 end
 
-
 gem 'rails', '~> 5.2.0'
-gem 'turbolinks'
-gem 'puma'
-gem 'sass-rails'
-gem 'uglifier'
+
+gem 'acts_as_belongable'
+gem 'bootsnap', require: false
+gem 'certified'
 gem 'config'
-gem 'haml'
-gem 'metamagic'
-gem 'search-engine-optimization'
-gem 'simple_form'
 gem 'friendly_id'
-gem 'turbolinks-animate'
-gem 'sentry-raven'
+gem 'gemoji'
+gem 'haml'
+gem 'httparty'
+gem 'metamagic'
+gem 'mozaic'
+gem 'myg'
+gem 'nilify_blanks'
+gem 'octokit'
 gem 'onsignal'
+gem 'puma'
 gem 'pwa'
 gem 'r404'
 gem 'randomize_id'
-gem 'mozaic'
-gem 'myg', github: 'jonhue/myg-rails'
-gem 'foreman'
+gem 'sass-rails'
+gem 'search-engine-optimization'
+gem 'sentry-raven'
+gem 'simple_form'
+gem 'turbolinks'
+gem 'turbolinks-animate'
+gem 'uglifier'
 gem 'webpacker'
-gem 'acts_as_belongable'
-gem 'certified'
-gem 'httparty'
-gem 'octokit'
-gem 'nilify_blanks'
-gem 'gemoji'
-gem 'bootsnap', require: false
-
 
 group :development, :test do
-    gem 'byebug'
-    gem 'capybara'
-    gem 'selenium-webdriver'
+  gem 'byebug'
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end
 
 group :development do
-    gem 'web-console'
-    gem 'pry-rails'
-    gem 'better_errors'
-    gem 'binding_of_caller'
-    gem 'brakeman', require: false
-    gem 'rubocop', require: false
-    gem 'mysql2', '~> 0.5.1'
-    gem 'lol_dba', require: false
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'foreman', require: false
+  gem 'haml_lint', require: false
+  gem 'mysql2'
+  gem 'pry-rails'
+  gem 'rspec-rails', require: false
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'web-console'
 end
 
 group :production do
-    gem 'pg'
-    gem 'rack-timeout'
+  gem 'pg'
+  gem 'rack-timeout'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

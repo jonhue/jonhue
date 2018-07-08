@@ -1,0 +1,38 @@
+require: rubocop-rspec
+
+AllCops:
+  Exclude:
+    - bin/*
+    - db/schema.rb
+    - node_modules/**/*
+    - vendor/**/*
+  TargetRubyVersion: 2.5
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - db/seeds.rb
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*.rb
+
+Style/Documentation:
+  Enabled: false
+
+Style/MultilineIfModifier:
+  Exclude:
+    - app/helpers/gemoji_helper.rb
+
+Style/PerlBackrefs:
+  Exclude:
+    - app/helpers/gemoji_helper.rb
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/WordArray:
+  EnforcedStyle: brackets

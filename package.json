@@ -1,17 +1,25 @@
 {
-    "name": "jonhue",
-    "private": true,
-    "dependencies": {
-        "@rails/webpacker": "^3.3.0",
-        "myg": "^0.10.1",
-        "onsignal": "^5.0.6",
-        "rails-erb-loader": "^5.2.1",
-        "rails-ujs": "^5.1.5",
-        "turbolinks": "^5.1.1",
-        "turbolinks-animate": "^3.0.5"
-    },
-    "devDependencies": {
-        "webpack-cli": "^2.0.10",
-        "webpack-dev-server": "^2.11.2"
-    }
+  "name": "jonhue",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^3.3.0",
+    "myg": "^0.13.3",
+    "onsignal": "^5.0.6",
+    "rails-erb-loader": "^5.2.1",
+    "rails-ujs": "^5.2.0",
+    "turbolinks": "^5.1.1",
+    "turbolinks-animate": "^3.0.5"
+  },
+  "scripts": {
+    "stylelint": "./node_modules/.bin/stylelint app/**/*.scss",
+    "eslint": "./node_modules/.bin/eslint app/**/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "stylelint": "^9.3.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^2.11.2"
+  }
 }
