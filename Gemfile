@@ -10,7 +10,7 @@ end
 
 gem 'rails', '~> 5.2.0'
 
-gem 'acts_as_belongable'
+gem 'activedata', github: 'jonhue/activedata'
 gem 'bootsnap', require: false
 gem 'certified'
 gem 'config'

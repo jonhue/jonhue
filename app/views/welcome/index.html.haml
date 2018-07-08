@@ -23,30 +23,7 @@
     %h2.lg Apps
     .myg-grid__grid
       - @apps.each do |app|
-        .myg-card
-          = link_to app, class: 'myg-card__top' do
-            = image_tag app.logo
-          .myg-card__bottom
-            .wrapper
-              .myg-badge__container
-                - if app.released_at && app.released_at > Time.now - 1.month
-                  %p.myg-badge.success New! 🚀
-                - if app.beta
-                  %p.myg-badge.error Beta 🔥
-                - if app.url
-                  %p.myg-badge Web
-                - if app.android
-                  %p.myg-badge Android
-                - if app.ios
-                  %p.myg-badge iOS
-                - if app.windows
-                  %p.myg-badge Windows
-                - if app.chrome
-                  %p.myg-badge Chrome
-              %h3= app.name
-              %p= app.description
-            = link_to('Learn more', app,
-                      class: 'myg-button--secondary')
+        = render app
 
 %section#subscribe
   .myg-layout__wrap--phone
@@ -62,31 +39,7 @@
     %h2.lg Open Source
     .myg-grid__grid
       - @repositories.each do |repository|
-        .myg-card
-          .myg-card__top
-          .myg-card__bottom
-            .wrapper
-              .myg-badge__container
-                - if repository.created_at > Time.now - 1.month
-                  %p.myg-badge.success New! 🚀
-                - if repository.discontinued
-                  %p.myg-badge.error Discontinued
-                - elsif repository.updated_at > Time.now - 1.day
-                  %p.myg-badge.error On... 🔥
-                %p.myg-badge
-                  = repository.language
-                - if repository.stars.positive?
-                  %p.myg-badge
-                    = repository.stars
-                    ⭐️
-              %h3= repository.name
-              %p= emojify repository.description
-              %p.sm= link_to(updated_time_ago(repository.updated_at),
-                              repository.github,
-                              class: 'myg-text__hyperlink -inherit',
-                              target: '_blank')
-            = link_to('Learn more', repository,
-                      class: 'myg-button--secondary')
+        = render repository
 
 %section#myg
   .myg-layout__wrap--large

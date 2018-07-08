@@ -6,24 +6,7 @@
   "github": "https://github.com/jonhue/myg",
   "demo": "https://nativegap.com",
   "rubygems": null,
-  "npm": "https://www.npmjs.com/package/myg",
-  "features": [{
-    "image": null,
-    "title": "Modular",
-    "content": "Myg includes a lot of UI elements. Because everyone of them is separately published on NPM, you can just include what you actually use."
-  }, {
-    "image": null,
-    "title": "Lightweight",
-    "content": "Mixins > Classes. Myg's CSS classes are entirely optional to minimize file size."
-  }, {
-    "image": null,
-    "title": "Opinionated",
-    "content": "Opinionated components prevent you from polluting your DOM."
-  }, {
-    "image": null,
-    "title": "Modern",
-    "content": "Myg uses the latest web technologies to support its rich feature set while remaining lightweight."
-  }]
+  "npm": "https://www.npmjs.com/package/myg"
 }, {
   "logo": null,
   "name": "Myg on Rails",
@@ -32,20 +15,7 @@
   "github": "https://github.com/jonhue/myg-rails",
   "demo": "https://nativegap.com",
   "rubygems": "https://rubygems.org/gems/myg",
-  "npm": null,
-  "features": [{
-    "image": null,
-    "title": "Mozaic components",
-    "content": "Making the implementation of complex Myg components dead simple while keeping your views clean."
-  }, {
-    "image": null,
-    "title": "Handling themes",
-    "content": "Create different color themes and switch between on the fly. You can even switch automatically for day & night."
-  }, {
-    "image": null,
-    "title": "Keeping you organized",
-    "content": "Myg on Rails supports you by generating a set of javascript and style files in which you can customize every aspect of Myg to your liking."
-  }]
+  "npm": null
 }, {
   "logo": null,
   "name": "OnSignal",

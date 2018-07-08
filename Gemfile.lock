@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/jonhue/activedata.git
+  revision: 200b9d8303e8bd064acc2457afa060c252102268
+  specs:
+    activedata (1.0.0)
+      activemodel (~> 5.2)
+      activesupport (~> 5.2)
+      railties (~> 5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -176,11 +185,11 @@ GEM
       activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
     nio4r (2.3.1)
-    nokogiri (1.8.3)
+    nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
-    nokogiri (1.8.3-x64-mingw32)
+    nokogiri (1.8.4-x64-mingw32)
       mini_portile2 (~> 2.3.0)
-    nokogiri (1.8.3-x86-mingw32)
+    nokogiri (1.8.4-x86-mingw32)
       mini_portile2 (~> 2.3.0)
     octokit (4.9.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -350,6 +359,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  activedata!
   acts_as_belongable
   better_errors
   binding_of_caller

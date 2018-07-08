@@ -1,0 +1,25 @@
+.myg-card
+  .myg-card__top
+  .myg-card__bottom
+    .wrapper
+      .myg-badge__container
+        - if repository.created_at > Time.now - 1.month
+          %p.myg-badge.success New! 🚀
+        - if repository.discontinued
+          %p.myg-badge.error Discontinued
+        - elsif repository.updated_at > Time.now - 1.day
+          %p.myg-badge.error On... 🔥
+        %p.myg-badge
+          = repository.language
+        - if repository.stars.positive?
+          %p.myg-badge
+            = repository.stars
+            ⭐️
+      %h3= repository.name
+      %p= emojify(repository.description)
+      %p.sm= link_to(updated_time_ago(repository.updated_at),
+                      repository.github,
+                      class: 'myg-text__hyperlink -inherit',
+                      target: '_blank')
+    = link_to('Learn more', repository_url(name: repository.name),
+              class: 'myg-button--secondary')
