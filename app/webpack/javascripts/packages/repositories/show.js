@@ -7,4 +7,4 @@ document.addEventListener( 'turbolinks:load', () => {
       }
     });
   }
-})
+});

@@ -6,4 +6,5 @@ script:
   - bundle exec rubocop
   - bundle exec rspec
   - yarn install
+  - yarn run eslint
   - yarn run stylelint
