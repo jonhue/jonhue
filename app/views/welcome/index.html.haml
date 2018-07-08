@@ -83,7 +83,8 @@
               %p= emojify repository.description
               %p.sm= link_to(updated_time_ago(repository.updated_at),
                               repository.github,
-                              class: 'myg-text__hyperlink -inherit', target: '_blank')
+                              class: 'myg-text__hyperlink -inherit',
+                              target: '_blank')
             = link_to('Learn more', repository,
                       class: 'myg-button--secondary')
 
