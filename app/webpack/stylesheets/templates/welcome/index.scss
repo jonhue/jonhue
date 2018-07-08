@@ -1,60 +1,60 @@
 body.welcome.index {
   .myg-content > section {
-    padding: myg-spacing(base);
+    padding: myg-spacing(4);
 
-    & > .myg-wrap--large {
-      padding: myg-spacing(base);
+    & > .myg-layout__wrap--large {
+      padding: myg-spacing(4);
     }
   }
 
   .myg-card {
-    background: color(background, base);
+    background: myg-theme__color(background, base);
     padding: 0;
 
-    @include myg-grid-span(4);
+    @include myg-grid__grid-span(4);
 
     h2 {
       margin-bottom: 0;
     }
 
-    .myg-card--top {
+    .myg-card__top {
       align-items: center;
-      background: color(background, dark);
+      background: myg-theme__color(background, dark);
       display: flex;
-      height: px(300);
+      height: myg__px(300);
       justify-content: center;
 
       img {
-        border-radius: px(5);
-        height: px(125);
+        border-radius: myg__px(5);
+        height: myg__px(125);
       }
     }
 
-    .myg-card--bottom {
+    .myg-card__bottom {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: px(260);
-      padding: myg-spacing(base);
+      min-height: myg__px(260);
+      padding: myg-spacing(4);
 
       .wrapper {
-        .myg-badge--container {
-          margin-bottom: px(15);
+        .myg-badge__container {
+          margin-bottom: myg__px(15);
         }
 
         & > h3 {
-          margin: px(20) 0 px(5);
+          margin: myg__px(20) 0 myg__px(5);
         }
 
         & > p {
           margin: 0;
 
           &:last-child {
-            margin: 0 0 px(25);
+            margin: 0 0 myg__px(25);
 
             &.sm {
-              color: color(text, light);
-              margin-top: px(5);
+              color: myg-theme__color(text, light);
+              margin-top: myg__px(5);
             }
           }
         }
@@ -63,7 +63,7 @@ body.welcome.index {
   }
 
   p.lg {
-    margin-bottom: px(35);
+    margin-bottom: myg__px(35);
   }
 
   #home {
@@ -71,10 +71,10 @@ body.welcome.index {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - #{px(225)});
+    min-height: calc(100vh - #{myg__px(225)});
     text-align: center;
 
-    @include bigger-than(desktop) {
+    @include myg-grid__bigger-than(desktop) {
       align-items: flex-start;
       text-align: left;
     }
@@ -82,61 +82,61 @@ body.welcome.index {
     h1,
     p {
       max-width: 85%;
-      width: px(650);
+      width: myg__px(650);
     }
 
     h1 {
-      margin: px(100) 0 0;
+      margin: myg__px(100) 0 0;
 
-      @include smaller-than(phone) {
-        font-size: px(40);
-        margin: px(50) 0 0;
+      @include myg-grid__smaller-than(phone) {
+        font-size: myg__px(40);
+        margin: myg__px(50) 0 0;
       }
     }
 
-    .myg-button--container {
-      margin-bottom: px(100);
+    .myg-button__container {
+      margin-bottom: myg__px(100);
     }
   }
 
   #apps {
-    background: color(background, lighter);
+    background: myg-theme__color(background, lighter);
     padding: 0;
 
-    @include bigger-than(large) {
-      padding: px(5) 0 px(25);
+    @include myg-grid__bigger-than(large) {
+      padding: myg__px(5) 0 myg__px(25);
     }
 
-    @include bigger-than(desktop) {
-      padding: px(25) 0 px(75);
+    @include myg-grid__bigger-than(desktop) {
+      padding: myg__px(25) 0 myg__px(75);
     }
 
-    @include smaller-than(large) {
+    @include myg-grid__smaller-than(large) {
       h2 {
-        margin-top: px(10);
+        margin-top: myg__px(10);
       }
     }
   }
 
   #subscribe {
-    background: color(text, dark);
-    padding: px(75) 0 px(100);
+    background: myg-theme__color(text, dark);
+    padding: myg__px(75) 0 myg__px(100);
 
     & > div {
       width: 85%;
 
       h1,
       p {
-        color: color(background, base);
+        color: myg-theme__color(background, base);
       }
 
       .myg-button {
-        background: color(text, dark);
-        border-color: color(background, base) !important;
+        background: myg-theme__color(text, dark);
+        border-color: myg-theme__color(background, base) !important;
 
         &:hover {
-          background: color(background, base);
-          color: color(text, dark);
+          background: myg-theme__color(background, base);
+          color: myg-theme__color(text, dark);
         }
       }
     }
@@ -145,32 +145,40 @@ body.welcome.index {
   #open-source {
     padding: 0;
 
-    @include bigger-than(large) {
-      padding: px(5) 0 px(25);
+    @include myg-grid__bigger-than(large) {
+      padding: myg__px(5) 0 myg__px(25);
     }
 
-    @include bigger-than(desktop) {
-      padding: px(25) 0 px(75);
+    @include myg-grid__bigger-than(desktop) {
+      padding: myg__px(25) 0 myg__px(75);
     }
 
-    @include smaller-than(large) {
+    @include myg-grid__smaller-than(large) {
       h2 {
-        margin-top: px(10);
+        margin-top: myg__px(10);
       }
     }
 
-    .myg-card--top {
-      height: px(25);
+    .myg-card__top {
+      height: myg__px(25);
     }
 
-    .myg-card--bottom {
-      min-height: px(300);
+    .myg-card__bottom {
+      min-height: myg__px(300);
+    }
+  }
+
+  #apps,
+  #open-source {
+    .myg-grid__grid {
+      @include myg-grid__grid-columns(repeat(12, 1fr))
+      @include myg-grid__grid-gap(myg__px(20))
     }
   }
 
   #myg {
-    background: color(background, lighter);
-    padding: px(50) 0;
+    background: myg-theme__color(background, lighter);
+    padding: myg__px(50) 0;
 
     & > div {
       align-items: center;
@@ -183,26 +191,26 @@ body.welcome.index {
       }
 
       p.sm {
-        color: color(text, lighter);
+        color: myg-theme__color(text, lighter);
       }
 
       & > .wrapper {
-        margin-bottom: px(20);
+        margin-bottom: myg__px(20);
 
         & > .wrapper {
           display: flex;
           flex-wrap: wrap;
-          margin: px(-6);
+          margin: myg__px(-6);
 
           & > a {
-            margin: px(6);
+            margin: myg__px(6);
             opacity: 0.7;
 
-            @include transition;
+            @include myg-animate__transition;
 
             path,
             rect {
-              fill: color(text, lighter);
+              fill: myg-theme__color(text, lighter);
             }
 
             &:hover {

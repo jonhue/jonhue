@@ -7,7 +7,7 @@
   = image_tag @app.logo
   %h1.sm= @app.name
   %p.lg= @app.description
-  .myg-button--container
+  .myg-button__container
     - if @app.url
       = link_to 'Get started', @app.url, class: 'myg-button', target: '_blank'
     - if @app.android
@@ -32,8 +32,8 @@
           %p.lg= feature.content
 
 %section#more
-  .myg-wrap--large
-    .myg-badge--container
+  .myg-layout__wrap--large
+    .myg-badge__container
       - if @app.released_at && @app.released_at > Time.now - 1.month
         %p.myg-badge.success New! 🚀
       - if @app.beta
@@ -48,7 +48,7 @@
         %p.myg-badge Windows
       - if @app.chrome
         %p.myg-badge Chrome
-    .myg-button--container
+    .myg-button__container
       - if @app.wiki
         = link_to('Wiki', @app.wiki, class: 'myg-button myg-button--secondary',
                   target: '_blank')

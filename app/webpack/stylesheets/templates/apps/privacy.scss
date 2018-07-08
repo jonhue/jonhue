@@ -1,11 +1,11 @@
 body.apps.privacy {
-  .myg-wrap--tablet {
-    @include bigger-than(tablet) {
-      padding-top: px(50);
+  .myg-layout__wrap--tablet {
+    @include myg-grid__bigger-than(tablet) {
+      padding-top: myg__px(50);
     }
   }
 
   section#policy {
-    padding: 0 px(25) px(75);
+    padding: 0 myg__px(25) myg__px(75);
   }
 }

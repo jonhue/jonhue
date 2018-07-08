@@ -8,9 +8,9 @@
 %section#home
   - if @repository.logo
     = image_tag @repository.logo
-  %h1.sm= @repository.name
+  %h1= @repository.name
   %p.lg= emojify @repository.description
-  .myg-button--container
+  .myg-button__container
     - if @repository.github
       = link_to('Source code', @repository.github,
                 class: 'myg-button', target: '_blank')
@@ -40,12 +40,12 @@
 - if @readme.length > 1000
   %section#readme
     %a{ name: 'readme' }
-    .myg-wrap--tablet
+    .myg-layout__wrap--tablet
       = @readme
 
 %section#more
-  .myg-wrap--large
-    .myg-badge--container
+  .myg-layout__wrap--large
+    .myg-badge__container
       - if @repository.created_at > Time.now - 1.month
         %p.myg-badge.success New! 🚀
       - if @repository.discontinued
@@ -62,7 +62,7 @@
         Updated
         = time_ago_in_words @repository.updated_at
         ago
-    .myg-button--container
+    .myg-button__container
       - if @repository.wiki
         = link_to('Wiki', @repository.wiki,
                   class: 'myg-button myg-button--secondary', target: '_blank')

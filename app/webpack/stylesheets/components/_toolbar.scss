@@ -1,13 +1,13 @@
 .myg-toolbar > .mdc-toolbar__row {
-  padding-left: myg-spacing(sm);
+  padding-left: myg-spacing(3);
 
-  @include bigger-than(tablet) {
-    padding-right: myg-spacing(sm);
+  @include myg-grid__bigger-than(tablet) {
+    padding-right: myg-spacing(3);
   }
 
   & > section.mdc-toolbar__section.mdc-toolbar__section--align-start {
-    & > h3 > a {
-      color: color(text, darker);
+    & > h2 > a {
+      color: myg-theme__color(text, darker);
       text-decoration: none !important;
     }
   }
@@ -19,38 +19,38 @@
 
     & > a:not(.myg-button) {
       align-items: center;
-      color: color(text, base);
+      color: myg-theme__color(text, base);
       display: flex;
-      font-size: px(14);
+      font-size: myg__px(15);
       height: map-get($myg-layout, toolbar-height);
       justify-content: center;
-      padding: 0 px(15);
+      padding: 0 myg__px(15);
       text-decoration: none !important;
 
-      @include transition(color);
+      @include myg-animate__transition(color);
 
       &:hover {
-        color: color(accent, base);
+        color: myg-theme__color(accent, base);
       }
     }
 
     &.mobile > a {
-      background: color(background, base);
-      padding: 0 px(20);
+      background: myg-theme__color(background, base);
+      padding: 0 myg__px(20);
 
-      @include transition(background);
+      @include myg-animate__transition(background);
 
       &:hover {
-        background: color(background, lighter);
+        background: myg-theme__color(background, lighter);
       }
     }
 
     & > a.myg-button {
-      margin-left: px(15);
+      margin-left: myg__px(15);
     }
   }
 
-  @include bigger-than(tablet) {
+  @include myg-grid__bigger-than(tablet) {
     section.mdc-toolbar__section.mdc-toolbar__section--align-end {
       &:not(.mobile) {
         display: flex;
