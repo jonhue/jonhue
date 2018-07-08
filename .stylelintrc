@@ -4,6 +4,7 @@
     "stylelint-order"
   ],
   "rules": {
+    "at-rule-no-unknown": false,
     "order/order": [
       "custom-properties",
       "declarations"
