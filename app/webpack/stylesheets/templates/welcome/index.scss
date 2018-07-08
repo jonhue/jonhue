@@ -171,8 +171,8 @@ body.welcome.index {
   #apps,
   #open-source {
     .myg-grid__grid {
-      @include myg-grid__grid-columns(repeat(12, 1fr))
-      @include myg-grid__grid-gap(myg__px(20))
+      @include myg-grid__grid-columns(repeat(12, 1fr));
+      @include myg-grid__grid-gap(myg__px(20));
     }
   }
 
