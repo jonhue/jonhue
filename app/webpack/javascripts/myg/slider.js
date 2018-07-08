@@ -6,4 +6,4 @@ import MygSlider from 'myg-slider';
 });
 function init() {
   const mygSliders = MygSlider.initAll(document.querySelectorAll('.myg-slider'), {});
-};
+}

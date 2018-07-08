@@ -6,4 +6,4 @@ import MygRadio from 'myg-radio';
 });
 function init() {
   const mygRadios = MygRadio.initAll(document.querySelectorAll('.myg-radio'), {});
-};
+}

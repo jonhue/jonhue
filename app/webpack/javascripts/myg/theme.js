@@ -6,4 +6,4 @@ import MygTheme from 'myg-theme';
 });
 function init() {
   const mygTheme = MygTheme.init(document.querySelector('html'), {});
-};
+}

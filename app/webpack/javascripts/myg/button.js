@@ -6,4 +6,4 @@ import MygButton from 'myg-button';
 });
 function init() {
   const mygButtons = MygButton.initAll(document.querySelectorAll('.myg-button'), {});
-};
+}

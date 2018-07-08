@@ -6,4 +6,4 @@ import MygModal from 'myg-modal';
 });
 function init() {
   const mygModals = MygModal.initAll(document.querySelectorAll('.myg-modal'), {});
-};
+}

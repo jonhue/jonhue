@@ -6,4 +6,4 @@ import MygText from 'myg-text';
 });
 function init() {
   const mygTexts = MygText.initAll(document.querySelectorAll('.myg-text'), {});
-};
+}

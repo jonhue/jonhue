@@ -6,4 +6,4 @@ import MygCheckbox from 'myg-checkbox';
 });
 function init() {
   const mygCheckboxes = MygCheckbox.initAll(document.querySelectorAll('.myg-checkbox'), {});
-};
+}

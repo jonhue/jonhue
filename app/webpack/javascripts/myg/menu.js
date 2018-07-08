@@ -6,4 +6,4 @@ import MygMenu from 'myg-menu';
 });
 function init() {
   const mygMenu = MygMenu.init(document.querySelector('.myg-menu'), {});
-};
+}

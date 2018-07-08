@@ -6,4 +6,4 @@ import MygProgress from 'myg-progress';
 });
 function init() {
   const mygProgresses = MygProgress.initAll(document.querySelectorAll('.myg-progress'), {});
-};
+}

@@ -6,4 +6,4 @@ import MygFormField from 'myg-form-field';
 });
 function init() {
   const mygFormFields = MygFormField.initAll(document.querySelectorAll('.myg-form-field'), {});
-};
+}

@@ -6,4 +6,4 @@ import MygIcon from 'myg-icon';
 });
 function init() {
   const mygIcons = MygIcon.initAll(document.querySelectorAll('.myg-icon'), {});
-};
+}

@@ -6,4 +6,4 @@ import MygCard from 'myg-card';
 });
 function init() {
   const mygCards = MygCard.initAll(document.querySelectorAll('.myg-card'), {});
-};
+}

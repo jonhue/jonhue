@@ -6,4 +6,4 @@ import MygTabs from 'myg-tabs';
 });
 function init() {
   const mygTabs = MygTabs.init(document.querySelector('.myg-tabs'), {});
-};
+}

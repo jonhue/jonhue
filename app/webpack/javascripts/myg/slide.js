@@ -10,4 +10,4 @@ function init() {
     wrapAround: true,
     autoPlay: 10000
   });
-};
+}

@@ -6,4 +6,4 @@ import MygDialog from 'myg-dialog';
 });
 function init() {
   const mygDialogs = MygDialog.initAll(document.querySelectorAll('.myg-dialog'), {});
-};
+}

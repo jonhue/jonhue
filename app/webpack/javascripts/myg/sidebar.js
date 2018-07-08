@@ -6,4 +6,4 @@ import MygSidebar from 'myg-sidebar';
 });
 function init() {
   const mygSidebar = MygSidebar.init(document.querySelector('.myg-sidebar'), {});
-};
+}

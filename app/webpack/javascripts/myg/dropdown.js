@@ -6,4 +6,4 @@ import MygDropdown from 'myg-dropdown';
 });
 function init() {
   const mygDropdowns = MygDropdown.initAll(document.querySelectorAll('.myg-dropdown'), {});
-};
+}

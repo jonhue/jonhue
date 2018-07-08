@@ -6,4 +6,4 @@ import MygFooter from 'myg-footer';
 });
 function init() {
   const mygFooter = MygFooter.init(document.querySelector('.myg-footer'), {});
-};
+}

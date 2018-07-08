@@ -6,4 +6,4 @@ import MygToast from 'myg-toast';
 });
 function init() {
   const mygToast = MygToast.init(document.querySelector('.myg-toast'), {});
-};
+}

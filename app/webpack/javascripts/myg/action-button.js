@@ -6,4 +6,4 @@ import MygActionButton from 'myg-action-button';
 });
 function init() {
   const mygActionButton = MygActionButton.init(document.querySelector('.myg-action-button'), {});
-};
+}

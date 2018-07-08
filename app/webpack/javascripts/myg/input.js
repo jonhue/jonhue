@@ -6,4 +6,4 @@ import MygInput from 'myg-input';
 });
 function init() {
   const mygInputs = MygInput.initAll(document.querySelectorAll('.myg-input'), {});
-};
+}

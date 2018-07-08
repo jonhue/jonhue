@@ -6,4 +6,4 @@ import MygDrawer from 'myg-drawer';
 });
 function init() {
   window.mygDrawer = MygDrawer.init(document.querySelector('.myg-drawer'), {});
-};
+}
