@@ -3,71 +3,13 @@
 @import url("https://use.typekit.net/mbh8qfe.css");
 @import "myg/myg";
 
-
+// Components
 @import "components/components";
 
-@import "packages/apps/show";
-@import "packages/apps/terms";
-@import "packages/apps/privacy";
-@import "packages/repositories/show";
-@import "packages/welcome/contact";
-@import "packages/welcome/index";
-
-
-
-.myg-toolbar > .mdc-toolbar__row {
-  padding-left: myg-spacing(sm);
-  +bigger-than(tablet) {
-    padding-right: myg-spacing(sm);
-  }
-  & > section.mdc-toolbar__section.mdc-toolbar__section--align-start {
-    & > h3 > a {
-      color: color(text, darker);
-      text-decoration: none !important;
-    }
-  }
-  & > section.mdc-toolbar__section.mdc-toolbar__section--align-end {
-    &:not(.mobile) {
-      display: none;
-    }
-    & > a:not(.myg-button) {
-      padding: 0 px(15);
-      font-size: px(14);
-      +flex--center;
-      height: map-get($myg-layout, toolbar-height);
-      color: color(text, base);
-      text-decoration: none !important;
-      +transition(color);
-      &:hover {
-        color: color(accent, base);
-      }
-    }
-    & > a.myg-button {
-      margin-left: px(15);
-    }
-    &.mobile > a {
-      padding: 0 px(20);
-      background: color(background, base);
-      +transition(background);
-      &:hover {
-        background: color(background, lighter);
-      }
-    }
-  }
-  +bigger-than(tablet) {
-    section.mdc-toolbar__section.mdc-toolbar__section--align-end {
-      &:not(.mobile) {
-        display: flex;
-      }
-      &.mobile {
-        display: none;
-      }
-    }
-  }
-}
-
-.myg-drawer {
-  a.myg-button {
-    width: 100%;
-  }
-}
+// Templates
+@import "templates/apps/show";
+@import "templates/apps/terms";
+@import "templates/apps/privacy";
+@import "templates/repositories/show";
+@import "templates/welcome/contact";
+@import "templates/welcome/index";

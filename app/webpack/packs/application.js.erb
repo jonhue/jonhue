@@ -1,13 +1,12 @@
 import 'rails-ujs';
-// import './../javascripts/cable';
 
 import Turbolinks from 'turbolinks';
 Turbolinks.start();
 
 import 'turbolinks-animate';
-document.addEventListener( 'turbolinks:load', () => {
+document.addEventListener('turbolinks:load', () => {
   TurbolinksAnimate.init({ element: document.querySelector('body.turbolinks-animate') });
-})
+});
 
 import 'onsignal/dist/OneSignalSDK';
 import OnSignal from 'onsignal';
@@ -15,10 +14,10 @@ function showSubscription() {
   if (document.querySelector('#subscribe a.myg-button'))
     document.querySelector('#subscribe a.myg-button').innerHTML = '🎉 Thank you for subscribing! 🎉';
 }
-document.addEventListener( 'turbolinks:load', () => { // change to 'ready'
-  const onSignal = new OnSignal('<%= Settings.onesignal.app_id %>');
+document.addEventListener( 'DOMContentLoaded', () => {
+  const onSignal = new OnSignal('<%= Rails.application.credentials.onesignal[:app_id] %>');
   if (onSignal.isSubscribed())
-    showSubscription()
+    showSubscription();
   else {
     if (document.querySelector('#subscribe a.myg-button')) {
       document.querySelector('#subscribe a.myg-button').addEventListener( 'click', () => {
@@ -27,7 +26,7 @@ document.addEventListener( 'turbolinks:load', () => { // change to 'ready'
       });
     }
   }
-})
+});
 
 import './../javascripts/myg/index';
 

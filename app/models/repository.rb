@@ -14,7 +14,7 @@ class Repository < ApplicationRecord
 
   def content
     Octokit.contents(
-      github.delete('https://github.com/'),
+      github.gsub('https://github.com/', ''),
       path: 'README.md',
       accept: 'application/vnd.github.v3.html'
     ).force_encoding('UTF-8').html_safe

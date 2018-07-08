@@ -1,0 +1,11 @@
+body.apps.terms {
+  .myg-layout__wrap--tablet {
+    @include myg-grid__bigger-than(tablet) {
+      padding-top: myg__px(50);
+    }
+  }
+
+  section#terms {
+    padding: 0 myg__px(25) myg__px(75);
+  }
+}
