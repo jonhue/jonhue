@@ -10,7 +10,12 @@
     "turbolinks": "^5.1.1",
     "turbolinks-animate": "^3.0.5"
   },
+  "scripts": {
+    "stylelint": "./node_modules/.bin/stylelint **/*.scss"
+  },
   "devDependencies": {
+    "stylelint": "^9.3.0",
+    "stylelint-config-standard": "^18.2.0",
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "^2.11.2"
   }

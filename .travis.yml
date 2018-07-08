@@ -5,3 +5,4 @@ script:
   - bundle exec haml-lint
   - bundle exec rubocop
   - bundle exec rspec
+  - yarn run stylelint
