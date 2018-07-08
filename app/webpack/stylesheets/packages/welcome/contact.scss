@@ -1,0 +1,26 @@
+body.welcome.contact {
+  .myg-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h2,
+    p {
+      max-width: 85%;
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: px(5) 0 px(35);
+    }
+
+    a {
+      margin-bottom: px(75);
+    }
+  }
+}
