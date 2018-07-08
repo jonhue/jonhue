@@ -3,12 +3,13 @@
 @import url("https://use.typekit.net/mbh8qfe.css");
 @import "myg/myg";
 
-
+// Components
 @import "components/components";
 
-@import "packages/apps/show";
-@import "packages/apps/terms";
-@import "packages/apps/privacy";
-@import "packages/repositories/show";
-@import "packages/welcome/contact";
-@import "packages/welcome/index";
+// Templates
+@import "templates/apps/show";
+@import "templates/apps/terms";
+@import "templates/apps/privacy";
+@import "templates/repositories/show";
+@import "templates/welcome/contact";
+@import "templates/welcome/index";

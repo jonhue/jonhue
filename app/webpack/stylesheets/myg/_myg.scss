@@ -1,11 +1,16 @@
 // @import "myg/src/myg"
 
 
+/* CUSTOMIZE MYG */
+
+/* Base */
 @import "myg-base/base";
 
+/* Style */
 @import "myg-theme/theme";
 @import "myg-font/font";
 
+/* Components */
 // @import "myg-action-button/action-button";
 @import "myg-animate/animate";
 @import "myg-badge/badge";
@@ -41,6 +46,7 @@
 @import "myg-toolbar/toolbar";
 // @import "myg-tooltip/tooltip";
 
+/* Classes */
 @include myg__classes--animate;
 @include myg__classes--base;
 @include myg__classes--badge;
@@ -70,6 +76,7 @@
 @include myg__classes--toolbar;
 // @include myg__classes--tooltip;
 
+/* Styling of HTML tags */
 // @include myg__mappings--button;
 @include myg__mappings--input;
 @include myg__mappings--label;
