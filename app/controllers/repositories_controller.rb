@@ -5,13 +5,13 @@ class RepositoriesController < ApplicationController
 
   def show
     turbolinks_animate 'fadein'
-    @features = @repository.features.order('created_at asc')
+    @features = @repository.features
   end
 
   private
 
   def set_repository
-    @repository = Repository.friendly.find params[:id]
+    @repository = Repository.find_by(name: params[:name])
     @readme = @repository.content
   end
 end

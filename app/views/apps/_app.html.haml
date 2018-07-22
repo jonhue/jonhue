@@ -1,0 +1,24 @@
+.myg-card
+  = link_to app, class: 'myg-card__top' do
+    = image_tag app.logo
+  .myg-card__bottom
+    .wrapper
+      .myg-badge__container
+        - if app.released_at && app.released_at > Time.now - 1.month
+          %p.myg-badge.success New! 🚀
+        - if app.beta
+          %p.myg-badge.error Beta 🔥
+        - if app.url
+          %p.myg-badge Web
+        - if app.android
+          %p.myg-badge Android
+        - if app.ios
+          %p.myg-badge iOS
+        - if app.windows
+          %p.myg-badge Windows
+        - if app.chrome
+          %p.myg-badge Chrome
+      %h3= app.name
+      %p= app.description
+    = link_to('Learn more', app_url(name: app.name),
+              class: 'myg-button--secondary')
