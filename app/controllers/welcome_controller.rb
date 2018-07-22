@@ -3,9 +3,8 @@
 class WelcomeController < ApplicationController
   def index
     turbolinks_animate 'fadein'
-    @apps = App.all.order('released_at desc')
-    @repositories = Repository.all.order('updated_at desc')
-    @posts = Post.all.order(:created_at).limit(1)
+    @apps = App.all.sort_by(&:released_at)
+    @repositories = Repository.all.sort_by(&:updated_at)
   end
 
   def contact
