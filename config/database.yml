@@ -1,24 +1,24 @@
 default: &default
-  pool: 5
-
-
-# production:
-#   <<: *default
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
 development:
   <<: *default
-  adapter: mysql2
-  encoding: utf8
-  username: root
-  password: 0402Jonas
-  port: 3306
+  adapter: postgresql
   database: jonhue_development
+  username: <%= Rails.application.credentials.database[:username] %>
+  password: <%= Rails.application.credentials.database[:password] %>
 
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
 test:
   <<: *default
-  adapter: mysql2
-  encoding: utf8
-  username: root
-  password: 0402Jonas
-  port: 3306
+  adapter: postgresql
   database: jonhue_test
+  username: <%= Rails.application.credentials.database[:username] %>
+  password: <%= Rails.application.credentials.database[:password] %>
+
+production:
+  <<: *default

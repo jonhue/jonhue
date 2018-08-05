@@ -24,6 +24,7 @@ gem 'myg'
 gem 'nilify_blanks'
 gem 'octokit'
 gem 'onsignal'
+gem 'pg'
 gem 'puma'
 gem 'pwa'
 gem 'r404'
@@ -40,6 +41,10 @@ gem 'webpacker'
 group :development, :test do
   gem 'byebug'
   gem 'capybara'
+  gem 'haml_lint', require: false
+  gem 'rspec-rails', require: false
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
   gem 'selenium-webdriver'
 end
 
@@ -47,17 +52,11 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'foreman', require: false
-  gem 'haml_lint', require: false
-  gem 'mysql2'
   gem 'pry-rails'
-  gem 'rspec-rails', require: false
-  gem 'rubocop', require: false
-  gem 'rubocop-rspec', require: false
   gem 'web-console'
 end
 
 group :production do
-  gem 'pg'
   gem 'rack-timeout'
 end
 

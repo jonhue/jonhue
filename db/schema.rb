@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2018_02_17_090025) do
 
-  create_table "apps", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "apps", force: :cascade do |t|
     t.string "slug"
     t.text "logo"
     t.string "name"
@@ -34,7 +37,7 @@ ActiveRecord::Schema.define(version: 2018_02_17_090025) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "belongings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "belongings", force: :cascade do |t|
     t.string "belonger_type"
     t.bigint "belonger_id"
     t.string "belongable_type"
@@ -47,7 +50,7 @@ ActiveRecord::Schema.define(version: 2018_02_17_090025) do
     t.index ["belonger_type", "belonger_id"], name: "index_belongings_on_belonger_type_and_belonger_id"
   end
 
-  create_table "devices", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "devices", force: :cascade do |t|
     t.string "owner_type"
     t.bigint "owner_id"
     t.string "onesignal_id"
@@ -59,7 +62,7 @@ ActiveRecord::Schema.define(version: 2018_02_17_090025) do
     t.index ["owner_type", "owner_id"], name: "index_devices_on_owner_type_and_owner_id"
   end
 
-  create_table "features", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "features", force: :cascade do |t|
     t.string "image"
     t.string "title"
     t.text "content"
@@ -67,7 +70,7 @@ ActiveRecord::Schema.define(version: 2018_02_17_090025) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.string "platform"
@@ -76,7 +79,7 @@ ActiveRecord::Schema.define(version: 2018_02_17_090025) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "repositories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "repositories", force: :cascade do |t|
     t.string "slug"
     t.string "logo"
     t.string "name"
