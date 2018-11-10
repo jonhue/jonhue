@@ -2,12 +2,13 @@
 %html{ lang: 'en' }
   %head
     %meta{ charset: 'utf-8' }
-    %meta{ name: 'viewport', content: viewport_content }
+    %meta{ name: 'viewport',
+           content: 'user-scalable=no, width=device-width, initial-scale=1,  maximum-scale=1' }
 
     = metamagic(site: 'Jonas Hübotter', title: [:title, :site],
                 separator: ' - ',
-                description: description,
-                keywords: ['developer'])
+                description: t('title'),
+                keywords: ['developer', 'designer'])
     = component 'pwa/manifest'
 
     %link{ rel: 'apple-touch-icon', sizes: '76x76',
@@ -37,6 +38,11 @@
     = favicon_link_tag '/favicon.ico'
 
     = component 'layouts/google_analytics'
+    = component('seo/schema', type: :person, name: 'Jonas Hübotter',
+                email: 'me@jonhue.me', address: 'Berlin', gender: 'male',
+                job_title: 'Software Developer', url: 'https://jonhue.me',
+                image: 'https://jonhue.me/512x512.png',
+                description: t('title'))
 
     = stylesheet_pack_tag('application', media: 'all',
                           'data-turbolinks-track': 'reload')
@@ -46,7 +52,6 @@
 
     = area :head
 
-  = component('turbolinks-animate', animation: @turbolinks_animate_animation,
-              class: body_class) do
+  %body.myg.myg-layout{ class: class_hierarchy([params[:controller].split('/'), action_name]) }
     = mozaic_area do
       = yield

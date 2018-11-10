@@ -30,4 +30,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  title: A Developer, Maker, with a love for Design.
+  contact: Contact me
+  subscribe:
+    title: Subscribe
+    content: I like to build stuff, learn stuff, and do other stuff. If you click on this button, I'll tell you what I've been building. Trust me, I'll misuse it.
+  more: More from me
+  apps:
+    title: Stuff I've been building
+    nativegap:
+      title: NativeGap
+      content: Bring your web app to the stores of iOS, Android, Chrome and Windows.
+    phylator:
+      title: Phylator
+      content: Bring your web app to the stores of iOS, Android, Chrome and Windows.
+    tip_the_world_cup:
+      title: Tip the World Cup
+      content: Bring your web app to the stores of iOS, Android, Chrome and Windows.
+  footer: Most of my work happens on %{github}. Some of it on %{medium} and %{behance}.

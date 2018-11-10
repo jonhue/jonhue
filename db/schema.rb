@@ -10,95 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_02_17_090025) do
+ActiveRecord::Schema.define(version: 0) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "apps", force: :cascade do |t|
-    t.string "slug"
-    t.text "logo"
-    t.string "name"
-    t.string "description"
-    t.boolean "beta", default: false, null: false
-    t.string "url"
-    t.string "github"
-    t.string "android"
-    t.string "ios"
-    t.string "windows"
-    t.string "chrome"
-    t.string "todo"
-    t.string "wiki"
-    t.string "issues"
-    t.integer "open_issues"
-    t.string "support"
-    t.datetime "released_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "belongings", force: :cascade do |t|
-    t.string "belonger_type"
-    t.bigint "belonger_id"
-    t.string "belongable_type"
-    t.bigint "belongable_id"
-    t.string "scope"
-    t.integer "position"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["belongable_type", "belongable_id"], name: "index_belongings_on_belongable_type_and_belongable_id"
-    t.index ["belonger_type", "belonger_id"], name: "index_belongings_on_belonger_type_and_belonger_id"
-  end
-
-  create_table "devices", force: :cascade do |t|
-    t.string "owner_type"
-    t.bigint "owner_id"
-    t.string "onesignal_id"
-    t.string "onesignal_permission"
-    t.datetime "last_used"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["onesignal_id"], name: "index_devices_on_onesignal_id"
-    t.index ["owner_type", "owner_id"], name: "index_devices_on_owner_type_and_owner_id"
-  end
-
-  create_table "features", force: :cascade do |t|
-    t.string "image"
-    t.string "title"
-    t.text "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
-    t.string "platform"
-    t.string "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "repositories", force: :cascade do |t|
-    t.string "slug"
-    t.string "logo"
-    t.string "name"
-    t.string "description"
-    t.string "language"
-    t.string "url"
-    t.string "github"
-    t.string "demo"
-    t.string "rubygems"
-    t.string "npm"
-    t.string "todo"
-    t.string "wiki"
-    t.string "issues"
-    t.integer "open_issues"
-    t.integer "stars"
-    t.integer "watchers"
-    t.boolean "discontinued", default: false, null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
 end

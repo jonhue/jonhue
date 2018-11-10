@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.5.1'
+ruby '2.5.3'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
@@ -10,38 +10,27 @@ end
 
 gem 'rails', '~> 5.2.0'
 
-gem 'acts_as_belongable'
 gem 'bootsnap', require: false
-gem 'certified'
 gem 'config'
-gem 'friendly_id'
-gem 'gemoji'
 gem 'haml'
-gem 'httparty'
 gem 'metamagic'
 gem 'mozaic'
 gem 'myg'
-gem 'nilify_blanks'
-gem 'octokit'
-gem 'onsignal'
 gem 'pg'
 gem 'puma'
 gem 'pwa'
-gem 'r404'
-gem 'randomize_id'
 gem 'sass-rails'
 gem 'search-engine-optimization'
 gem 'sentry-raven'
-gem 'simple_form'
 gem 'skylight'
 gem 'turbolinks'
-gem 'turbolinks-animate'
 gem 'uglifier'
 gem 'webpacker'
 
 group :development, :test do
   gem 'byebug'
   gem 'capybara'
+  gem 'dotenv-rails'
   gem 'haml_lint', require: false
   gem 'rspec-rails', require: false
   gem 'rubocop', require: false
