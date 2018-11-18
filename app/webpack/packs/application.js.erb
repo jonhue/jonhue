@@ -1,37 +1,28 @@
-import 'rails-ujs';
+import 'rails-ujs'
 
-import Turbolinks from 'turbolinks';
-Turbolinks.start();
+import Turbolinks from 'turbolinks'
+Turbolinks.start()
 
-import 'turbolinks-animate';
-document.addEventListener('turbolinks:load', () => {
-  TurbolinksAnimate.init({ element: document.querySelector('body.turbolinks-animate') });
-});
+import 'onsignal/dist/OneSignalSDK'
+import OnSignal from 'onsignal'
 
-import 'onsignal/dist/OneSignalSDK';
-import OnSignal from 'onsignal';
+let subscribeButton = document.querySelector('#subscribe a')
 function showSubscription() {
-  if (document.querySelector('#subscribe a.myg-button'))
-    document.querySelector('#subscribe a.myg-button').innerHTML = '🎉 Thank you for subscribing! 🎉';
+  if (subscribeButton)
+    subscribeButton.innerHTML = '🎉 Thank you for subscribing! 🎉'
 }
-document.addEventListener( 'DOMContentLoaded', () => {
-  const onSignal = new OnSignal('<%= Rails.application.credentials.onesignal[:app_id] %>');
+document.addEventListener('DOMContentLoaded', () => {
+  const onSignal = new OnSignal('<%= Rails.application.credentials.onesignal[:app_id] %>')
   if (onSignal.isSubscribed())
-    showSubscription();
+    showSubscription()
   else {
-    if (document.querySelector('#subscribe a.myg-button')) {
-      document.querySelector('#subscribe a.myg-button').addEventListener( 'click', () => {
-        onSignal.subscribe();
-        showSubscription();
-      });
+    if (subscribeButton) {
+      subscribeButton.addEventListener('click', () => {
+        onSignal.subscribe()
+        showSubscription()
+      })
     }
   }
-});
+})
 
-import './../javascripts/myg/index';
-
-import './../javascripts/packages/layouts/application';
-import './../javascripts/packages/repositories/show';
-
-
-import './../stylesheets/index';
+import './../stylesheets/index'

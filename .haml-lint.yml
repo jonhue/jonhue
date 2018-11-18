@@ -5,5 +5,5 @@ linters:
   ConsecutiveComments:
     enabled: false
 
-  ViewLength:
-    max: 140
+  LineLength:
+    max: 100
