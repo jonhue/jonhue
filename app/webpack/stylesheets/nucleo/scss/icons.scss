@@ -1,6 +1,6 @@
-/*------------------------
+/* ------------------------
 	icons
--------------------------*/
+------------------------- */
 @function unicode($str) {
   @return unquote("\"\\#{$str}\"");
 }
@@ -35,4 +35,3 @@ $nc-shape-star: unicode(ea0c);
 .nc-shape-star::before {
   content: $nc-shape-star;
 }
-

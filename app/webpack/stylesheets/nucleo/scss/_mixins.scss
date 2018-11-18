@@ -1,5 +1,5 @@
 @mixin nc-rotate($degrees, $rotation) {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});
+  filter: progid:dximagetransform.microsoft.basicimage(rotation=#{$rotation});
   -webkit-transform: rotate($degrees);
   -moz-transform: rotate($degrees);
   -ms-transform: rotate($degrees);
@@ -8,7 +8,7 @@
 }
 
 @mixin nc-flip($horiz, $vert, $rotation) {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation});
+  filter: progid:dximagetransform.microsoft.basicimage(rotation=#{$rotation});
   -webkit-transform: scale($horiz, $vert);
   -moz-transform: scale($horiz, $vert);
   -ms-transform: scale($horiz, $vert);
