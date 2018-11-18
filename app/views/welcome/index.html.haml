@@ -14,7 +14,11 @@
 
     #subscribe
       %p= t('subscribe.content')
-      %p.mobile= t('footer', github: link_to('GitHub', Settings.social.github), medium: link_to('Medium', Settings.social.medium), behance: link_to('Behance', Settings.social.behance)).html_safe
+      %p.mobile
+        = t('footer',
+            github: link_to('GitHub', Settings.social.github),
+            medium: link_to('Medium', Settings.social.medium),
+            behance: link_to('Behance', Settings.social.behance)).html_safe
       = link_to(t('subscribe.title'), 'javascript:void(0)', class: 'button')
       = link_to('javascript:void(0)', id: 'more') do
         %i.nc.nc-tail-triangle-down-2
@@ -35,4 +39,7 @@
         %p= t('apps.tip_the_world_cup.content')
 
   %footer
-    %p= t('footer', github: link_to('GitHub', Settings.social.github, target: '_blank'), medium: link_to('Medium', Settings.social.medium, target: '_blank'), behance: link_to('Behance', Settings.social.behance, target: '_blank')).html_safe
+    %p= t('footer',
+          github: link_to('GitHub', Settings.social.github, target: '_blank'),
+          medium: link_to('Medium', Settings.social.medium, target: '_blank'),
+          behance: link_to('Behance', Settings.social.behance, target: '_blank')).html_safe
