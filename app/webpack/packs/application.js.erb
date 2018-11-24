@@ -6,23 +6,26 @@ Turbolinks.start()
 import 'onsignal/dist/OneSignalSDK'
 import OnSignal from 'onsignal'
 
-let subscribeButton = document.querySelector('#subscribe a')
 function showSubscription() {
-  if (subscribeButton)
-    subscribeButton.innerHTML = '🎉 Thank you for subscribing! 🎉'
+  document.querySelector('#subscribe a.button').innerHTML = '🎉 Thank you for subscribing! 🎉'
 }
 document.addEventListener('DOMContentLoaded', () => {
   const onSignal = new OnSignal('<%= Rails.application.credentials.onesignal[:app_id] %>')
   if (onSignal.isSubscribed())
     showSubscription()
   else {
-    if (subscribeButton) {
-      subscribeButton.addEventListener('click', () => {
-        onSignal.subscribe()
-        showSubscription()
-      })
-    }
+    document.querySelector('#subscribe a.button').addEventListener('click', () => {
+      onSignal.subscribe()
+      showSubscription()
+    })
   }
+
+  document.querySelector('a#more').addEventListener('click', () => {
+    window.scrollTo({
+      top: document.querySelector('#hero').offsetHeight,
+      behavior: 'smooth'
+    })
+  })
 })
 
 import './../stylesheets/index'
