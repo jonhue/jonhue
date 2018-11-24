@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  mount Pwa::Engine, at: ''
-
   get 'contact', to: 'welcome#contact'
 
   get 'repos/:id', to: 'repositories#show', as: :repository
