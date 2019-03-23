@@ -18,7 +18,7 @@
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^2.1.0",
-    "webpack-cli": "^2.0.10",
+    "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^2.11.2"
   }
 }
