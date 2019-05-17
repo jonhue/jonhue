@@ -123,7 +123,7 @@ GEM
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    haml_lint (0.30.0)
+    haml_lint (0.31.0)
       haml (>= 4.0, < 5.1)
       rainbow
       rake (>= 10, < 13)
