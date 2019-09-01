@@ -16,7 +16,7 @@
     "eslint": "./node_modules/.bin/eslint app/**/*.js app/**/*.js.erb"
   },
   "devDependencies": {
-    "eslint": "^6.2.2",
+    "eslint": "^6.3.0",
     "postcss-cssnext": "^3.1.0",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
