@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Don't force requests from old versions of IE to be UTF-8 encoded.
 Rails.application.config.action_view.default_enforce_utf8 = false
 
