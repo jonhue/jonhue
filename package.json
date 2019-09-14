@@ -2,14 +2,19 @@
   "name": "jonhue",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.6.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.5.5",
     "@rails/webpacker": "^4.0.7",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "file-loader": "^4.2.0",
     "onsignal": "^5.0.6",
     "rails-erb-loader": "^5.5.2",
     "rails-ujs": "^5.2.3",
     "sass-loader": "^7.3.1",
     "turbolinks": "^5.2.0",
+    "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
   },
   "scripts": {
