@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'repos/:id', to: 'repositories#show', as: :repository
   get ':id', to: 'apps#show', as: :app
-  get ':id/terms', to: 'apps#terms', as: :app_terms	
+  get ':id/terms', to: 'apps#terms', as: :app_terms
   get ':id/privacy', to: 'apps#privacy', as: :app_privacy
 
   root 'welcome#index'
