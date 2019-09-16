@@ -7,12 +7,12 @@ en:
   more: More from me
   apps:
     title: Stuff I've been building
-    nativegap:
-      title: NativeGap
-      content: Bring your web app to the stores of iOS, Android, Chrome and Windows.
-    phylator:
-      title: Phylator
-      content: A simple but powerful calculator for physics.
+    quik:
+      title: Quik
+      content: A high concurrency, strongly typed, high level, general purpose programming language.
+    plaain:
+      title: Plaain
+      content: Stream your media from anywhere. No server. No fee.
     tip_the_world_cup:
       title: Tip the World Cup
       content: Tip the 2018 World Cup with friends & family.
