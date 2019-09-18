@@ -16,7 +16,7 @@
     "sass-loader": "^7.3.1",
     "turbolinks": "^5.2.0",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.8"
+    "webpack-cli": "^3.3.9"
   },
   "scripts": {
     "stylelint": "./node_modules/.bin/stylelint app/**/*.scss",
