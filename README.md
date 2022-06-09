@@ -1,4 +1,8 @@
-### Hi there 👋
+### Hello, I'm Jonas 👋
+
+I study theoretical computer science and machine learning at ETH Zurich.
+
+Fee free to reach out to me through jonas.huebotter@gmail.com.
 
 <!--
 **jonhue/jonhue** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
