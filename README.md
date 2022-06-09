@@ -2,4 +2,4 @@
 
 I study theoretical computer science and machine learning at ETH Zurich.
 
-Fee free to reach out to me through jonas.huebotter@gmail.com.
+Feel free to reach out to me through jonas.huebotter@gmail.com.
